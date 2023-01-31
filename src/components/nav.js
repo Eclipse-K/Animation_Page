@@ -5,8 +5,13 @@ const Nav = () => {
   return (
     <nav>
       <div>
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
+      </div>
+      <div>
+        <NavLink to="/category">Category</NavLink>
       </div>
     </nav>
   );
 };
+
+export default Nav;
