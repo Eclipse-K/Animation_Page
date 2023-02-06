@@ -1,10 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import AinNavbar from "./AniNavbar";
 
 function App() {
   return (
     <div>
       <div>
-        <h1>id</h1>
+        <AinNavbar />
       </div>
     </div>
   );
