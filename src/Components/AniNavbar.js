@@ -9,10 +9,10 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 function AinNavbar() {
   return (
     <>
-      {[false, "sm", "md", "lg", "xl", "xxl"].map((expand) => (
+      {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">추억의 애니</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -21,7 +21,7 @@ function AinNavbar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  카테고리
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -29,17 +29,14 @@ function AinNavbar() {
                   <Nav.Link href="#action1">Home</Nav.Link>
                   <Nav.Link href="#action2">Link</Nav.Link>
                   <NavDropdown
-                    title="Dropdown"
+                    title="Year"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">1980</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">1990</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">2000</NavDropdown.Item>
+                    <NavDropdown.Item href="#action6">2010</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Form className="d-flex">
