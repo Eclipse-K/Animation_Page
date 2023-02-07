@@ -32,11 +32,11 @@ function AinNavbar() {
                     title="Year"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">1980</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">1990</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">2000</NavDropdown.Item>
-                    <NavDropdown.Item href="#action6">2010</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3">1970</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">1980</NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">1990</NavDropdown.Item>
+                    <NavDropdown.Item href="#action6">2000</NavDropdown.Item>
+                    <NavDropdown.Item href="#action7">2010</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
                 <Form className="d-flex">
