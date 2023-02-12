@@ -1,17 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import AinNavbar from "./AniNavbar";
+import Navbar from "./Navbar/Navbar";
 import Motion from "./Motion";
 
 function App() {
   return (
-    <div>
+    <>
       <div>
-        <AinNavbar />
+        <Navbar />
       </div>
       <div>
         <Motion />
       </div>
-    </div>
+    </>
   );
 }
 
