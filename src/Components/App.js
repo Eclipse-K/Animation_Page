@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar/Navbar";
 import Motion from "./Motion";
 
