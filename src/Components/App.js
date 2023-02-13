@@ -3,14 +3,10 @@ import Motion from "./Motion";
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <Motion />
-      </div>
-    </>
+    <div>
+      <Navbar />
+      <Motion />
+    </div>
   );
 }
 
