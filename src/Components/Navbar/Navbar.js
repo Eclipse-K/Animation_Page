@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="Navbar">
       <h1 className="navbar-logo">
-        추억의 애니<i className="fab fa-react"></i>
+        React<i className="fab fa-react"></i>
       </h1>
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
