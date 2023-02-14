@@ -3,35 +3,38 @@ import "./Motion.css";
 function Motion() {
   return (
     <div>
-      <div class="container">
-        <div class="block">
-          <div class="front">
+      <h2>
+        Score: <span className="score">0</span>
+      </h2>
+      <div className="container">
+        <div className="block">
+          <div className="front">
             <span>?</span>
           </div>
-          <div class="back">
+          <div className="back">
             <span></span>
           </div>
-          <div class="right">
+          <div className="right">
             <span>?</span>
           </div>
-          <div class="left">
+          <div className="left">
             <span>?</span>
           </div>
-          <div class="top">
+          <div className="top">
             <span></span>
           </div>
-          <div class="bottom">
+          <div className="bottom">
             <span></span>
           </div>
         </div>
-        <div class="coin"></div>
-        <div class="oneup">
-          <div class="cap">
-            <div class="spot"></div>
+        <div className="coin"></div>
+        <div className="oneup">
+          <div className="cap">
+            <div className="spot"></div>
           </div>
-          <div class="face">
-            <div class="eye"></div>
-            <div class="eye right"></div>
+          <div className="face">
+            <div className="eye"></div>
+            <div className="eye right"></div>
           </div>
         </div>
       </div>
@@ -44,8 +47,6 @@ function Motion() {
         id="oneup"
         src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/1-up.wav"
       ></audio>
-
-      <script src="./MotionScript.js"></script>
     </div>
   );
 }
