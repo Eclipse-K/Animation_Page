@@ -1,12 +1,8 @@
 import "./Motion.css";
-import Input from "./Script2";
 
 function Motion() {
   return (
     <div>
-      <h2>
-        Score: <span className="score">0</span>
-      </h2>
       <div className="container">
         <div className="block">
           <div className="front">
