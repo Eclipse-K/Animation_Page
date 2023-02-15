@@ -1,4 +1,5 @@
 import "./Motion.css";
+import Input from "./Script2";
 
 function Motion() {
   return (
@@ -27,6 +28,7 @@ function Motion() {
             <span></span>
           </div>
         </div>
+
         <div className="coin"></div>
         <div className="oneup">
           <div className="cap">
