@@ -1,21 +1,21 @@
 export const MenuItems = [
   {
-    title: "Home",
+    title: "홈",
+    url: "",
+    cName: "nav-links",
+  },
+  {
+    title: "연도별",
+    url: "",
+    cName: "nav-links",
+  },
+  {
+    title: "무제",
     url: "#",
     cName: "nav-links",
   },
   {
-    title: "Services",
-    url: "#",
-    cName: "nav-links",
-  },
-  {
-    title: "Products",
-    url: "#",
-    cName: "nav-links",
-  },
-  {
-    title: "Contact Us",
+    title: "무제",
     url: "#",
     cName: "nav-links",
   },
