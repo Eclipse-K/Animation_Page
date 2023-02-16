@@ -1,6 +1,6 @@
-import "./Motion.css";
+import "./style.css";
 
-function Motion() {
+function Background() {
   return (
     <div>
       <div className="container">
@@ -26,7 +26,7 @@ function Motion() {
         </div>
 
         <div className="coin"></div>
-        <div className="oneup oneup-active">
+        <div className="oneup">
           <div className="cap">
             <div className="spot"></div>
           </div>
@@ -49,4 +49,4 @@ function Motion() {
   );
 }
 
-export default Motion;
+export default Background;
