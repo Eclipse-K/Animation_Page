@@ -1,11 +1,11 @@
-import Background from "./Background";
-import Navbar from "./Navbar/Navbar";
+import Base from "./Base/Base";
+import NavbarDrop from "./Navbar";
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Background />
+      <NavbarDrop />
+      <Base />
     </div>
   );
 }
