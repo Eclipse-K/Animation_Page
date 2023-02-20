@@ -1,95 +1,90 @@
-import "./Base.css";
-
 function Base() {
   return (
-    <>
-      <div id="container">
-        <div class="platforms">
-          <div class="platform">
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-          </div>
-          <div class="platform">
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-            <div class="platform-line"></div>
-          </div>
+    <div id="container">
+      <div className="platforms">
+        <div className="platform">
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
         </div>
-        <div class="donkey-kong">
-          <div class="body">
-            <div class="head">
-              <div class="face">
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="nose"></div>
-                <div class="teeth">
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                  <div class="line"></div>
-                </div>
-              </div>
-              <div class="ears">
-                <div class="ear"></div>
-                <div class="ear"></div>
-              </div>
-            </div>
-
-            <div class="chest">
-              <div class="part"></div>
-              <div class="part"></div>
-            </div>
-            <div class="arms">
-              <div class="arm"></div>
-              <div class="arm"></div>
-            </div>
-
-            <div class="hands">
-              <div class="hand"></div>
-              <div class="hand"></div>
-            </div>
-
-            <div class="barrel">
-              <div class="barrel shape">
-                <div class="barrel-line"></div>
-                <div class="barrel-line"></div>
-                <div class="barrel-line"></div>
-                <div class="barrel-line"></div>
-                <div class="barrel-line"></div>
-              </div>
-            </div>
-
-            <div class="legs">
-              <div class="leg">
-                <div class="zigzag"></div>
-              </div>
-              <div class="leg">
-                <div class="zigzag"></div>
-              </div>
-              <div class="feet">
-                <div class="foot"></div>
-                <div class="foot"></div>
-              </div>
-            </div>
-          </div>
-          <div class="shadow"></div>
+        <div className="platform">
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
+          <div className="platform-line"></div>
         </div>
       </div>
-      ;
-    </>
+      <div className="donkey-kong">
+        <div className="body">
+          <div className="head">
+            <div className="face">
+              <div className="eye"></div>
+              <div className="eye"></div>
+              <div className="nose"></div>
+              <div className="teeth">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+              </div>
+            </div>
+            <div className="ears">
+              <div className="ear"></div>
+              <div className="ear"></div>
+            </div>
+          </div>
+
+          <div className="chest">
+            <div className="part"></div>
+            <div className="part"></div>
+          </div>
+          <div className="arms">
+            <div className="arm"></div>
+            <div className="arm"></div>
+          </div>
+
+          <div className="hands">
+            <div className="hand"></div>
+            <div className="hand"></div>
+          </div>
+
+          <div className="barrel">
+            <div className="barrel shape">
+              <div className="barrel-line"></div>
+              <div className="barrel-line"></div>
+              <div className="barrel-line"></div>
+              <div className="barrel-line"></div>
+              <div className="barrel-line"></div>
+            </div>
+          </div>
+
+          <div className="legs">
+            <div className="leg">
+              <div className="zigzag"></div>
+            </div>
+            <div className="leg">
+              <div className="zigzag"></div>
+            </div>
+            <div className="feet">
+              <div className="foot"></div>
+              <div className="foot"></div>
+            </div>
+          </div>
+        </div>
+        <div className="shadow"></div>
+      </div>
+    </div>
   );
 }
 
