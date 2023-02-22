@@ -1,21 +1,21 @@
-function AniListItem({ item }) {
+function AniListItem({ items }) {
   return (
     <div>
-      <h1>{item.id}</h1>
-      <p>{item.name}</p>
-      <p>{item.year}</p>
-      <p>{item.content}</p>
+      <h1>{items.id}</h1>
+      <p>{items.name}</p>
+      <p>{items.year}</p>
+      <p>{items.content}</p>
     </div>
   );
 }
 
-function AniList({ item }) {
+function AniList({ items }) {
   return (
     <ul>
-      {item.map((item) => {
+      {items.map((items) => {
         return (
           <li>
-            <AniListItem item={item} />
+            <AniListItem items={items} />
           </li>
         );
       })}
