@@ -9,7 +9,7 @@ function AnimationListItem({ items, onDelete }) {
     <div className="AnimationListItem">
       <h1>{items.title}</h1>
       <p>{items.year}</p>
-      <p>{items.popular}</p>
+      <p>{items.best}</p>
       <p>{items.content}</p>
       <button onClick={handleDeleteClick}>삭제</button>
     </div>
