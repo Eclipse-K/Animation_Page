@@ -8,8 +8,8 @@ function AnimationListItem({ items, onDelete }) {
   return (
     <div className="AnimationListItem">
       <h1>{items.title}</h1>
-      <p>{items.year}</p>
-      <p>{items.best}</p>
+      <h2>{items.year}</h2>
+      <h3>{items.best}</h3>
       <p>{items.content}</p>
       <button onClick={handleDeleteClick}>삭제</button>
     </div>
