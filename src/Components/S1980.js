@@ -3,7 +3,7 @@ import React from "react";
 function S1980() {
   return (
     <div>
-      <h1>s1980</h1>
+      <h1>1980년대 만화</h1>
       <p>1980</p>
     </div>
   );
