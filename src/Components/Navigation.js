@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
 import S1970 from "./S1970";
 import S1980 from "./S1980";
 import S1990 from "./S1990";
@@ -12,7 +13,7 @@ function Navigation() {
     <div>
       <ul>
         <li>
-          <Link to="/">홈</Link>
+          <Link to="/Home">홈</Link>
         </li>
         <li>
           <Link to="/s1970">1970년대</Link>
@@ -31,6 +32,7 @@ function Navigation() {
         </li>
         <hr />
         <Routes>
+          <Route path="/Home" element={<Home />} />
           <Route path="/s1970" element={<S1970 />} />
           <Route path="/s1980" element={<S1980 />} />
           <Route path="/s1990" element={<S1990 />} />
