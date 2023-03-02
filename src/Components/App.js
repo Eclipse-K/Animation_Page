@@ -1,5 +1,6 @@
 import Navigation from "./Navigation";
 import { BrowserRouter } from "react-router-dom";
+import NavDrop from "./NavDrop";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
           <Navigation />
         </BrowserRouter>
       </div>
+      <NavDrop />
     </div>
   );
 }
