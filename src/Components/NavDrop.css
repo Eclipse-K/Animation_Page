@@ -16,6 +16,7 @@
 }
 
 .careIcon {
+  position: relative;
   transition: transform 250ms ease-out;
 }
 
