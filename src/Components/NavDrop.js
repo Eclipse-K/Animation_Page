@@ -7,14 +7,15 @@ import S1980 from "./S1980";
 import S1990 from "./S1990";
 import S2000 from "./S2000";
 import S2010 from "./S2010";
+import Logo from "../image/logo.png";
 
 function NavDrop() {
   return (
     <div>
+      <img className="logo" src={Logo} alt={Logo} />
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
         <Link to="/">홈</Link>
-        <div>연도</div>
         <FaAngleDown className="careIcon" />
       </label>
       <div className="content">
