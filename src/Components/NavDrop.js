@@ -1,4 +1,4 @@
-import { FaAngleDown } from "react-icons/fa";
+import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
 import { Link, Routes, Route } from "react-router-dom";
 import Home from "./Home";
@@ -7,16 +7,18 @@ import Logo from "../image/logo.png";
 function NavDrop() {
   return (
     <div>
-      <img className="logo" src={Logo} alt={Logo} />
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
-        <Link to="/">홈</Link>
-        <FaAngleDown className="careIcon" />
+        <Link to="/home">
+          <img className="logo" src={Logo} alt={Logo} />
+        </Link>
+        <h1>Animation</h1>
+        <AiFillAppstore className="careIcon" />
       </label>
       <div className="content">
         <ul>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </ul>
       </div>

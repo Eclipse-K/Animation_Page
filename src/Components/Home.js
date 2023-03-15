@@ -29,9 +29,8 @@ function Home() {
 
   return (
     <div>
-      <h1>애니</h1>
       <MenuList menu={menu} onMenu={onMenu} />
-      <hr />
+
       <div>
         <button onClick={handleYearClick}>연도순</button>
         <button onClick={handleBestClick}>베스트순</button>
