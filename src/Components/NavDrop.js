@@ -9,16 +9,16 @@ function NavDrop() {
     <div>
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
-        <Link to="/home">
-          <img className="logo" src={Logo} alt={Logo} />
+        <img className="logo" src={Logo} alt={Logo} />
+        <Link id="title-a" to="/">
+          <h1>Animation</h1>
         </Link>
-        <h1>Animation</h1>
         <AiFillAppstore className="careIcon" />
       </label>
       <div className="content">
         <ul>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </ul>
       </div>
