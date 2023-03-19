@@ -9,7 +9,6 @@ function App() {
         <BrowserRouter>
           <NavDrop />
         </BrowserRouter>
-        <Career />
       </div>
     </div>
   );

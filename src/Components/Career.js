@@ -1,38 +1,41 @@
 import "./Career.css";
+import Insta from "../image/instagram.png";
+import Twitter from "../image/twitter.png";
+import Face from "../image/facebook.png";
 
-const Career = () => {
+function Career() {
   return (
-    <div class="container">
-      <div class="card card0">
-        <div class="border">
+    <div className="container">
+      <div className="card card0">
+        <div className="border">
           <h2>흰둥이</h2>
-          <div class="icons">
+          <div className="icons">
             <a
-              class="fa fa-instagram"
+              className="fa fa-instagram"
               href="https://www.instagram.com"
               aria-hidden="true"
             >
-              <img src="../image/instagram.png" alt="instagram" />
+              <img src={Insta} alt={Insta} />
             </a>
             <a
-              class="fa fa-twitter"
+              className="fa fa-twitter"
               href="https://www.twitter.com"
               aria-hidden="true"
             >
-              <img src="../image/twitter.png" alt="twitter" />
+              <img src={Twitter} alt={Twitter} />
             </a>
             <a
-              class="fa fa-facebook"
+              className="fa fa-facebook"
               href="https://www.facebook.com"
               aria-hidden="true"
             >
-              <img src="../image/facebook.png" alt="facebook" />
+              <img src={Face} alt={Face} />
             </a>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Career;
