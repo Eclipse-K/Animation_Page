@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import Career from "./Career";
 import NavDrop from "./NavDrop";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <BrowserRouter>
           <NavDrop />
         </BrowserRouter>
+        <Career />
       </div>
     </div>
   );
