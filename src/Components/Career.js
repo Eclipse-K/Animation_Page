@@ -1,4 +1,5 @@
 import "./Career.css";
+import Box from "../image/box_icon.png";
 import Insta from "../image/instagram.png";
 import Twitter from "../image/twitter.png";
 import Face from "../image/facebook.png";
@@ -10,6 +11,9 @@ function Career() {
         <div className="border">
           <h2>흰둥이</h2>
           <div className="icons">
+            <a href="#" aria-hidden="true">
+              <img src={Box} alt={Box} />
+            </a>
             <a
               className="fa fa-instagram"
               href="https://www.instagram.com"

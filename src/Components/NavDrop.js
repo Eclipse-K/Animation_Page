@@ -10,7 +10,7 @@ function NavDrop() {
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
         <img className="logo" src={Logo} alt={Logo} />
-        <Link id="title-a" to="/List">
+        <Link id="title-a" to="/">
           <h1>Animation</h1>
         </Link>
         <AiFillAppstore className="careIcon" />
@@ -18,7 +18,7 @@ function NavDrop() {
       <div className="content">
         <ul>
           <Routes>
-            <Route path="/List" element={<List />} />
+            <Route path="/" element={<List />} />
           </Routes>
         </ul>
       </div>
