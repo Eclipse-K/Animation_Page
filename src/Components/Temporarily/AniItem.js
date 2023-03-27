@@ -1,8 +1,10 @@
+import "./AniItem.css";
+
 const AniItem = ({ item }) => {
-  const { id, title, year, since, content } = item;
+  const { title, year, since, content } = item;
   return (
-    <li>
-      <h2>해당연대: {since}</h2>
+    <li className="card">
+      <h2>연대: {since}</h2>
       <h3>{title}</h3>
       <p>방영연도: {year}</p>
       <p>개요: {content}</p>
