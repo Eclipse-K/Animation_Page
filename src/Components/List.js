@@ -2,6 +2,7 @@ import { useState } from "react";
 import aniJsons from "../Animation.json";
 import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
+import "./List.css";
 
 function Home() {
   const [order, setOrder] = useState("year");
@@ -17,7 +18,6 @@ function Home() {
   const sortedData = data.sort((a, b) => b[order] - a[order]);
 
   const handleYearClick = () => setOrder("year");
-  const handleBestClick = () => setOrder("best");
 
   const onMenu = (since) => {
     if (since === "all") {
@@ -29,11 +29,12 @@ function Home() {
 
   return (
     <div>
-      <MenuList menu={menu} onMenu={onMenu} />
+      <div className="button">
+        <MenuList menu={menu} onMenu={onMenu} />
+      </div>
 
       <div>
         <button onClick={handleYearClick}>연도순</button>
-        <button onClick={handleBestClick}>베스트순</button>
       </div>
       <AniList item={sortedData} data={data} />
     </div>
