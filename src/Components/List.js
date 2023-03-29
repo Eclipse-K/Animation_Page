@@ -1,12 +1,12 @@
 import { useState } from "react";
-import aniJsons from "../Animation.json";
+import AniJsons from "../Animation.json";
 import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
 
 function Home() {
   const [order, setOrder] = useState("year");
-  const [data, setData] = useState(aniJsons); //애니데이터 설정
+  const [data, setData] = useState(AniJsons); //애니데이터 설정
   const [menu, setMenu] = useState([
     { since: "all" },
     { since: "1970" },
@@ -17,25 +17,17 @@ function Home() {
 
   const sortedData = data.sort((a, b) => b[order] - a[order]);
 
-  const handleYearClick = () => setOrder("year");
-
   const onMenu = (since) => {
     if (since === "all") {
-      setData(aniJsons);
+      setData(AniJsons);
     } else {
-      setData(aniJsons.filter((item) => item.since === since));
+      setData(AniJsons.filter((item) => item.since === since));
     }
   };
 
   return (
-    <div>
-      <div className="button">
-        <MenuList menu={menu} onMenu={onMenu} />
-      </div>
-
-      <div>
-        <button onClick={handleYearClick}>연도순</button>
-      </div>
+    <div className="button">
+      <MenuList menu={menu} onMenu={onMenu} />
       <AniList item={sortedData} data={data} />
     </div>
   );

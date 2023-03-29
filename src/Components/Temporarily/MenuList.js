@@ -1,8 +1,9 @@
 import MenuItem from "./MenuItem";
+import "./MenuList.css";
 
 const MenuList = ({ menu, onMenu }) => {
   return (
-    <ul>
+    <ul className="list">
       {menu.map((item, index) => (
         <MenuItem key={index} item={item} onMenu={onMenu} />
       ))}
