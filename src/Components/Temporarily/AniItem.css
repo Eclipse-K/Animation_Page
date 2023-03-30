@@ -1,5 +1,5 @@
 .card {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #ccc;
@@ -8,7 +8,8 @@
   background-color: aliceblue;
   padding: 20px;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 20px 0 0 20px;
+  overflow: auto;
 }
 
 .card img {

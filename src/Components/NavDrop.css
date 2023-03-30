@@ -48,8 +48,15 @@
   margin: 0;
 }
 
-.content ul li {
+.content .list li {
   margin: 0.8rem 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 150px;
+  margin-right: 50px;
+  text-align: center;
+  background-color: bisque;
 }
 
 .logo {
