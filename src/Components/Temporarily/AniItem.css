@@ -1,4 +1,4 @@
-.card {
+.info_card {
   display: inline-block;
   flex-direction: column;
   justify-content: space-between;
@@ -7,29 +7,30 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: aliceblue;
   padding: 20px;
-  max-width: 500px;
+  max-width: 400px;
+  height: 300px;
   margin: 20px 0 0 20px;
   overflow: auto;
 }
 
-.card img {
+.info_card img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.card h2 {
+.info_card h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.card h3 {
+.info_card h3 {
   font-size: 15px;
   margin-bottom: 10px;
 }
 
-.card p {
+.info_card p {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
