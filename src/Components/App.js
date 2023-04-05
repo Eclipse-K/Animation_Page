@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import NavDrop from "./NavDrop";
+import "./App.css";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -13,14 +14,13 @@ function App() {
           <NavDrop />
         </BrowserRouter>
       </div>
-      <div>
+      <div className="carbutton">
         <button
-          className="cbutton"
           onClick={() => {
             setShow(!show);
           }}
         >
-          {show ? "숨기기" : "보이기"}
+          {show ? "숨기기" : "흰둥이"}
         </button>
       </div>
       {show && <Home />}

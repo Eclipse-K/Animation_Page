@@ -1,4 +1,13 @@
-.cbutton {
-  border: 5px solid black;
-  background-color: red;
+.carbutton {
+  text-align: center;
+}
+
+.carbutton button {
+  font-size: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  background-color: teal;
+  color: aliceblue;
+  box-shadow: 15px;
 }
