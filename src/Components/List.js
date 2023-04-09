@@ -5,7 +5,7 @@ import MenuList from "./Temporarily/MenuList";
 import "./List.css";
 
 function Home() {
-  const [order, setOrder] = useState("year");
+  const [order, setOrder] = useState("id");
   const [data, setData] = useState(AniJsons); //애니데이터 설정
   const [menu, setMenu] = useState([
     { since: "all" },
