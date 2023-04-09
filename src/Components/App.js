@@ -8,7 +8,7 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div className="enter">
       <div>
         <BrowserRouter>
           <NavDrop />
