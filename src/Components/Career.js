@@ -11,30 +11,30 @@ function Career() {
         <div className="border">
           <h2>흰둥이</h2>
           <div className="icons">
-            <a href="#" aria-hidden="true">
+            <button href="#" aria-hidden="true">
               <img src={Box} alt={Box} />
-            </a>
-            <a
+            </button>
+            <button
               className="fa fa-instagram"
               href="https://www.instagram.com"
               aria-hidden="true"
             >
               <img src={Insta} alt={Insta} />
-            </a>
-            <a
+            </button>
+            <button
               className="fa fa-twitter"
               href="https://www.twitter.com"
               aria-hidden="true"
             >
               <img src={Twitter} alt={Twitter} />
-            </a>
-            <a
+            </button>
+            <button
               className="fa fa-facebook"
               href="https://www.facebook.com"
               aria-hidden="true"
             >
               <img src={Face} alt={Face} />
-            </a>
+            </button>
           </div>
         </div>
       </div>
