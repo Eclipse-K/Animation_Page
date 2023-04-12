@@ -4,7 +4,7 @@ import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
 
-function Home() {
+function List() {
   // eslint-disable-next-line
   const [order, setOrder] = useState("id");
   const [data, setData] = useState(AniJsons); //애니데이터 설정
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default List;
