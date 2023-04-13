@@ -22,11 +22,19 @@ function Search() {
     setFilteredData(filtered);
   };
 
+  const handleReset = () => {
+    setSearchTerm("");
+    setFilteredData([]);
+  };
+
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
         <input type="text" value={searchTerm} onChange={handleSearchChange} />
         <button type="submit">검색</button>
+        <button type="button" onClick={handleReset}>
+          Reset
+        </button>
       </form>
       {filteredData.length > 0 ? (
         filteredData.map((item) => (
