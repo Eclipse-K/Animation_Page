@@ -1,0 +1,45 @@
+import React, { useState, useEffect } from "react";
+import jsonData from "../api.json";
+
+function Search() {
+  const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    setData(jsonData);
+  }, []);
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const filtered = data.filter((item) =>
+      item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredData(filtered);
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleFormSubmit}>
+        <input type="text" value={searchTerm} onChange={handleSearchChange} />
+        <button type="submit">검색</button>
+      </form>
+      {filteredData.length > 0 ? (
+        filteredData.map((item) => (
+          <div key={item.id}>
+            <h4>{item.title}</h4>
+            <p>{item.year}</p>
+          </div>
+        ))
+      ) : (
+        <p>검색 결과가 없습니다.</p>
+      )}
+    </div>
+  );
+}
+
+export default Search;

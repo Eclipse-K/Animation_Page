@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import NavDrop from "./NavDrop";
 import "./App.css";
+import Search from "./SearchBar";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -14,6 +15,7 @@ function App() {
           <NavDrop />
         </BrowserRouter>
       </div>
+      <Search />
       <div className="carbutton">
         <button
           onClick={() => {

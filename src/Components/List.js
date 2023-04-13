@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AniJsons from "../Animation.json";
+import anijson from "../api.json";
 import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
@@ -7,7 +7,7 @@ import "./List.css";
 function List() {
   // eslint-disable-next-line
   const [order, setOrder] = useState("id");
-  const [data, setData] = useState(AniJsons); //애니데이터 설정
+  const [data, setData] = useState(anijson); //애니데이터 설정
   // eslint-disable-next-line
   const [menu, setMenu] = useState([
     { since: "all" },
@@ -21,9 +21,9 @@ function List() {
 
   const onMenu = (since) => {
     if (since === "all") {
-      setData(AniJsons);
+      setData(anijson);
     } else {
-      setData(AniJsons.filter((item) => item.since === since));
+      setData(anijson.filter((item) => item.since === since));
     }
   };
 
