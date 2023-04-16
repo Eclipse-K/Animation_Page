@@ -29,7 +29,7 @@ function Search() {
   };
 
   return (
-    <div className="searchbar">
+    <div className="Searchbar">
       <form onSubmit={handleFormSubmit}>
         <input type="text" value={searchTerm} onChange={handleSearchChange} />
         <button type="submit">검색</button>
@@ -39,9 +39,10 @@ function Search() {
       </form>
       {filteredData.length > 0 ? (
         filteredData.map((item) => (
-          <div key={item.id}>
+          <div className="Searchcard" key={item.id}>
             <h4>{item.title}</h4>
             <p>{item.year}</p>
+            <p>{item.content}</p>
           </div>
         ))
       ) : (

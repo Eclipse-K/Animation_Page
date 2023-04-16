@@ -1,19 +1,36 @@
-.searchbar {
+.Searchbar {
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
 }
 
-.searchbar form input {
+.Searchbar form input {
   border-radius: 5px;
   margin-right: 5px;
   padding: auto;
   box-shadow: 5px 3px 3px gray;
 }
 
-.searchbar form button {
+.Searchbar form button {
   border-radius: 10px;
   margin-right: 5px;
   background-color: white;
   box-shadow: 5px 3px 3px gray;
+}
+
+.Searchcard {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 15px 150px 150px 150px;
+  padding: 15px 50px 10px 50px;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+
+.Searchcard h4 {
+  background-color: lightblue;
+}
+
+.Searchcard p {
+  background-color: lightblue;
 }
