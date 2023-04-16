@@ -1,0 +1,19 @@
+.searchbar {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.searchbar form input {
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: auto;
+  box-shadow: 5px 3px 3px gray;
+}
+
+.searchbar form button {
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: white;
+  box-shadow: 5px 3px 3px gray;
+}

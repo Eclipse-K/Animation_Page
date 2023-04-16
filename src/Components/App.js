@@ -15,7 +15,7 @@ function App() {
           <NavDrop />
         </BrowserRouter>
       </div>
-      <Search />
+
       <div className="carbutton">
         <button
           onClick={() => {
@@ -26,6 +26,8 @@ function App() {
         </button>
       </div>
       {show && <Home />}
+
+      <Search />
     </div>
   );
 }

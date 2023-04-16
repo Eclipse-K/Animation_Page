@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import jsonData from "../api.json";
+import "./SearchBar.css";
 
 function Search() {
   const [data, setData] = useState([]);
@@ -28,7 +29,7 @@ function Search() {
   };
 
   return (
-    <div>
+    <div className="searchbar">
       <form onSubmit={handleFormSubmit}>
         <input type="text" value={searchTerm} onChange={handleSearchChange} />
         <button type="submit">검색</button>
