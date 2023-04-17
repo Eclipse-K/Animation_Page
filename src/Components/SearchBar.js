@@ -31,7 +31,12 @@ function Search() {
   return (
     <div className="Searchbar">
       <form onSubmit={handleFormSubmit}>
-        <input type="text" value={searchTerm} onChange={handleSearchChange} />
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          placeholder="검색"
+        />
         <button type="submit">검색</button>
         <button type="button" onClick={handleReset}>
           Reset
