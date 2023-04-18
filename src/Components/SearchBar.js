@@ -13,6 +13,9 @@ function Search() {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+    if (!event.target.value.trim()) {
+      setFilteredData([]);
+    } //검색어가 없으면 빈배열.
   };
 
   const handleFormSubmit = (event) => {
@@ -53,9 +56,9 @@ function Search() {
           ))}
         </div>
       ) : (
-        <p>검색 결과가 없습니다.</p>
+        searchTerm.trim() !== "" && <p>검색 결과가 없습니다.</p>
       )}
-    </div>
+    </div> //검색어가 없을 때는 검색이 되지 않는다.
   );
 }
 
