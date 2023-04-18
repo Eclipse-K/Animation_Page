@@ -6,6 +6,7 @@ function Search() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [searched, setSearched] = useState(false);
 
   useEffect(() => {
     setData(jsonData);
@@ -13,22 +14,24 @@ function Search() {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    if (!event.target.value.trim()) {
-      setFilteredData([]);
-    } //검색어가 없으면 빈배열.
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    const filtered = data.filter((item) =>
-      item.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredData(filtered);
-  };
+    if (searchTerm === "") {
+      setFilteredData([]);
+    } else {
+      const filtered = data.filter((item) =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredData(filtered);
+    }
+  }; //검색어가 없을 때는 값을 출력하지 않음.
 
   const handleReset = () => {
     setSearchTerm("");
     setFilteredData([]);
+    setSearched(false);
   };
 
   return (
@@ -45,7 +48,10 @@ function Search() {
           Reset
         </button>
       </form>
-      {filteredData.length > 0 ? (
+
+      {searched && filteredData.length === 0 ? (
+        <div>검색 결과가 없습니다.</div>
+      ) : filteredData.length > 0 ? (
         <div>
           {filteredData.map((item) => (
             <div className="Searchcard" key={item.id}>
@@ -55,10 +61,8 @@ function Search() {
             </div>
           ))}
         </div>
-      ) : (
-        searchTerm.trim() !== "" && <p>검색 결과가 없습니다.</p>
-      )}
-    </div> //검색어가 없을 때는 검색이 되지 않는다.
+      ) : null}
+    </div> //검색 결과값이 없을 때는 출력하지 않는다.
   );
 }
 
