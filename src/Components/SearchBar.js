@@ -43,13 +43,15 @@ function Search() {
         </button>
       </form>
       {filteredData.length > 0 ? (
-        filteredData.map((item) => (
-          <div className="Searchcard" key={item.id}>
-            <h4>{item.title}</h4>
-            <p>{item.year}</p>
-            <p>{item.content}</p>
-          </div>
-        ))
+        <div>
+          {filteredData.map((item) => (
+            <div className="Searchcard" key={item.id}>
+              <h4>{item.title}</h4>
+              <p>{item.year}</p>
+              <p>{item.content}</p>
+            </div>
+          ))}
+        </div>
       ) : (
         <p>검색 결과가 없습니다.</p>
       )}

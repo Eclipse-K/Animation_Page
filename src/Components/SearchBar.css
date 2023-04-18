@@ -14,10 +14,12 @@
 
 .Searchbar form button {
   border: 1px solid black;
+  color: black;
   border-radius: 10px;
   margin-right: 5px;
   background-color: white;
   box-shadow: 5px 3px 3px gray;
+  cursor: pointer;
 }
 
 .Searchcard {
