@@ -4,6 +4,7 @@ import Home from "./Home";
 import NavDrop from "./NavDrop";
 import "./App.css";
 import Search from "./SearchBar";
+import Copyright from "./Copyright";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -28,6 +29,8 @@ function App() {
       {show && <Home />}
 
       <Search />
+      <hr />
+      <Copyright />
     </div>
   );
 }
