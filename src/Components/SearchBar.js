@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import jsonData from "../api.json";
 import "./SearchBar.css";
+import { FiRotateCcw, FiSearch } from "react-icons/fi";
 
 function Search() {
   const [data, setData] = useState([]);
@@ -43,9 +44,15 @@ function Search() {
           onChange={handleSearchChange}
           placeholder="검색"
         />
-        <button type="submit">검색</button>
-        <button type="button" onClick={handleReset}>
-          Reset
+        {searchTerm && (
+          <button onClick={handleReset}>
+            <i aria-hidden="true">
+              <FiRotateCcw />
+            </i>
+          </button>
+        )}
+        <button type="submit">
+          <FiSearch />
         </button>
       </form>
 
