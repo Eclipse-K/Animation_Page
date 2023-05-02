@@ -29,7 +29,7 @@ function App() {
       {show && <Home />}
 
       <Search />
-      <hr />
+
       <Copyright />
     </div>
   );

@@ -63,7 +63,7 @@ function Search() {
           {filteredData.map((item) => (
             <div className="Searchcard" key={item.id}>
               <h4>{item.title}</h4>
-              <p>{item.year}</p>
+              <h5>{item.year}</h5>
               <p>{item.content}</p>
             </div>
           ))}
