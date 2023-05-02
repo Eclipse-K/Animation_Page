@@ -1,3 +1,8 @@
+.under_sentence {
+  height: 50px;
+  margin-top: 50px;
+}
+
 .under_sentence p {
   text-align: center;
 }
