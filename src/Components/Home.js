@@ -1,11 +1,5 @@
-import Career from "./Career";
-
 function Home() {
-  return (
-    <div>
-      <Career />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Home;
