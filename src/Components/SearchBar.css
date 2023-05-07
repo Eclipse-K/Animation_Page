@@ -38,18 +38,20 @@ input:focus {
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: lightblue;
+  background-image: url("../image/background_image_2.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .Searchcard h4 {
-  background-color: lightblue;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .Searchcard h5 {
-  background-color: lightblue;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .Searchcard p {
-  background-color: lightblue;
+  background-color: rgba(255, 255, 255, 0.5);
   text-align: left;
 }
