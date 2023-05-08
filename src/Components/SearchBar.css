@@ -20,6 +20,10 @@ input:focus {
   outline: none;
 }
 
+input::placeholder {
+  color: black;
+}
+
 .Searchbar form button {
   border-style: none;
   color: black;
