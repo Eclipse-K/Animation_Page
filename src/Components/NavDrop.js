@@ -6,7 +6,7 @@ import Logo from "../image/logo.png";
 
 function NavDrop() {
   return (
-    <div>
+    <div className="top_bar">
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
         <img className="logo" src={Logo} alt={Logo} />
