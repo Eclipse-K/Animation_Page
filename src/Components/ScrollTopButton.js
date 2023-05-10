@@ -1,4 +1,4 @@
-import { FiArrowUp } from "react-icons/fi";
+import { SiAcclaim } from "react-icons/si";
 import "./ScrollTopButton.css";
 
 function ScrollTopButton() {
@@ -8,7 +8,7 @@ function ScrollTopButton() {
 
   return (
     <button className="scrollbutton" onClick={handleScrollTop}>
-      {FiArrowUp}위로가기
+      <SiAcclaim />
     </button>
   );
 }
