@@ -36,19 +36,30 @@ input::placeholder {
 
 .Searchcard {
   display: inline-block;
+  position: relative;
   border: 1px solid black;
-  margin: 15px 150px 150px 150px;
-  padding: 15px 50px 10px 50px;
-  width: 500px;
-  height: 500px;
+  margin-top: 10%;
+  margin-left: 50%;
+  margin-bottom: 10%;
+  transform: translate(-50%, -5%);
+  /*margin: 15px 150px 150px 150px;
+  padding: 15px 50px 10px 50px;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 450px;
+  height: 450px;
   border-radius: 10px;
   background-image: url("../image/background_image_2.png");
   background-size: cover;
   background-position: center;
+  overflow: auto;
 }
 
 .Searchcard h4 {
   background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 20%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Searchcard h5 {
