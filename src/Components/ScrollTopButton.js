@@ -1,4 +1,4 @@
-import { SiAcclaim } from "react-icons/si";
+import { BsArrowUpCircleFill } from "react-icons/bs";
 import "./ScrollTopButton.css";
 
 function ScrollTopButton() {
@@ -8,7 +8,7 @@ function ScrollTopButton() {
 
   return (
     <button className="scrollbutton" onClick={handleScrollTop}>
-      <SiAcclaim />
+      <BsArrowUpCircleFill className="arrowIcon" />
     </button>
   );
 }
