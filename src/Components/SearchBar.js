@@ -8,10 +8,23 @@ function Search() {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [searched, setSearched] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
     setData(jsonData);
   }, []);
+
+  //자동검색을 위한 useEffect
+  useEffect(() => {
+    if (searchTerm === "") {
+      setSuggestions([]);
+    } else {
+      const filtered = data.filter((item) =>
+        item.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setSuggestions(filtered);
+    }
+  }, [searchTerm, data]);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -27,6 +40,7 @@ function Search() {
       );
       setFilteredData(filtered);
     }
+    setSearched(true);
   }; //검색어가 없을 때는 값을 출력하지 않음.
 
   const handleReset = () => {
@@ -34,6 +48,12 @@ function Search() {
     setFilteredData([]);
     setSearched(false);
   };
+
+  const handleSuggestionClick = (suggestions) => {
+    setSearchTerm(suggestions.title);
+    setFilteredData([suggestions]);
+    setSearched(true);
+  }; //자동완성 로직을 수행하여 검색어에 맞는 결과를 계산
 
   return (
     <div className="Searchbar">
@@ -68,7 +88,19 @@ function Search() {
             </div>
           ))}
         </div>
-      ) : null}
+      ) : (
+        //자동검색
+        <ul>
+          {suggestions.map((suggestions) => (
+            <li
+              key={suggestions.id}
+              onClick={() => handleSuggestionClick(suggestions)}
+            >
+              {suggestions.title}
+            </li>
+          ))}
+        </ul>
+      )}
     </div> //검색 결과값이 없을 때는 출력하지 않는다.
   );
 }
