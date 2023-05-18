@@ -90,7 +90,7 @@ function Search() {
         </div>
       ) : (
         //자동검색
-        <ul>
+        <ul className="Suggestion_title">
           {suggestions.map((suggestions) => (
             <li
               key={suggestions.id}
