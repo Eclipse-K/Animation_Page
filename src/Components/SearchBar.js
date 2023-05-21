@@ -63,6 +63,7 @@ function Search() {
           value={searchTerm}
           onChange={handleSearchChange}
           placeholder="검색"
+          inputMode="text"
         />
         {searchTerm && (
           <button onClick={handleReset}>
