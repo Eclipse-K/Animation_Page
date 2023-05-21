@@ -58,23 +58,25 @@ function Search() {
   return (
     <div className="Searchbar">
       <form onSubmit={handleFormSubmit}>
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={handleSearchChange}
-          placeholder="검색"
-          inputMode="text"
-        />
-        {searchTerm && (
-          <button onClick={handleReset}>
-            <i aria-hidden="true">
-              <FiRotateCcw />
-            </i>
+        <div className="Search-container">
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            placeholder="검색"
+            inputMode="text"
+          />
+          {searchTerm && (
+            <button onClick={handleReset}>
+              <i aria-hidden="true">
+                <FiRotateCcw />
+              </i>
+            </button>
+          )}
+          <button type="submit">
+            <FiSearch />
           </button>
-        )}
-        <button type="submit">
-          <FiSearch />
-        </button>
+        </div>
       </form>
 
       {searched && filteredData.length === 0 ? (
@@ -90,8 +92,9 @@ function Search() {
           ))}
         </div>
       ) : (
-        //자동검색
+        //자동완성
         <ul className="Suggestion_title">
+          {searchTerm && <hr className="divider" />}
           {suggestions.map((suggestions) => (
             <li
               key={suggestions.id}
