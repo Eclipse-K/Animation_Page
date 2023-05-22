@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import jsonData from "../api.json";
 import "./SearchBar.css";
 import { FiRotateCcw, FiSearch } from "react-icons/fi";
@@ -9,6 +9,7 @@ function Search() {
   const [filteredData, setFilteredData] = useState([]);
   const [searched, setSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
+  const suggestionRef = useRef();
 
   useEffect(() => {
     setData(jsonData);
@@ -17,12 +18,12 @@ function Search() {
   //자동검색을 위한 useEffect
   useEffect(() => {
     if (searchTerm === "") {
-      setSuggestions([]);
+      setSuggestions([]); // 검색어가 없을 경우 자동완성 목록을 빈 배열로 설정합니다.
     } else {
       const filtered = data.filter((item) =>
         item.title.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setSuggestions(filtered);
+      ); // 검색어와 일치하는 항목을 필터링하여 배열을 생성합니다.
+      setSuggestions(filtered); // 생성된 배열을 자동완성 목록으로 설정합니다.
     }
   }, [searchTerm, data]);
 
@@ -41,6 +42,7 @@ function Search() {
       setFilteredData(filtered);
     }
     setSearched(true);
+    setSuggestions([]);
   }; //검색어가 없을 때는 값을 출력하지 않음.
 
   const handleReset = () => {
@@ -53,33 +55,70 @@ function Search() {
     setSearchTerm(suggestions.title);
     setFilteredData([suggestions]);
     setSearched(true);
+    setSuggestions([]);
   }; //자동완성 로직을 수행하여 검색어에 맞는 결과를 계산
+
+  const handleOutsideClick = (event) => {
+    if (
+      suggestionRef.current &&
+      !suggestionRef.current.contains(event.target)
+    ) {
+      setSuggestions([]);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (filteredData.length > 0) {
+      setSuggestions([]);
+    }
+  }, [filteredData]);
 
   return (
     <div className="Searchbar">
       <form onSubmit={handleFormSubmit}>
         <div className="Search-container">
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={handleSearchChange}
-            placeholder="검색"
-            inputMode="text"
-          />
-          {searchTerm && (
-            <button onClick={handleReset}>
-              <i aria-hidden="true">
-                <FiRotateCcw />
-              </i>
+          <div className="Search-input-container">
+            <input
+              type="text"
+              value={searchTerm}
+              onChange={handleSearchChange}
+              placeholder="검색"
+              inputMode="text"
+            />
+            {searchTerm && (
+              <button onClick={handleReset}>
+                <i aria-hidden="true">
+                  <FiRotateCcw />
+                </i>
+              </button>
+            )}
+            <button type="submit">
+              <FiSearch />
             </button>
+          </div>
+          {suggestions.length > 0 && (
+            <ul className="Suggestion_title" ref={suggestionRef}>
+              {suggestions.map((suggestion) => (
+                <li
+                  key={suggestion.id}
+                  onClick={() => handleSuggestionClick(suggestion)}
+                >
+                  {suggestion.title}
+                </li>
+              ))}
+            </ul> //자동완성 기능
           )}
-          <button type="submit">
-            <FiSearch />
-          </button>
         </div>
       </form>
 
-      {searched && filteredData.length === 0 ? (
+      {searched && filteredData.length === 0 && suggestions.length === 0 ? (
         <div>검색 결과가 없습니다.</div>
       ) : filteredData.length > 0 ? (
         <div>
@@ -91,20 +130,7 @@ function Search() {
             </div>
           ))}
         </div>
-      ) : (
-        //자동완성
-        <ul className="Suggestion_title">
-          {searchTerm && <hr className="divider" />}
-          {suggestions.map((suggestions) => (
-            <li
-              key={suggestions.id}
-              onClick={() => handleSuggestionClick(suggestions)}
-            >
-              {suggestions.title}
-            </li>
-          ))}
-        </ul>
-      )}
+      ) : null}
     </div> //검색 결과값이 없을 때는 출력하지 않는다.
   );
 }
