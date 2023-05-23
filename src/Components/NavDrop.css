@@ -1,6 +1,6 @@
 .top_bar {
   position: relative;
-  z-index: 3;
+  z-index: 3; /* NavDrop의 쌓임 순서를 높여 SearchBar 결과물을 덮습니다. */
 }
 
 #dropdown {
