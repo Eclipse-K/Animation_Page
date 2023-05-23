@@ -3,6 +3,7 @@
   margin-top: 30px;
   padding-top: 20px;
   height: 600px;
+  z-index: 2;
 }
 
 .Search-container {

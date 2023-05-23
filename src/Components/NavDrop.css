@@ -1,5 +1,6 @@
 .top_bar {
   position: relative;
+  z-index: 3;
 }
 
 #dropdown {
