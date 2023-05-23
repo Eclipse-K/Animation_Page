@@ -70,16 +70,14 @@ input::placeholder {
 
 .Searchcard {
   display: inline-block;
-  position: flex;
+  position: absolute;
   border: 1px solid black;
-  margin-top: 15%;
-  margin-left: 50%;
+  margin-top: 20%;
+  margin-left: 5%;
   margin-bottom: 10%;
-  transform: translate(-50%, -5%);
-  /*margin: 15px 150px 150px 150px;
-  padding: 15px 50px 10px 50px;*/
-  padding-left: 10%;
-  padding-right: 10%;
+  transform: translate(-65%, -50%);
+  /*margin: 15px 150px 150px 150px;*/
+  padding: 15px 50px 10px 50px;
   width: 450px;
   height: 430px;
   border-radius: 10px;
@@ -92,12 +90,14 @@ input::placeholder {
 .Searchcard h4 {
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: 20%;
-  margin-left: 30%;
-  transform: translate(-20%, -50%);
+  margin-left: 10%;
+  transform: translate(-10%, -50%);
 }
 
 .Searchcard h5 {
   background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 10%;
+  transform: translate(-10%, -50%);
 }
 
 .Searchcard p {
