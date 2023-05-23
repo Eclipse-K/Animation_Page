@@ -12,7 +12,7 @@ function Search() {
   const suggestionRef = useRef();
 
   useEffect(() => {
-    setData(jsonData);
+    setData(jsonData); //초기 데이터를 설정합니다.
   }, []);
 
   //자동검색을 위한 useEffect
@@ -28,7 +28,7 @@ function Search() {
   }, [searchTerm, data]);
 
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
+    setSearchTerm(event.target.value); // 검색어 입력값을 업데이트합니다.
   };
 
   const handleFormSubmit = (event) => {
@@ -56,14 +56,14 @@ function Search() {
     setFilteredData([suggestions]);
     setSearched(true);
     setSuggestions([]);
-  }; //자동완성 로직을 수행하여 검색어에 맞는 결과를 계산
+  }; // 자동완성 항목을 클릭했을 때 검색어와 결과를 업데이트 합니다.
 
   const handleOutsideClick = (event) => {
     if (
       suggestionRef.current &&
       !suggestionRef.current.contains(event.target)
     ) {
-      setSuggestions([]);
+      setSuggestions([]); // 자동완성 목록 외에 영역을 클릭한 경우 자동완성 목록을 닫습니다.
     }
   };
 
@@ -76,7 +76,7 @@ function Search() {
 
   useEffect(() => {
     if (filteredData.length > 0) {
-      setSuggestions([]);
+      setSuggestions([]); // 검색 결과가 있을 때 자동완성 목록을 닫습니다.
     }
   }, [filteredData]);
 
