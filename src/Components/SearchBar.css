@@ -1,8 +1,9 @@
 .Searchbar {
+  position: relative;
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
-  height: 600px;
+  height: 350px;
   z-index: 2; /* SearchBar의 쌓임 순서를 낮춥니다. */
 }
 
@@ -73,14 +74,13 @@ input::placeholder {
   display: inline-block;
   position: absolute;
   border: 1px solid black;
-  margin-top: 20%;
-  margin-left: 5%;
-  margin-bottom: 10%;
-  transform: translate(-65%, -50%);
-  /*margin: 15px 150px 150px 150px;*/
-  padding: 15px 50px 10px 50px;
-  width: 450px;
-  height: 430px;
+  margin: 0;
+  padding: 15px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 450px;
   border-radius: 10px;
   background-image: url("../image/background_image_2.png");
   background-size: cover;
