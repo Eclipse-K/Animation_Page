@@ -1,9 +1,9 @@
 .Searchbar {
   position: relative;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-top: 20px;
-  height: 350px;
+  height: 300px;
   z-index: 2; /* SearchBar의 쌓임 순서를 낮춥니다. */
 }
 
@@ -71,7 +71,7 @@ input::placeholder {
 }
 
 .Searchcard {
-  display: inline-block;
+  display: block;
   position: absolute;
   border: 1px solid black;
   margin: 0;
@@ -104,4 +104,6 @@ input::placeholder {
 .Searchcard p {
   background-color: rgba(255, 255, 255, 0.5);
   text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
 }
