@@ -44,6 +44,8 @@ Animation information page
 
    - css에서 카드부분을 absolute 를 사용하여 검색바 하단에 고정시킴.
 
+   - 검색어 입력 후 Enter 치면 리셋이 먼저 작동되는 현상이 발생 -> handleKeyPress 함수를 추가하여 Enter를 치면 검색이 먼저 작동되도록 수정.
+
 3. 하단에 저작권 표시 문구 추가
 
    - 저작권 표시 문구 위에 "<hr />" 제거 (추후 깔끔하게 삽입 하는 방법 찾아낼 예정)
