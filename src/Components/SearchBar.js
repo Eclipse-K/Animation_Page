@@ -80,6 +80,13 @@ function Search() {
     }
   }, [filteredData]);
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleFormSubmit(event);
+    }
+  };
+
   return (
     <div className="Searchbar">
       <form onSubmit={handleFormSubmit}>
@@ -89,6 +96,7 @@ function Search() {
               type="text"
               value={searchTerm}
               onChange={handleSearchChange}
+              onKeyPress={handleKeyPress}
               placeholder="검색"
               inputMode="text"
             />
