@@ -100,12 +100,14 @@ function Search() {
               placeholder="검색"
               inputMode="text"
             />
-            {searchTerm && (
+            {searchTerm ? (
               <button onClick={handleReset}>
                 <i aria-hidden="true">
                   <FiRotateCcw />
                 </i>
               </button>
+            ) : (
+              <span style={{ width: "28px" }}></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
             )}
             <button type="submit">
               <FiSearch />
