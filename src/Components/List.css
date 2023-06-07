@@ -1,4 +1,25 @@
-.button {
+.list-container {
+  position: relative;
   border: 1px solid none;
   background-color: skyblue;
+}
+
+.load-more {
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  color: black;
+  border-style: solid;
+  z-index: 3;
+}
+
+.load-more button {
+  border: none;
+  background-color: #eee;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.load-more button:hover {
+  background-color: #ddd;
 }

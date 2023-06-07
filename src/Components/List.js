@@ -16,8 +16,10 @@ function List() {
     { since: "1990" },
     { since: "2000" },
   ]); //메뉴 설정
+  const [visibleCount, setVisibleCount] = useState(10);
 
   const sortedData = data.sort((a, b) => b[order] - a[order]);
+  const visibleData = sortedData.slice(0, visibleCount);
 
   const onMenu = (since) => {
     if (since === "all") {
@@ -25,12 +27,22 @@ function List() {
     } else {
       setData(anijson.filter((item) => item.since === since));
     }
+    setVisibleCount(10); // 메뉴 변경 시 보이는 리스트 개수 초기화
+  };
+
+  const handleLoadMore = () => {
+    setVisibleCount((prevCount) => prevCount + 10); //"더보기" 버튼 클릭 시 보이는 리스트 개수 증가
   };
 
   return (
-    <div className="button">
+    <div className="list-container">
       <MenuList menu={menu} onMenu={onMenu} />
-      <AniList item={sortedData} data={data} />
+      <AniList item={visibleData} data={data} />
+      {visibleCount < sortedData.length && (
+        <div className="load-more">
+          <button onClick={handleLoadMore}>더보기</button>
+        </div>
+      )}
     </div>
   );
 }
