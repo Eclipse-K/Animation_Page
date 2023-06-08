@@ -10,10 +10,10 @@ function NavDrop() {
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
         <img className="logo" src={Logo} alt={Logo} />
-        <Link id="title-a" to="/">
+        <Link id="title-a">
           <h1>Animation</h1>
         </Link>
-        <AiFillAppstore className="careIcon" />
+        <AiFillAppstore className="careIcon" to="/" />
       </label>
       <div className="content">
         <ul>

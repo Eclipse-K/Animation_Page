@@ -19,7 +19,8 @@ function List() {
 
   const onMenu = (since) => {
     if (since === "all") {
-      setData(anijson);
+      const allData = anijson.sort((a, b) => b[order] - a[order]);
+      setData(allData.slice(0, 10));
     } else {
       //setData(anijson.filter((item) => item.since === since));
       const filterData = anijson.filter((item) => item.since === since);
