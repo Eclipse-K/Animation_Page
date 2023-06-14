@@ -5,12 +5,13 @@
 }
 
 .load-more {
-  position: sticky;
-  bottom: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
   padding: 10px;
   color: black;
   border-style: solid;
-  z-index: 3;
+  z-index: 999;
 }
 
 .load-more button {
