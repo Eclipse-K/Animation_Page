@@ -1,4 +1,4 @@
-import { BiChevronsUp } from "react-icons/bi";
+import { AiOutlineCaretUp } from "react-icons/ai";
 import "./ScrollTopButton.css";
 
 function ScrollTopButton() {
@@ -8,7 +8,7 @@ function ScrollTopButton() {
 
   return (
     <button onClick={handleScrollTop}>
-      <BiChevronsUp className="arrowIcon" alt="맨위로" />
+      <AiOutlineCaretUp className="arrowIcon" alt="맨위로" />
     </button>
   );
 }
