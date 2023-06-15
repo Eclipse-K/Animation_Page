@@ -7,9 +7,11 @@ function ScrollTopButton() {
   };
 
   return (
-    <button onClick={handleScrollTop}>
-      <AiOutlineCaretUp className="arrowIcon" alt="맨위로" />
-    </button>
+    <AiOutlineCaretUp
+      className="arrowIcon"
+      onClick={handleScrollTop}
+      alt="맨위로"
+    />
   );
 }
 

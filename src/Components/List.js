@@ -3,6 +3,7 @@ import anijson from "../api.json";
 import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
+import ScrollTopButton from "./ScrollTopButton";
 
 function List() {
   // eslint-disable-next-line
@@ -55,6 +56,7 @@ function List() {
     <div className="list-container">
       <MenuList menu={menu} onMenu={onMenu} />
       <AniList item={data} data={data} />
+      <ScrollTopButton />
       <button className="load-more" onClick={handleShowMore}>
         더보기
       </button>
