@@ -1,7 +1,6 @@
 .list-container {
   position: relative;
   padding-bottom: 30px;
-  border: 1px solid none;
   background-color: skyblue;
 }
 
@@ -28,7 +27,7 @@
   width: 100%;
   padding: 10px;
   color: black;
-  border-style: solid;
+  border-style: none;
   background-color: white;
   z-index: 3;
 }
