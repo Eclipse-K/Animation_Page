@@ -1,16 +1,17 @@
-.scrollbutton {
+.arrowIcon {
   justify-content: flex-end;
   position: fixed;
   right: 20px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   bottom: 55px;
-  color: white;
-  border-style: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 20px;
   z-index: 3;
 }
 
-.arrowIcon {
-  width: 30px;
-  height: 30px;
+.arrowIcon:hover {
+  cursor: pointer;
 }

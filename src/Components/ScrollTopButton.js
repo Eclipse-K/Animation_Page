@@ -1,4 +1,4 @@
-import { BsArrowUpCircleFill } from "react-icons/bs";
+import { BiChevronsUp } from "react-icons/bi";
 import "./ScrollTopButton.css";
 
 function ScrollTopButton() {
@@ -7,8 +7,8 @@ function ScrollTopButton() {
   };
 
   return (
-    <button className="scrollbutton" onClick={handleScrollTop}>
-      <BsArrowUpCircleFill className="arrowIcon" />
+    <button onClick={handleScrollTop}>
+      <BiChevronsUp className="arrowIcon" alt="맨위로" />
     </button>
   );
 }
