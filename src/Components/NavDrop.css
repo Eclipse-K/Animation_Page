@@ -21,6 +21,10 @@
   transition: transform 250ms ease-out;
 }
 
+.careIcon:hover {
+  cursor: pointer;
+}
+
 #dropdown:checked + label > .careIcon {
   transform: rotate(-180deg);
 }
