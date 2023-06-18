@@ -1,7 +1,7 @@
 .list-container {
   position: relative;
   padding-bottom: 30px;
-  background-color: skyblue;
+  background-color: white;
 }
 
 .list-container::after {
