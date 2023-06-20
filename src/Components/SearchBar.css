@@ -78,7 +78,7 @@ input::placeholder {
   padding: 15px;
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.8);
   width: 550px;
   height: 450px;
   border-radius: 10px;
@@ -87,6 +87,18 @@ input::placeholder {
   background-position: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   overflow: auto;
+  animation: zoom-in 0.5s forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
 }
 
 .Searchcard h4 {
