@@ -1,5 +1,6 @@
 .top_bar {
   position: relative;
+  box-shadow: 4px 0 5px gray;
   z-index: 3; /* NavDrop의 쌓임 순서를 높여 SearchBar 결과물을 덮습니다. */
 }
 
@@ -12,6 +13,7 @@
 #dropdown:checked + label + div {
   display: block;
   border-top: 1px solid #00000026;
+  box-shadow: 3px 0 4px gray;
 }
 
 .careIcon {

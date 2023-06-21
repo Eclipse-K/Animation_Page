@@ -6,7 +6,7 @@ import Copyright from "./Copyright";
 
 function App() {
   return (
-    <div className="enter">
+    <div>
       <div>
         <BrowserRouter>
           <NavDrop />
