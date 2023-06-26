@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Hi+Melody&display=swap");
+
 .info_card {
   display: inline-block;
   flex-direction: column;
@@ -21,16 +23,19 @@
   background-color: aliceblue;
 }
 
-.info_card h2 {
-  font-size: 20px;
+.info_card h1 {
+  font-size: 25px;
   margin-bottom: 10px;
   background-color: aliceblue;
+  font-family: "Grandiflora One", serif;
+  font-weight: 800;
 }
 
-.info_card h3 {
+.info_card h2 {
   font-size: 15px;
   margin-bottom: 10px;
   background-color: aliceblue;
+  font-family: "Hi Melody", cursive;
 }
 
 .info_card p {
@@ -38,4 +43,5 @@
   line-height: 1.5;
   margin-bottom: 20px;
   background-color: aliceblue;
+  font-family: "Hi Melody", cursive;
 }
