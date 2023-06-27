@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@300&display=swap");
+
 .Searchbar {
   position: relative;
   text-align: center;
@@ -106,6 +108,8 @@ input::placeholder {
   margin-top: 20%;
   margin-left: 10%;
   transform: translate(-10%, -50%);
+  font-family: "Bagel Fat One", cursive;
+  font-size: 2rem;
 }
 
 .Searchcard h5 {
@@ -119,4 +123,6 @@ input::placeholder {
   text-align: left;
   padding-left: 25px;
   padding-right: 25px;
+  font-family: "Dongle", sans-serif;
+  font-size: 1.2rem;
 }
