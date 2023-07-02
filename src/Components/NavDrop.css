@@ -67,6 +67,7 @@
 
 .content .list li:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
