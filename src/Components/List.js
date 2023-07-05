@@ -4,6 +4,7 @@ import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
 import ScrollTopButton from "./ScrollTopButton";
+import PlusPopup from "./PlusPopup";
 
 function List() {
   // eslint-disable-next-line
@@ -19,6 +20,7 @@ function List() {
   ]); //메뉴 설정
   const [visibleCount, setVisibleCount] = useState(10); //현재 표시되는 데이터 개수
   const [activeTab, setActiveTab] = useState("all");
+  const [isPlusPopup, setIsPlusPopup] = useState(false);
 
   const onMenu = (since) => {
     setActiveTab(since);
@@ -52,11 +54,21 @@ function List() {
     }
   }, [visibleCount, order, activeTab]);
 
+  //추가하기 기능
+  const hadnleAddClick = () => {
+    setIsPlusPopup(true);
+  };
+
   return (
     <div className="list-container">
       <MenuList menu={menu} onMenu={onMenu} />
+
+      <button onClick={hadnleAddClick}>추가하기</button>
+      {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
+
       <AniList item={data} data={data} />
       <ScrollTopButton />
+
       <button className="load-more" onClick={handleShowMore}>
         더보기
       </button>
