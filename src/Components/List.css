@@ -20,6 +20,7 @@
   z-index: 3;
 }
 
+/*더보기------*/
 .load-more {
   position: absolute;
   bottom: 40px;
@@ -41,4 +42,19 @@
 
 .load-more button:hover {
   background-color: #ddd;
+}
+
+.plusbutton {
+  border: 1px solid black;
+  border-radius: 10px;
+  justify-content: flex-end;
+  position: fixed;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  bottom: 100px;
+}
+
+.plusbutton:hover {
+  cursor: pointer;
 }

@@ -4,6 +4,7 @@ import AniList from "./Temporarily/AniList";
 import MenuList from "./Temporarily/MenuList";
 import "./List.css";
 import ScrollTopButton from "./ScrollTopButton";
+import { BsFillPlusSquareFill } from "react-icons/bs";
 import PlusPopup from "./PlusPopup";
 
 function List() {
@@ -63,7 +64,7 @@ function List() {
     <div className="list-container">
       <MenuList menu={menu} onMenu={onMenu} />
 
-      <button onClick={hadnleAddClick}>추가하기</button>
+      <BsFillPlusSquareFill className="plusbutton" onClick={hadnleAddClick} />
       {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
 
       <AniList item={data} data={data} />
