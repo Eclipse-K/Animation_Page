@@ -56,7 +56,7 @@ function List() {
   }, [visibleCount, order, activeTab]);
 
   //추가하기 기능
-  const hadnleAddClick = () => {
+  const handleAddClick = () => {
     setIsPlusPopup(true);
   };
 
@@ -64,7 +64,7 @@ function List() {
     <div className="list-container">
       <MenuList menu={menu} onMenu={onMenu} />
 
-      <BsFillPlusSquareFill className="plusbutton" onClick={hadnleAddClick} />
+      <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
       {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
 
       <AniList item={data} data={data} />
