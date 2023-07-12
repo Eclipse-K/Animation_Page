@@ -1,17 +1,26 @@
-import "./PlusPopup.css";
-import PopupCard from "./PopupCard";
+import styled from "styled-components";
+import PlusCloseButton from "./PlusOption/PulsCloseButton";
+
+const Container = styled.div`
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+`;
 
 function PlusPopup({ onClose }) {
   return (
-    <div className="plus-popup-container">
-      <div className="plus-popup-content">
-        <h1>추가하기</h1>
-        <PopupCard />
-        <button className="close-button" onClick={onClose}>
-          닫기
-        </button>
-      </div>
-    </div>
+    <Container>
+      <h1>추가하기</h1>
+      <PlusCloseButton onClick={onClose}>닫기</PlusCloseButton>
+    </Container>
   );
 }
 
