@@ -26,7 +26,9 @@ function PlusPopup({ onClose }) {
       <form>
         <h1>추가하기</h1>
         <PlusInput text="제목" id="title" name="title" placeholder="제목" />
+        <PlusInput text="연대" id="since" name="since" placeholder="연대" />
         <PlusInput text="연도" id="year" name="year" placeholder="연도" />
+        <PlusInput text="내용" id="content" name="content" placeholder="내용" />
         <PlusCloseButton onClick={onClose}>닫기</PlusCloseButton>
       </form>
     </Container>
