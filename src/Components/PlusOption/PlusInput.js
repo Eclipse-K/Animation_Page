@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PlusInput = styled.input`
   border: 1px solid black;
-  display: block;
+  display: flex;
   font-size: 16px;
   outline: none;
   padding: 8px 0;

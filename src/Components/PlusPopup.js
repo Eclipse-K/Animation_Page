@@ -20,6 +20,11 @@ const Container = styled.div`
   ${PlusInput} {
     margin-bottom: 16px;
   }
+
+  form {
+    width: 400px;
+    padding: 5px;
+  }
 `;
 
 function PlusPopup({ onClose }) {
