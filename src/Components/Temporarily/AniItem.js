@@ -1,9 +1,19 @@
+import { useState } from "react";
 import "./AniItem.css";
 
-const AniItem = ({ item }) => {
+function AniItem({ item }) {
   const { title, year, content } = item;
+  const [isClick, setIsClick] = useState(false);
+
+  const zoomClick = () => {
+    setIsClick(!isClick);
+  };
+
   return (
-    <li className="info_card">
+    <li
+      className={`info_card ${isClick ? "expansion" : ""}`}
+      onClick={zoomClick}
+    >
       <sapn className="card_content">
         <h1>{title}</h1>
         <h2>- 방영연도: {year}</h2>
@@ -11,6 +21,6 @@ const AniItem = ({ item }) => {
       </sapn>
     </li>
   );
-};
+}
 
 export default AniItem;
