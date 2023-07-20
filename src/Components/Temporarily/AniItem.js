@@ -7,18 +7,18 @@ function AniItem({ item }) {
 
   const zoomClick = () => {
     setIsClick(!isClick);
-  };
+  }; //클릭하면 확대되는 기능
 
   return (
     <li
-      className={`info_card ${isClick ? "expansion" : ""}`}
+      className={`info_card ${isClick ? "expansion" : ""}`} //클릭하면 확대, 축소
       onClick={zoomClick}
     >
-      <sapn className="card_content">
+      <span className="card_content">
         <h1>{title}</h1>
         <h2>- 방영연도: {year}</h2>
         <p>- {content}</p>
-      </sapn>
+      </span>
     </li>
   );
 }

@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 const PlusInput = styled.input`
   border: 1px solid black;
+  border-bottom: 2px solid ${({ error }) => (error ? `#f44336` : `#eeeeee`)};
   display: flex;
   font-size: 16px;
   outline: none;
   padding: 8px 0;
   width: 100%;
-  border-bottom: 2px solid ${({ error }) => (error ? `#f44336` : `#eeeeee`)};
 
   ${({ error }) =>
     !error &&
