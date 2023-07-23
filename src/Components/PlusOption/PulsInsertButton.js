@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-const PlusCloseButton = styled.button`
+const PlusInsertButton = styled.button`
   background-color: black;
   border: none;
   border-radius: ${({ round }) => (round ? `9999px` : `8px`)};
   color: white;
   cursor: pointer;
   font-size: 18px;
-  padding: 16px;
+  padding: 8px;
+  width: 100px;
+  height: 40px;
 
   &:hover,
   &active {
@@ -15,4 +17,4 @@ const PlusCloseButton = styled.button`
   }
 `;
 
-export default PlusCloseButton;
+export default PlusInsertButton;

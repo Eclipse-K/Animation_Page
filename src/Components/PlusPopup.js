@@ -1,5 +1,6 @@
 import PlusInput from "./PlusOption/PlusInput";
 import PlusLabel from "./PlusOption/PlusLabel";
+import PlusInsertButton from "./PlusOption/PulsInsertButton";
 import PlusContainer from "./PlusOption/PlusContainer";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -38,6 +39,7 @@ function PlusPopup({ onClose }) {
         <PlusInput text="연도" id="year" name="year" placeholder="연도" />
         <PlusLabel htmlFor="content">내용</PlusLabel>
         <PlusInput text="내용" id="content" name="content" placeholder="내용" />
+        <PlusInsertButton>확인</PlusInsertButton>
       </form>
     </PlusContainer>
   );
