@@ -1,9 +1,11 @@
 import "./Copyright.css";
 
 function Copyright() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="under_sentence">
-      <p>Copyright © 2023 My Company. All rights reserved.</p>
+      <p>Copyright {currentYear} &copy;My Company. All rights reserved.</p>
     </footer>
   );
 }

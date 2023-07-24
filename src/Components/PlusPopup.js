@@ -54,6 +54,8 @@ function PlusPopup({ onClose }) {
         console.error("아이템 추가에 실패했습니다:", error);
       });
       */
+
+    onClose();
   };
 
   return (
