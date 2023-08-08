@@ -2,7 +2,7 @@ import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
 import { Link, Routes, Route } from "react-router-dom";
 import List from "./List";
-import Logo from "../image/logo.png";
+import Logo from "../image/yeonu_logo.png";
 
 function NavDrop() {
   return (
