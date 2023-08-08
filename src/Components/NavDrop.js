@@ -9,11 +9,17 @@ function NavDrop() {
     <div className="top_bar">
       <input id="dropdown" type="checkbox" />
       <label className="dropdownLabel" htmlFor="dropdown">
-        <img className="logo" src={Logo} alt={Logo} />
+        <div className="logo-container">
+          <Link>
+            <img className="logo" src={Logo} alt={Logo} />
+          </Link>
+        </div>
         <Link id="title-a">
           <h1>Animation</h1>
         </Link>
-        <AiFillAppstore className="careIcon" to="/" />
+        <Link className="careIcon" to="/">
+          <AiFillAppstore className="careIcon" />
+        </Link>
       </label>
       <div className="content">
         <ul>
