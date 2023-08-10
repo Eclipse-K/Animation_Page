@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import NavDrop from "./NavDrop";
 import "./App.css";
 import Search from "./SearchBar";
@@ -6,11 +5,9 @@ import Copyright from "./Copyright";
 
 function App() {
   return (
-    <div>
+    <div className="App-container">
       <div>
-        <BrowserRouter>
-          <NavDrop />
-        </BrowserRouter>
+        <NavDrop />
       </div>
 
       <Search />

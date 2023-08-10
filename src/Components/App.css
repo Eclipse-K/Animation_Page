@@ -4,3 +4,7 @@
   background-color: white;
   font-family: "Bebas Neue", cursive;
 }
+
+.App-container {
+  height: 600px;
+}

@@ -1,34 +1,35 @@
 import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
-import { Link, Routes, Route } from "react-router-dom";
-import List from "./List";
 import Logo from "../image/yeonu_logo.png";
+import { useState } from "react";
+import DropdownMenu from "./DropdownMenu";
 
 function NavDrop() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isButtonRotated, setIsButtonRotated] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    setIsButtonRotated(!isButtonRotated);
+  };
+
   return (
-    <div className="top_bar">
-      <input id="dropdown" type="checkbox" />
-      <label className="dropdownLabel" htmlFor="dropdown">
-        <div className="logo-container">
-          <Link>
-            <img className="logo" src={Logo} alt={Logo} />
-          </Link>
-        </div>
-        <Link id="title-a">
-          <h1>Animation</h1>
-        </Link>
-        <Link className="careIcon" to="/">
-          <AiFillAppstore className="careIcon" />
-        </Link>
-      </label>
-      <div className="content">
-        <ul>
-          <Routes>
-            <Route path="/" element={<List />} />
-          </Routes>
-        </ul>
+    <nav className="navbar-drop">
+      <div className="navbar-logo">
+        <img src={Logo} alt={Logo} />
       </div>
-    </div>
+      <h1 className="navbar-title">Animation</h1>
+      <div className={`navbar-dropdown ${isDropdownOpen ? "open" : ""}`}>
+        <button
+          className={`dropdown-button ${isButtonRotated ? "rotated" : ""}`}
+          onClick={toggleDropdown}
+        >
+          <AiFillAppstore />
+        </button>
+      </div>
+
+      {isDropdownOpen && <DropdownMenu />}
+    </nav>
   );
 }
 
