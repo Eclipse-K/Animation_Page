@@ -16,17 +16,6 @@ const DropdownBox = styled.div`
   p:hover {
     background-color: #555;
   }
-
-  button {
-    display: block;
-    margin-top: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
 `;
 
 export default DropdownBox;
