@@ -1,14 +1,20 @@
-import "./DropdownMenu.css";
+import DropdownContainer from "./Dropdown/DropdownContainer.js";
+import DropdownBox from "./Dropdown/DropdownBox.js";
 
-function DropdownMenu() {
+function DropdownMenu({ closeDropdown }) {
+  const dropButtonClick = () => {
+    closeDropdown();
+  };
+
   return (
-    <div className="dropdown-content">
-      <ul className="dropdown-menu">
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-      </ul>
-    </div>
+    <DropdownContainer>
+      <DropdownBox>
+        <button onClick={dropButtonClick}>Close</button>
+        <p>List item 1</p>
+        <p>List item 2</p>
+        <p>List item 3</p>
+      </DropdownBox>
+    </DropdownContainer>
   );
 }
 

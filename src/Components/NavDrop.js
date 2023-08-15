@@ -1,16 +1,18 @@
+import React, { useState } from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
 import Logo from "../image/yeonu_logo.png";
-import { useState } from "react";
 import DropdownMenu from "./DropdownMenu";
 
 function NavDrop() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isButtonRotated, setIsButtonRotated] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
-    setIsButtonRotated(!isButtonRotated);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
   };
 
   return (
@@ -20,15 +22,18 @@ function NavDrop() {
       </div>
       <h1 className="navbar-title">Animation</h1>
       <div className={`navbar-dropdown ${isDropdownOpen ? "open" : ""}`}>
-        <button
-          className={`dropdown-button ${isButtonRotated ? "rotated" : ""}`}
-          onClick={toggleDropdown}
-        >
-          <AiFillAppstore />
-        </button>
+        {isDropdownOpen ? (
+          <button className="dropdown-button rotated" onClick={closeDropdown}>
+            <AiFillAppstore />
+          </button>
+        ) : (
+          <button className="dropdown-button" onClick={toggleDropdown}>
+            <AiFillAppstore />
+          </button>
+        )}
       </div>
 
-      {isDropdownOpen && <DropdownMenu />}
+      {isDropdownOpen && <DropdownMenu closeDropdown={closeDropdown} />}
     </nav>
   );
 }
