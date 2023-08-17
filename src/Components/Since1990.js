@@ -7,34 +7,18 @@ import { BsFillPlusSquareFill } from "react-icons/bs";
 import PlusPopup from "./PlusPopup";
 import "./List.css";
 
-function List() {
+function Since1990() {
   // eslint-disable-next-line
   const [order, setOrder] = useState("id");
-  const [data, setData] = useState(anijson.slice(0, 10)); //애니데이터 설정, 초기에는 상위 10개의 데이터만 표시
+  const [data, setData] = useState([]); //애니데이터 설정, 초기에는 상위 10개의 데이터만 표시
   // eslint-disable-next-line
-  const [menu, setMenu] = useState([
-    { since: "all" },
-    { since: "1970" },
-    { since: "1980" },
-    { since: "1990" },
-    { since: "2000" },
-  ]); //메뉴 설정
+  const [menu, setMenu] = useState([{ since: "1990" }]); //메뉴 설정
   const [visibleCount, setVisibleCount] = useState(10); //현재 표시되는 데이터 개수
-  const [activeTab, setActiveTab] = useState("all");
+  const [activeTab, setActiveTab] = useState("1990");
   const [isPlusPopup, setIsPlusPopup] = useState(false);
 
   const onMenu = (since) => {
     setActiveTab(since);
-
-    if (since === "all") {
-      const allData = anijson.sort((a, b) => b[order] - a[order]);
-      setData(allData.slice(0, visibleCount));
-    } else {
-      //setData(anijson.filter((item) => item.since === since));
-      const filterData = anijson.filter((item) => item.since === since);
-      const sortedData = filterData.sort((a, b) => b[order] - a[order]);
-      setData(sortedData.slice(0, visibleCount)); // 상위 10개의 데이터만 설정
-    }
     setVisibleCount(10); // "더보기" 기능 초기화
   };
 
@@ -45,10 +29,7 @@ function List() {
   // visibleCount가 변경될 때마다 데이터 업데이트
   useEffect(() => {
     // visibleCount, order, activeTab이 변경될 때마다 실행되는 콜백 함수
-    if (activeTab === "all") {
-      const allData = anijson.sort((a, b) => b[order] - a[order]);
-      setData(allData.slice(0, visibleCount));
-    } else {
+    if (activeTab === "1990") {
       const filterData = anijson.filter((item) => item.since === activeTab);
       const sortedData = filterData.sort((a, b) => b[order] - a[order]);
       setData(sortedData.slice(0, visibleCount));
@@ -77,4 +58,4 @@ function List() {
   );
 }
 
-export default List;
+export default Since1990;

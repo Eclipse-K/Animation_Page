@@ -13,13 +13,25 @@ function DropdownMenu({ closeDropdown }) {
     <DropdownContainer>
       <DropdownBox>
         <DropdownButton onClick={dropButtonClick}>
-          <AiOutlineClose />
+          <Link to="/">
+            <AiOutlineClose />
+          </Link>
         </DropdownButton>
         <p>
-          <Link to="/List">List</Link>
+          <Link to="/List">All</Link>
         </p>
-        <p>List item 2</p>
-        <p>List item 3</p>
+        <p>
+          <Link to="/Since1970">Since 1970</Link>
+        </p>
+        <p>
+          <Link to="/Since1980">Since 1980</Link>
+        </p>
+        <p>
+          <Link to="/Since1990">Since 1990</Link>
+        </p>
+        <p>
+          <Link to="/Since2000">Since 2000</Link>
+        </p>
       </DropdownBox>
     </DropdownContainer>
   );
