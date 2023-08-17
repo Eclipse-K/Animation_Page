@@ -18,9 +18,6 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
-          <Link to="/List">All</Link>
-        </p>
-        <p>
           <Link to="/Since1970">Since 1970</Link>
         </p>
         <p>
