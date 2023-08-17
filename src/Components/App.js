@@ -2,6 +2,8 @@ import NavDrop from "./NavDrop";
 import "./App.css";
 import Search from "./SearchBar";
 import Copyright from "./Copyright";
+import { Route, Routes } from "react-router-dom";
+import List from "./List";
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <Search />
 
       <Copyright />
+
+      <Routes>
+        <Route path="/List" element={<List />} />
+      </Routes>
     </div>
   );
 }
