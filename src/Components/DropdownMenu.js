@@ -18,16 +18,24 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
-          <Link to="/Since1970">Since 1970</Link>
+          <Link to="/Since1970" onClick={dropButtonClick}>
+            Since 1970
+          </Link>
         </p>
         <p>
-          <Link to="/Since1980">Since 1980</Link>
+          <Link to="/Since1980" onClick={dropButtonClick}>
+            Since 1980
+          </Link>
         </p>
         <p>
-          <Link to="/Since1990">Since 1990</Link>
+          <Link to="/Since1990" onClick={dropButtonClick}>
+            Since 1990
+          </Link>
         </p>
         <p>
-          <Link to="/Since2000">Since 2000</Link>
+          <Link to="/Since2000" onClick={dropButtonClick}>
+            Since 2000
+          </Link>
         </p>
       </DropdownBox>
     </DropdownContainer>
