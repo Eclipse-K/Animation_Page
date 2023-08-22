@@ -5,14 +5,14 @@ import Logo from "../image/yeonu_logo.png";
 import DropdownMenu from "./DropdownMenu";
 
 function NavDrop() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleCollapse = () => {
+    setIsCollapsed((prevCollapsed) => !prevCollapsed);
   };
 
   const closeDropdown = () => {
-    setIsDropdownOpen(false);
+    setIsCollapsed(false);
   };
 
   return (
@@ -21,19 +21,19 @@ function NavDrop() {
         <img src={Logo} alt={Logo} />
       </div>
       <h1 className="navbar-title">Animation</h1>
-      <div className={`navbar-dropdown ${isDropdownOpen ? "open" : ""}`}>
-        {isDropdownOpen ? (
+      <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
+        {isCollapsed ? (
           <button className="dropdown-button rotated" onClick={closeDropdown}>
             <AiFillAppstore />
           </button>
         ) : (
-          <button className="dropdown-button" onClick={toggleDropdown}>
+          <button className="dropdown-button" onClick={toggleCollapse}>
             <AiFillAppstore />
           </button>
         )}
       </div>
 
-      {isDropdownOpen && <DropdownMenu closeDropdown={closeDropdown} />}
+      {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
     </nav>
   );
 }

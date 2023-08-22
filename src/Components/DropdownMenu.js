@@ -2,6 +2,7 @@ import DropdownContainer from "./Dropdown/DropdownContainer.js";
 import DropdownBox from "./Dropdown/DropdownBox.js";
 import { AiOutlineClose } from "react-icons/ai";
 import DropdownButton from "./Dropdown/DropdownButton.js";
+import DropStyledLink from "./Dropdown/DropStyledLink.js";
 import { Link } from "react-router-dom";
 
 function DropdownMenu({ closeDropdown }) {
@@ -18,24 +19,24 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
-          <Link to="/Since1970" onClick={dropButtonClick}>
+          <DropStyledLink to="/Since1970" onClick={dropButtonClick}>
             Since 1970
-          </Link>
+          </DropStyledLink>
         </p>
         <p>
-          <Link to="/Since1980" onClick={dropButtonClick}>
+          <DropStyledLink to="/Since1980" onClick={dropButtonClick}>
             Since 1980
-          </Link>
+          </DropStyledLink>
         </p>
         <p>
-          <Link to="/Since1990" onClick={dropButtonClick}>
+          <DropStyledLink to="/Since1990" onClick={dropButtonClick}>
             Since 1990
-          </Link>
+          </DropStyledLink>
         </p>
         <p>
-          <Link to="/Since2000" onClick={dropButtonClick}>
+          <DropStyledLink to="/Since2000" onClick={dropButtonClick}>
             Since 2000
-          </Link>
+          </DropStyledLink>
         </p>
       </DropdownBox>
     </DropdownContainer>
