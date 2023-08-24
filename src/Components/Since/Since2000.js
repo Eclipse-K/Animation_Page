@@ -5,6 +5,7 @@ import ScrollTopButton from "../ScrollTopButton";
 import { BsFillPlusSquareFill } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
 import "../List.css";
+import NavDrop from "../NavDrop";
 
 function Since2000() {
   // eslint-disable-next-line
@@ -31,6 +32,7 @@ function Since2000() {
 
   return (
     <div className="list-container">
+      <NavDrop />
       <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
       {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
 
