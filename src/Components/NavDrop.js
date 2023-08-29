@@ -3,6 +3,7 @@ import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
 import Logo from "../image/yeonu_logo.png";
 import DropdownMenu from "./DropdownMenu";
+import { Link } from "react-router-dom";
 
 function NavDrop() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -20,7 +21,9 @@ function NavDrop() {
       <div className="navbar-logo">
         <img src={Logo} alt={Logo} />
       </div>
-      <h1 className="navbar-title">Animation</h1>
+      <Link className="navbar-title" to="/">
+        Animation
+      </Link>
       <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
         {isCollapsed ? (
           <button className="dropdown-button rotated" onClick={closeDropdown}>
