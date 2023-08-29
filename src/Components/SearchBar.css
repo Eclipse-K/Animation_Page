@@ -94,7 +94,7 @@ input::placeholder {
   background-position: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   overflow: auto;
-  animation: zoom-in 0.5s forwards;
+  animation: zoom-in 0.3s forwards;
 }
 
 @keyframes zoom-in {
@@ -130,4 +130,23 @@ input::placeholder {
   padding-right: 25px;
   font-family: "Dongle", sans-serif;
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .Searchcard {
+    width: 70%;
+    background-image: none;
+    height: 350px;
+    top: 80%;
+  }
+
+  .Searchcard h4 {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 15%;
+  }
+
+  .Searchcard h5 {
+    font-size: 15px;
+  }
 }
