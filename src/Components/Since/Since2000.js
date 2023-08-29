@@ -6,6 +6,7 @@ import { BsFillPlusSquareFill } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
 import "../List.css";
 import NavDrop from "../NavDrop";
+import Copyright from "../Copyright";
 
 function Since2000() {
   // eslint-disable-next-line
@@ -42,6 +43,7 @@ function Since2000() {
       <button className="load-more" onClick={handleShowMore}>
         더보기
       </button>
+      <Copyright />
     </div>
   );
 }

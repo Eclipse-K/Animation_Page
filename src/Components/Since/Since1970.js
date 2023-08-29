@@ -5,6 +5,7 @@ import ScrollTopButton from "../ScrollTopButton";
 import { BsFillPlusSquareFill } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
 import NavDrop from "../NavDrop";
+import Copyright from "../Copyright";
 import "../List.css";
 
 function Since1970() {
@@ -42,6 +43,7 @@ function Since1970() {
       <button className="load-more" onClick={handleShowMore}>
         더보기
       </button>
+      <Copyright />
     </div>
   );
 }
