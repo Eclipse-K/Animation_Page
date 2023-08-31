@@ -8,6 +8,14 @@ const DropdownBox = styled.div`
   width: 100%;
   height: 100%;
   background-color: lightgray;
+
+  @media all and (max-width: 400px) {
+    width: 100px;
+
+    p {
+      margin: 0;
+    }
+  }
 `;
 
 export default DropdownBox;

@@ -13,6 +13,10 @@ const DropdownContainer = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 3;
+
+  @media all and (max-width: 400px) {
+    width: 100px;
+  }
 `;
 
 export default DropdownContainer;
