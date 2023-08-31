@@ -57,7 +57,7 @@
   height: 50px;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 414px) {
   .navbar-drop {
     width: 100%;
   }

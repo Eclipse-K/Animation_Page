@@ -132,21 +132,29 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 414px) {
   .Searchcard {
-    width: 70%;
+    width: 75%;
     background-image: none;
     height: 350px;
     top: 80%;
+    box-shadow: 5px 3px 3px gray;
   }
 
   .Searchcard h4 {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
+    margin-bottom: 0;
     margin-left: 15%;
+    padding-top: 10px;
   }
 
   .Searchcard h5 {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .Searchcard p {
     font-size: 15px;
   }
 }
