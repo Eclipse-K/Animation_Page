@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Diphylleia+One&family=Hi+Melody&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Black+Ops+One&display&family=Dongle&display=swap");
 
 .info_card {
   display: flex;
@@ -75,4 +75,20 @@
 }
 
 @media all and (max-width: 414px) {
+  .info_card.expansion {
+    transform: scale(1.1);
+  }
+
+  .info_card h1 {
+    font-size: 20px;
+    font-family: "Black Ops One", cursive;
+  }
+
+  .info_card h2 {
+    font-family: "Dongle", sans-serif;
+  }
+
+  .info_card p {
+    font-family: "Dongle", sans-serif;
+  }
 }
