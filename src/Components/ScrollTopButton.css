@@ -10,10 +10,25 @@
   border: 1px solid rgba(218, 218, 220);
   /*box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);*/
   border-radius: 20px;
+  cursor: pointer;
   z-index: 4;
 }
 
 .arrowIcon:hover {
-  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media all and (max-width: 414px) {
+  .arrowIcon {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    border-color: black;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .arrowIcon:hover {
+    background-color: none;
+  }
 }

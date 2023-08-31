@@ -2,7 +2,7 @@ import AniItem from "./AniItem";
 
 const AniList = ({ data }) => {
   return (
-    <ul>
+    <ul className="info_container">
       {data.map((item) => (
         <AniItem key={item.id} item={item} />
       ))}
