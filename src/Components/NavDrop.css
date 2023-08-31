@@ -57,12 +57,22 @@
   height: 50px;
 }
 
-@media (max-width: 768px) {
+@media all and (max-width: 400px) {
   .navbar-drop {
-    max-width: 100%;
+    width: 100%;
+  }
+
+  .navbar-drop img {
+    width: 60px;
+    height: 60px;
   }
 
   .navbar-title {
-    font-size: 30px;
+    font-size: 35px;
+  }
+
+  .dropdown-button svg {
+    width: 60px;
+    height: 60px;
   }
 }
