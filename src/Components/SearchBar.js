@@ -101,7 +101,7 @@ function Search() {
               inputMode="text"
             />
             {searchTerm ? (
-              <button onClick={handleReset}>
+              <button className="Search-ResetButton" onClick={handleReset}>
                 <i aria-hidden="true">
                   <FiRotateCcw />
                 </i>
@@ -109,7 +109,7 @@ function Search() {
             ) : (
               <span style={{ width: "28px" }}></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
             )}
-            <button type="submit">
+            <button className="Search-SubmitButton" type="submit">
               <FiSearch />
             </button>
           </div>

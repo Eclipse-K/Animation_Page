@@ -49,7 +49,9 @@
 }
 
 .Searchbar form {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 5px 3px 3px gray;
 }
 
@@ -67,14 +69,26 @@ input::placeholder {
   color: black;
 }
 
-.Searchbar form button {
+.Search-ResetButton,
+.Search-SubmitButton {
+  display: flex;
   border-style: none;
   color: black;
   cursor: pointer;
 }
 
-.Searchbar form button i {
-  display: inline-block;
+.Search-ResetButton i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.Search-SubmitButton svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Searchcard {
