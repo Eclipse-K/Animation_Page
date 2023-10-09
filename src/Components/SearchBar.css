@@ -13,7 +13,6 @@
   position: relative;
   border: 2px solid black;
   width: 250px;
-  transition: border-color 0.3 ease;
 }
 
 .Search-container form:focus-within {
@@ -23,6 +22,7 @@
 .Search-input-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .Suggestion_title {
@@ -48,14 +48,13 @@
   background-color: #f0f0f0;
 }
 
-.Searchbar form {
+.Searchbar-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 5px 3px 3px gray;
 }
 
-.Searchbar form input {
+.Searchbar-form input {
   border-style: none;
   padding: auto;
   width: 180px;

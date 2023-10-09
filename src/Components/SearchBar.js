@@ -89,7 +89,7 @@ function Search() {
 
   return (
     <div className="Searchbar">
-      <form onSubmit={handleFormSubmit}>
+      <form className="Searchbar-form" onSubmit={handleFormSubmit}>
         <div className="Search-container">
           <div className="Search-input-container">
             <input
