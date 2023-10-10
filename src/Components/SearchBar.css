@@ -154,8 +154,7 @@ input::placeholder {
     text-indent: 5px;
   }
 
-  .Search-ResetButton,
-  .Search-SubmitButton {
+  .Search-ResetButton {
     padding: 0;
   }
 
