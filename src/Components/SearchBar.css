@@ -55,8 +55,7 @@
 }
 
 .Searchbar-form input {
-  border-style: solid;
-  padding: auto;
+  border-style: none;
   width: 180px;
 }
 
@@ -71,7 +70,7 @@ input::placeholder {
 .Search-ResetButton,
 .Search-SubmitButton {
   display: flex;
-  border-style: solid;
+  border-style: none;
   color: black;
   cursor: pointer;
 }
@@ -146,6 +145,14 @@ input::placeholder {
 }
 
 @media all and (max-width: 414px) {
+  .Search-container {
+    width: 220px;
+  }
+
+  .Searchbar-form input {
+    text-indent: 5px;
+  }
+
   .Searchcard {
     width: 75%;
     background-image: none;
