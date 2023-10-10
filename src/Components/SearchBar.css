@@ -150,7 +150,13 @@ input::placeholder {
   }
 
   .Searchbar-form input {
+    width: 140px;
     text-indent: 5px;
+  }
+
+  .Search-ResetButton,
+  .Search-SubmitButton {
+    padding: 0;
   }
 
   .Searchcard {
