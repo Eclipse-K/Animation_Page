@@ -146,11 +146,10 @@ input::placeholder {
 
 @media all and (max-width: 414px) {
   .Search-container {
-    width: 220px;
+    width: 250px;
   }
 
   .Searchbar-form input {
-    width: 140px;
     text-indent: 5px;
   }
 
