@@ -55,7 +55,7 @@
 }
 
 .Searchbar-form input {
-  border-style: none;
+  border-style: solid;
   padding: auto;
   width: 180px;
 }
@@ -71,7 +71,7 @@ input::placeholder {
 .Search-ResetButton,
 .Search-SubmitButton {
   display: flex;
-  border-style: none;
+  border-style: solid;
   color: black;
   cursor: pointer;
 }
