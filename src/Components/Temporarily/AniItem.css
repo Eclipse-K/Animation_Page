@@ -3,14 +3,14 @@
 
 .info_card {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-color: #f4faf6;
-  padding: 20px;
-  width: 80%;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 90%;
   height: 300px;
   margin: 10px 0 20px 20px;
   overflow: auto;
@@ -24,6 +24,9 @@
 }
 
 .card_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f4faf6;
   pointer-events: none;
 }
@@ -41,17 +44,33 @@
 }
 */
 
-/*
-.info_card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: aliceblue;
+.card-content-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-right: 10px;
+  width: 300px;
+  height: 90%;
 }
-*/
 
-.info_card h1 {
+.card_content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: rgb(212, 246, 248);
+}
+
+.card-content-second {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-color: #f4faf6;
+  width: 100%;
+}
+
+.card_content h1 {
   font-size: 25px;
   margin-bottom: 10px;
   background-color: #f4faf6;
@@ -59,14 +78,14 @@
   font-weight: 800;
 }
 
-.info_card h2 {
+.card_content h2 {
   font-size: 15px;
   margin-bottom: 10px;
   background-color: #f4faf6;
   font-family: "Hi Melody", cursive;
 }
 
-.info_card p {
+.card_content p {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -79,16 +98,16 @@
     transform: scale(1.1);
   }
 
-  .info_card h1 {
+  .card_content h1 {
     font-size: 20px;
     font-family: "Black Ops One", cursive;
   }
 
-  .info_card h2 {
+  .card_content h2 {
     font-family: "Dongle", sans-serif;
   }
 
-  .info_card p {
+  .card_content p {
     font-family: "Dongle", sans-serif;
   }
 }
