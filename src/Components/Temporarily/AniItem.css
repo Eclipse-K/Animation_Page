@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Diphylleia+One&family=Hi+Melody&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Black+Ops+One&display&family=Dongle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Black+Ops+One&display&family=Dongle&family=Gugi&family=Cute+Font&display=swap");
 
 .info_card {
   display: flex;
@@ -74,7 +74,7 @@
   font-size: 25px;
   margin-bottom: 10px;
   background-color: #f4faf6;
-  font-family: "Diphylleia", serif;
+  font-family: "Gugi", serif;
   font-weight: 800;
 }
 
@@ -82,7 +82,7 @@
   font-size: 15px;
   margin-bottom: 10px;
   background-color: #f4faf6;
-  font-family: "Hi Melody", cursive;
+  font-family: "Cute Font", cursive;
 }
 
 .card_content p {
@@ -90,7 +90,7 @@
   line-height: 1.5;
   margin-bottom: 20px;
   background-color: #f4faf6;
-  font-family: "Hi Melody", cursive;
+  font-family: "Cute Font", cursive;
 }
 
 @media all and (max-width: 414px) {
@@ -100,7 +100,7 @@
 
   .card_content h1 {
     font-size: 20px;
-    font-family: "Black Ops One", cursive;
+    font-family: "Gugi", cursive;
   }
 
   .card_content h2 {
