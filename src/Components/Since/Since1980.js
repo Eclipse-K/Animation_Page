@@ -22,7 +22,7 @@ function Since1980() {
   // visibleCount가 변경될 때마다 데이터 업데이트
   useEffect(() => {
     const filterData = anijson.filter((item) => item.since === "1980");
-    const sortedData = filterData.sort((a, b) => b[order] - a[order]);
+    const sortedData = filterData.sort((a, b) => a[order] - b[order]);
     setData(sortedData.slice(0, visibleCount));
   }, [visibleCount, order]);
 
