@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.a3d11f30.css",
-    "main.js": "/static/js/main.2fc5bf32.js",
+    "main.js": "/static/js/main.9dfc3364.js",
     "static/media/background_image_2.png": "/static/media/background_image_2.787a74ee63d980fbc1ee.png",
     "static/media/yeonu_logo.png": "/static/media/yeonu_logo.ca270e2849633742751e.png",
     "index.html": "/index.html",
     "main.a3d11f30.css.map": "/static/css/main.a3d11f30.css.map",
-    "main.2fc5bf32.js.map": "/static/js/main.2fc5bf32.js.map"
+    "main.9dfc3364.js.map": "/static/js/main.9dfc3364.js.map"
   },
   "entrypoints": [
     "static/css/main.a3d11f30.css",
-    "static/js/main.2fc5bf32.js"
+    "static/js/main.9dfc3364.js"
   ]
 }
