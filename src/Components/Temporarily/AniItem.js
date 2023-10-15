@@ -15,7 +15,7 @@ function AniItem({ item }) {
       onClick={zoomClick}
     >
       <div className="card_content">
-        <div className="card-content-img">
+        <div className="card-img-group">
           <img src={img} alt={title} />
         </div>
 

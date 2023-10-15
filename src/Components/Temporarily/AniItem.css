@@ -29,6 +29,7 @@
   justify-content: center;
   background-color: #f4faf6;
   pointer-events: none;
+  width: 100%;
 }
 
 /* 마우스 호버시 사라진 글자뜸
@@ -44,7 +45,7 @@
 }
 */
 
-.card-content-img {
+.card-img-group {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +55,7 @@
   height: 90%;
 }
 
-.card_content img {
+.card-img-group img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -79,14 +80,14 @@
 }
 
 .card_content h2 {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 10px;
   background-color: #f4faf6;
   font-family: "Cute Font", cursive;
 }
 
 .card_content p {
-  font-size: 1rem;
+  font-size: 17px;
   line-height: 1.5;
   margin-bottom: 20px;
   background-color: #f4faf6;
