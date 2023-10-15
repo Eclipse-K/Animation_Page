@@ -208,6 +208,7 @@
   },
   {
     "id": 24,
+    "img": "https://i.namu.wiki/i/-tJqakUHsxMbQe1O1dqWPFeZ3I1jy6MGql-U1jx40Nowea5dYRVJ8sIGCGC8aZK5R37aUiBbtLZCsw42WILoCPluenY3PRXfKE4zL947ZTydQYmMF1NoaNWS-qIKrdzmGH2iY5X1v9-DV1_9rX5PnA.webp",
     "title": "꼬마자동차 붕붕",
     "year": "1985",
     "since": "1980",
@@ -216,7 +217,8 @@
   },
   {
     "id": 25,
-    "title": "세인스 세이야",
+    "img": "https://i.namu.wiki/i/7D_SOaPFXdS2aBiXjTjThlswbjxENof64IcAzS5_PYMxj5ixeEmWeuxasPvFxtkwI7gzBG5VovGNLcZqV_SMKYou0plnlL7GsJ7mCyzmO91E6tO31drGlIZkBU3Fqaa263VCQDgFO3de2gBBmav_cw.webp",
+    "title": "세인트 세이야",
     "year": "1986",
     "since": "1980",
     "best": 4,
@@ -224,6 +226,7 @@
   },
   {
     "id": 26,
+    "img": "https://i.namu.wiki/i/LLBbnRRu_HHYhMi3f36nfBwxnrRNM6X2AAJOkzGbwAo2ZFibyiQMlm4k9uU9lwZSUSHffWTybNwftPHTYZk4g59lTAIAVgsD5msYBBGHdOj2LoypUh3yQuO0YPDEade35Lugt9PhIsosGXX3GDux2w.webp",
     "title": "드래곤볼",
     "year": "1986",
     "since": "1980",
@@ -232,6 +235,7 @@
   },
   {
     "id": 27,
+    "img": "https://i.namu.wiki/i/icYJg-cdBa2xVQMiwXECLCt0R8EQaClxS4pIIlcw4WAM41Eph0QaO5E7VHF4zksStDvVfcxUWQe7rfcFVnsL8a2RLfcdy5KBx5eQc460_EFS-QXYT_X8Ft6dJxYls3oL0PbJwit0IRamlJjKsgw6vw.webp",
     "title": "시티헌터",
     "year": "1987",
     "since": "1980",
@@ -240,6 +244,7 @@
   },
   {
     "id": 28,
+    "img": "https://i.namu.wiki/i/_xI0oycwc3gQcxBHjkEedpf8M3eHYdF39fUwOh4jfHY0GDiMegyAUhyzNYAs0dYf0jJjPVGIWHoxwmB-lflQJQ92-7mdA8dVlC0BxoKuoNkE-pIqdos5wWW4rLlUrSxyGA_z-LEdvMkInNttQOtRHQ.webp",
     "title": "아기공룡 둘리",
     "year": "1987",
     "since": "1980",
@@ -248,6 +253,7 @@
   },
   {
     "id": 29,
+    "img": "https://i.namu.wiki/i/xynk_e7cKiuqZABH4JYlMGFv6GRpBb3JWvF4WNXFNblxDed6_7nilZ7as3vJEFshAi-cdINv-sssM8TrXRSjvw.webp",
     "title": "달려라 하니",
     "year": "1988",
     "since": "1980",
@@ -256,6 +262,7 @@
   },
   {
     "id": 30,
+    "img": "https://i.namu.wiki/i/-VzDVTx0FFtGjvWtwIPM9t7_dhtO5quO2xEWYr7iiEV89EPhDMXpL-GfdzG6DMGV87gPiOM3Q1-vHA1xkTyWGlGJ5xE8lFsLb5fEiOH0VolZN-wCTNMW9qA7s_rXfQCBEz4Rj_JjD5Pf13kPooT11A.webp",
     "title": "마신영웅전 와타루",
     "year": "1988",
     "since": "1980",
@@ -264,6 +271,7 @@
   },
   {
     "id": 31,
+    "img": "https://i.namu.wiki/i/V9vHi4R2iI_aAwCbDBvnw5bzo8VUf_kB87Bv9px2Zqlzp9qoFH7uXtl5ySRKW8UHVvjr3ZzXa-MSGq9Nhf8_u6GbFG828T14iJJQ01ulT3ASylmfnYemul_MVdWgSUqzKJByGc5UFKZ7TDww1BoDMA.webp",
     "title": "날아라 호빵맨",
     "year": "1988",
     "since": "1980",
@@ -272,6 +280,7 @@
   },
   {
     "id": 32,
+    "img": "https://i.namu.wiki/i/MDIePgIc1Nf6dTNk9zr8QNtCp54WnEaAVx-6XNg32GcR_On_g77phIUDV4o07DljhY81ynbKUiPg4ox-OocwRT2-CkbIAlV0irX992OKbE4o3-9nEg9nGZ9ifU-1XJxmHRPpEyrp3wWNnuJVYSl_lw.webp",
     "title": "머털도사",
     "year": "1989",
     "since": "1980",
@@ -280,6 +289,7 @@
   },
   {
     "id": 33,
+    "img": "https://i.namu.wiki/i/k6AjHXiaKPdjgjVlo9_kGk4H_lNJFq0yBcbCUj36-EoUBLmsZtCOXTKOe2mTkm8hWAfGq6U2Uhnv5GCZFqZsNwpFjUM6U47JVWORvzrqIkFddC0sXOYQcHxlCzN9zV6h4-ujM70tpIFdZ_h-p-krVA.webp",
     "title": "밀림의 왕 레오",
     "year": "1989",
     "since": "1980",
@@ -288,6 +298,7 @@
   },
   {
     "id": 34,
+    "img": "https://i.namu.wiki/i/SrvLgYx1irZfTMy-B8c1km75WDtWDAsC29fIw_Hai7f_JkCwDDvXU4gNVK6Qa2XWfEbbqlXXOla6CXR0IIPlXbVBiP47j3iisQQfe-4cTqwf50LROTmQFF-eXbY2GBFfFs78F9bymv1_aDVj55WUSg.webp",
     "title": "천하무적 슈라트",
     "year": "1989",
     "since": "1980",
@@ -296,6 +307,7 @@
   },
   {
     "id": 35,
+    "img": "https://i.namu.wiki/i/XpwTIuDVNNUgI1jMUuSUuyjXn0ugfsTKjqG2SKRQJiideedvB_0nR5FJv5HFAkippXCnNcorYreWnbg9stqf5Q4CboRZigSFeb-cDpBOz78WgQbXTzJfii8YEokIHjSYKOWQ1nu_GjGFVatyv03pUA.webp",
     "title": "달려라 부메랑",
     "year": "1989",
     "since": "1980",
@@ -304,6 +316,7 @@
   },
   {
     "id": 36,
+    "img": "https://i.namu.wiki/i/ECkVEUb5E6KdYq-0qdpRwi9KPY69lePD0RyFhvWp1dFIPtCEzWb1XxCylZXo9jdMs5GIgjNujPO9JDh-dASudeeRr3aDztlUgrsR0YvTYL5Y3HWE2_3hpr_0VM4pJJZDFhft5zAplGGhZcI9qmQZbg.webp",
     "title": "슈퍼 그랑죠",
     "year": "1989",
     "since": "1980",
