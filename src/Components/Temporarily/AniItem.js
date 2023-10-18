@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./AniItem.css";
 
 function AniItem({ item }) {
-  const { img, title, year, content } = item;
+  const { title, year, content } = item;
   const [isClick, setIsClick] = useState(false);
 
   const zoomClick = () => {
@@ -15,10 +15,6 @@ function AniItem({ item }) {
       onClick={zoomClick}
     >
       <div className="card_content">
-        <div className="card-img-group">
-          <img src={img} alt={title} />
-        </div>
-
         <div className="card-content-second">
           <h1>{title}</h1>
           <h2>- 방영연도: {year}</h2>

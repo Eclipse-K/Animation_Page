@@ -96,7 +96,8 @@
 
 @media all and (max-width: 414px) {
   .info_card.expansion {
-    transform: scale(1.1);
+    transform: scale(1);
+    margin-left: 5%;
   }
 
   .card_content h1 {
