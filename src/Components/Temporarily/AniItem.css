@@ -3,17 +3,19 @@
 
 .info_card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background-color: #f4faf6;
   padding-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   width: 90%;
   height: 300px;
   margin: 10px 0 20px 20px;
-  overflow: auto;
+  overflow: scroll;
   transition: transform 0.3s;
   cursor: pointer;
 }
@@ -95,6 +97,9 @@
 }
 
 @media all and (max-width: 414px) {
+  .card_content {
+    overflow: visible;
+  }
   .info_card.expansion {
     transform: scale(1);
     margin-left: 5%;
