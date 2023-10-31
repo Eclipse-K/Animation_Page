@@ -14,9 +14,20 @@ function Since1970() {
   const [data, setData] = useState([]); //애니데이터 설정, 초기에는 상위 10개의 데이터만 표시
   const [visibleCount, setVisibleCount] = useState(10); //현재 표시되는 데이터 개수
   const [isPlusPopup, setIsPlusPopup] = useState(false);
+  const [showLoadMore, setShowLoadMore] = useState(true); // 추가할 데이터가 더 있는지 여부를 나타내는 상태 추가
 
   const handleShowMore = () => {
-    setVisibleCount((prevCount) => prevCount + 10); //10개씩 추가로 개수 증가
+    const newVisibleCount = visibleCount + 10;
+    const filterData = anijson.filter((item) => item.since === "1970");
+    const sortedData = filterData.sort((a, b) => a[order] - b[order]);
+    const newData = sortedData.slice(0, newVisibleCount);
+    if (newData.length > data.length) {
+      setData(newData);
+      setVisibleCount(newVisibleCount);
+    } else {
+      // 더 이상 추가할 데이터가 없으면 load-more 버튼을 숨김
+      setShowLoadMore(false);
+    }
   };
 
   // visibleCount가 변경될 때마다 데이터 업데이트
@@ -40,9 +51,11 @@ function Since1970() {
       <AniList item={data} data={data} />
       <ScrollTopButton />
 
-      <button className="load-more" onClick={handleShowMore}>
-        더보기
-      </button>
+      {showLoadMore && (
+        <button className="load-more" onClick={handleShowMore}>
+          더보기
+        </button>
+      )}
       <Copyright />
     </div>
   );
