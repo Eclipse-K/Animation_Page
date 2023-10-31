@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
-import Logo from "../image/yeonu_logo.png";
+import Logo from "../image/YeonU-Logo.png";
 import DropdownMenu from "./DropdownMenu";
 import { Link } from "react-router-dom";
 
