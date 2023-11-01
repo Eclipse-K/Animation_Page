@@ -8,7 +8,7 @@ import NavDrop from "../NavDrop";
 import Copyright from "../Copyright";
 import "../List.css";
 
-function Since1970() {
+function Since1980() {
   // eslint-disable-next-line
   const [order, setOrder] = useState("id");
   const [data, setData] = useState([]); //애니데이터 설정, 초기에는 상위 10개의 데이터만 표시
@@ -61,4 +61,4 @@ function Since1970() {
   );
 }
 
-export default Since1970;
+export default Since1980;
