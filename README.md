@@ -1,8 +1,37 @@
 # Animation page
 
-Animation information page
+<center>
+<img  src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Animation Page&fontSize=90" width="80%"/>
+</center>
 
-## 과정
+- 고전만화부터 현대의 만화까지를 손쉽게 찾을 수 있었으면 좋겠다는 목적으로 만든 사이트. [Animation_Page](https://k-animation.netlify.app).
+
+## 🧰 Tech Stack
+
+### 📖 Platforms & Languages
+
+<center>
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+</center>
+
+### 🛠️ Tools
+
+<center>
+<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white">
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+</center>
+
+<center>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Eclipse-K&layout=compact" width="80%"><br><br>
+<img src="https://github-readme-stats.vercel.app/api?username=Eclipse-K&show_icons=true" width="80%">
+
+</center>
+
+## 📕과정
 
 1. 네비게이션바 생성을 위한 과정
 
