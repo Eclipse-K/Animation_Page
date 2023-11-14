@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const DropdownContainer = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 200px;
   height: 100%;
   padding: 0;
@@ -12,7 +12,7 @@ const DropdownContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 1;
 
   @media all and (max-width: 414px) {
     width: 100px;

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
-import Logo from "../image/YeonU-Logo.png";
 import DropdownMenu from "./DropdownMenu";
-import { Link } from "react-router-dom";
 
 function NavDrop() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -17,27 +15,23 @@ function NavDrop() {
   };
 
   return (
-    <nav className="navbar-drop">
-      <div className="navbar-logo">
-        <img src={Logo} alt={Logo} />
-      </div>
-      <Link className="navbar-title" to="/">
-        Animation
-      </Link>
-      <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
-        {isCollapsed ? (
-          <button className="dropdown-button rotated" onClick={closeDropdown}>
-            <AiFillAppstore />
-          </button>
-        ) : (
-          <button className="dropdown-button" onClick={toggleCollapse}>
-            <AiFillAppstore />
-          </button>
-        )}
-      </div>
+    <div>
+      <nav className="navbar-drop">
+        <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
+          {isCollapsed ? (
+            <button className="dropdown-button rotated" onClick={closeDropdown}>
+              <AiFillAppstore />
+            </button>
+          ) : (
+            <button className="dropdown-button" onClick={toggleCollapse}>
+              <AiFillAppstore />
+            </button>
+          )}
+        </div>
 
-      {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
-    </nav>
+        {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
+      </nav>
+    </div>
   );
 }
 
