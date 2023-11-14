@@ -19,6 +19,11 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
+          <DropStyledLink to="/Home" onClick={dropButtonClick}>
+            Home
+          </DropStyledLink>
+        </p>
+        <p>
           <DropStyledLink to="/Since1970" onClick={dropButtonClick}>
             Since 1970
           </DropStyledLink>
@@ -36,6 +41,11 @@ function DropdownMenu({ closeDropdown }) {
         <p>
           <DropStyledLink to="/Since2000" onClick={dropButtonClick}>
             Since 2000
+          </DropStyledLink>
+        </p>
+        <p>
+          <DropStyledLink to="/SearchBar" onClick={dropButtonClick}>
+            Search
           </DropStyledLink>
         </p>
       </DropdownBox>

@@ -12,7 +12,7 @@ const DropdownContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 3;
 
   @media all and (max-width: 414px) {
     width: 100px;

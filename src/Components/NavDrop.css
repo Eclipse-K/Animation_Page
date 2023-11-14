@@ -6,8 +6,6 @@
   align-items: center;
   background-color: white;
   padding: 1rem;
-  box-shadow: 4px 0 5px gray;
-  border-bottom: 1px groove gray;
   width: 100px;
   z-index: 3;
 }

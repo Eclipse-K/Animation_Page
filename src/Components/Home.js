@@ -12,8 +12,9 @@ const Title = styled(Link)`
   transition: transform 0.3s;
   text-decoration: none;
   position: absolute;
-  right: 30px;
-  top: 10px;
+  padding: 1rem;
+  right: 0;
+  top: 0;
 
   :hover {
     color: black;

@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import jsonData from "../api.json";
 import "./SearchBar.css";
 import { FiRotateCcw, FiSearch } from "react-icons/fi";
+import NavDrop from "./NavDrop";
 
-function Search() {
+function SearchBar() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
@@ -89,6 +90,7 @@ function Search() {
 
   return (
     <div className="Searchbar">
+      <NavDrop />
       <form className="Searchbar-form" onSubmit={handleFormSubmit}>
         <div className="Search-container">
           <div className="Search-input-container">
@@ -149,4 +151,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchBar;
