@@ -19,7 +19,7 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
-          <DropStyledLink to="/Home" onClick={dropButtonClick}>
+          <DropStyledLink to="/" onClick={dropButtonClick}>
             Home
           </DropStyledLink>
         </p>
