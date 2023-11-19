@@ -1,4 +1,4 @@
-import { BsFillCaretUpSquareFill } from "react-icons/bs";
+import { BsCaretUpSquareFill } from "react-icons/bs";
 import "./ScrollTopButton.css";
 
 function ScrollTopButton() {
@@ -7,7 +7,7 @@ function ScrollTopButton() {
   };
 
   return (
-    <BsFillCaretUpSquareFill
+    <BsCaretUpSquareFill
       className="arrowIcon"
       onClick={handleScrollTop}
       alt="맨위로"

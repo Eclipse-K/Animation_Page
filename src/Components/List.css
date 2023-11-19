@@ -27,27 +27,23 @@
 }
 
 /*더보기------*/
-.load-more {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  color: black;
+.More-Arrow {
+  position: fixed;
+  right: 25px;
+  bottom: 60px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(242, 242, 243, 0.5);
   border-style: none;
-  background-color: #ebe7de;
   z-index: 3;
 }
 
-.load-more button {
-  border: none;
-  background-color: #eee;
-  padding: 10px 20px;
+.More-Arrow:hover {
   cursor: pointer;
-}
-
-.load-more button:hover {
-  background-color: #ddd;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .plusbutton {

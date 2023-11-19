@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import anijson from "../../api.json";
 import AniList from "../Temporarily/AniList";
 import ScrollTopButton from "../ScrollTopButton";
-import { BsFillPlusSquareFill } from "react-icons/bs";
+import { BsFillPlusSquareFill, BsCaretDownSquareFill } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
 import NavDrop from "../NavDrop";
 import Copyright from "../Copyright";
@@ -45,6 +45,7 @@ function Since1970() {
   return (
     <div className="list-container">
       <NavDrop />
+
       <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
       {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
 
@@ -52,9 +53,11 @@ function Since1970() {
       <ScrollTopButton />
 
       {showLoadMore && (
-        <button className="load-more" onClick={handleShowMore}>
-          더보기
-        </button>
+        <BsCaretDownSquareFill
+          className="More-Arrow"
+          onClick={handleShowMore}
+          alt="더보기"
+        />
       )}
       <Copyright />
     </div>
