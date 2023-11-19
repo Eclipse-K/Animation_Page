@@ -19,6 +19,11 @@ function DropdownMenu({ closeDropdown }) {
           </Link>
         </DropdownButton>
         <p>
+          <DropStyledLink to="/SearchBar" onClick={dropButtonClick}>
+            통합검색
+          </DropStyledLink>
+        </p>
+        <p>
           <DropStyledLink to="/" onClick={dropButtonClick}>
             Home
           </DropStyledLink>
@@ -41,11 +46,6 @@ function DropdownMenu({ closeDropdown }) {
         <p>
           <DropStyledLink to="/Since2000" onClick={dropButtonClick}>
             Since 2000
-          </DropStyledLink>
-        </p>
-        <p>
-          <DropStyledLink to="/SearchBar" onClick={dropButtonClick}>
-            Search
           </DropStyledLink>
         </p>
       </DropdownBox>

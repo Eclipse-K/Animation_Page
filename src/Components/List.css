@@ -1,9 +1,11 @@
 .list-container {
+  display: flex;
   position: relative;
   padding-bottom: 30px;
-  background-color: white;
-}
 
+  height: 100%;
+}
+/*
 .list-container::after {
   content: "";
   position: absolute;
@@ -13,7 +15,7 @@
   height: 10px;
   background-color: #eee;
   z-index: 2;
-}
+}*/
 
 .info_container {
   padding: 0;

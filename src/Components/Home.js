@@ -2,7 +2,7 @@ import NavDrop from "./NavDrop";
 import Copyright from "./Copyright";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Logo from "../image/YeonU-Logo.png";
+import "./Home.css";
 
 const Title = styled(Link)`
   color: black;
@@ -12,19 +12,13 @@ const Title = styled(Link)`
   transition: transform 0.3s;
   text-decoration: none;
   position: absolute;
-  padding: 1rem;
-  right: 0;
-  top: 0;
+
+  right: 40px;
+  top: 10px;
 
   :hover {
     color: black;
     transform: scale(1.2);
-  }
-
-  .TitleLogo {
-    width: 50px;
-    height: 50px;
-    margin-right: 5px;
   }
 
   @media all and (max-width: 414px) {
@@ -35,12 +29,9 @@ const Title = styled(Link)`
 
 function Home() {
   return (
-    <div>
+    <div className="Home-container">
       <NavDrop />
-      <Title to="/">
-        <img className="TitleLogo" src={Logo} alt={Logo} />
-        Animation
-      </Title>
+      <Title to="/">Animation</Title>
       <Copyright />
     </div>
   );

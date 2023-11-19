@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-  background-color: white;
   font-family: "Bebas Neue", cursive;
 }
 
-.App-container {
-  height: 800px;
+.dark-mode {
+  background-color: rgb(50, 46, 46);
+  color: #68d5c1;
+}
+
+.light-mode {
+  background-color: rgba(232, 221, 203, 0.614);
+  color: #10100f;
 }
