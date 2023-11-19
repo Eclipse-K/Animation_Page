@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Title = styled(Link)`
-  color: black;
+  color: white;
   margin: 0;
   font-family: "Black Ops One", cursive;
   font-size: 40px;

@@ -6,11 +6,11 @@ import Since1990 from "./Since/Since1990";
 import Since2000 from "./Since/Since2000";
 import Home from "./Home";
 import SearchBar from "./SearchBar";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [modeChange, setModeChange] = useState(false);
+  //시스템 설정에 따라 테마 색상이 변함.
 
   useEffect(() => {
     const prefersModeChange = window.matchMedia(
