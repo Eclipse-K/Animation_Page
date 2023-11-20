@@ -15,23 +15,21 @@ function NavDrop() {
   };
 
   return (
-    <div>
-      <nav className="navbar-drop">
-        <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
-          {isCollapsed ? (
-            <button className="dropdown-button rotated" onClick={closeDropdown}>
-              <AiFillAppstore />
-            </button>
-          ) : (
-            <button className="dropdown-button" onClick={toggleCollapse}>
-              <AiFillAppstore />
-            </button>
-          )}
-        </div>
+    <nav className="navbar-drop">
+      <div className={`navbar-dropdown ${isCollapsed ? "open" : ""}`}>
+        {isCollapsed ? (
+          <button className="dropdown-button rotated" onClick={closeDropdown}>
+            <AiFillAppstore />
+          </button>
+        ) : (
+          <button className="dropdown-button" onClick={toggleCollapse}>
+            <AiFillAppstore />
+          </button>
+        )}
+      </div>
 
-        {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
-      </nav>
-    </div>
+      {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
+    </nav>
   );
 }
 
