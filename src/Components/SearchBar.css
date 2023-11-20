@@ -3,7 +3,7 @@
 .SearchBar-container {
   border: 1px solid green;
   width: 100%;
-  height: 100%;
+  height: 800px;
 }
 
 .Searchbar {
@@ -11,14 +11,19 @@
   text-align: center;
   width: 100%;
   height: 100%;
-  z-index: 1; /* SearchBar의 쌓임 순서를 낮춥니다. */
+  z-index: 2; /* SearchBar의 쌓임 순서를 낮춥니다. */
+}
+
+.Searchbar-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
 }
 
 .Search-container {
-  position: absolute;
   border-bottom: 2px solid black;
-  top: 10px;
-  right: 10px;
   width: 100%;
   height: 80px;
 }
@@ -29,53 +34,28 @@
 
 .Search-input-container {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.Suggestion_title {
   position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  padding: 8px;
-  border: 2px solid black;
-  max-height: 200px;
-  overflow-y: auto;
-  list-style-type: none;
-  z-index: 1;
-}
-
-.Suggestion_title li {
-  text-align: left;
-  padding: 4px;
-  cursor: pointer;
-}
-
-.Suggestion_title li:hover {
-  background-color: #f0f0f0;
-}
-
-.Searchbar-form {
-  display: flex;
+  right: 0;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 70%;
+  background-color: white;
 }
 
-.Searchbar-form input {
+.Search-input-container input {
   border-style: none;
-  width: 70%;
+  width: 90%;
   height: 50px;
   text-align: left;
   font-size: 20px;
-  border-bottom: 1px solid gray;
+  padding: 0;
 }
 
-input:focus {
+.Search-input-container input:focus {
   outline: none;
 }
 
-input::placeholder {
+.Search-input-container input::placeholder {
   color: gray;
 }
 
@@ -83,6 +63,7 @@ input::placeholder {
 .Search-SubmitButton {
   display: flex;
   border-style: none;
+  background-color: white;
   color: black;
   cursor: pointer;
 }
@@ -104,6 +85,32 @@ input::placeholder {
   justify-content: center;
   width: 30px;
   height: 30px;
+}
+
+.Suggestion_title {
+  position: relative;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  padding: 8px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.Suggestion_title li {
+  text-align: left;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.Suggestion_title li:hover {
+  background-color: #f0f0f0;
 }
 
 .Searchcard {
@@ -166,7 +173,7 @@ input::placeholder {
     width: 250px;
   }
 
-  .Searchbar-form input {
+  .Search-input-container input {
     text-indent: 5px;
   }
 
