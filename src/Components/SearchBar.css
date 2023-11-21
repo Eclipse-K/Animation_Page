@@ -113,14 +113,18 @@
   background-color: #f0f0f0;
 }
 
+.Searchcard-container {
+  display: flex;
+  justify-content: center;
+}
+
 .Searchcard {
-  display: block;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: 1px solid black;
   margin: 0;
   padding: 15px;
-  top: 100%;
-  left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
   width: 550px;
   height: 450px;
@@ -135,28 +139,24 @@
 
 @keyframes zoom-in {
   from {
-    transform: translate(-50%, -50%) scale(0.2);
+    transform: scale(0.2);
     opacity: 0;
   }
   to {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
     opacity: 1;
   }
 }
 
 .Searchcard h4 {
   background-color: rgba(255, 255, 255, 0.5);
-  margin-top: 20%;
-  margin-left: 10%;
-  transform: translate(-10%, -50%);
+  margin-bottom: 10%;
   font-family: "Bagel Fat One", cursive;
   font-size: 2rem;
 }
 
 .Searchcard h5 {
   background-color: rgba(255, 255, 255, 0.5);
-  margin-left: 10%;
-  transform: translate(-10%, -50%);
 }
 
 .Searchcard p {
@@ -168,9 +168,9 @@
   font-size: 1.2rem;
 }
 
-@media all and (max-width: 414px) {
-  .Search-container {
-    width: 250px;
+@media all and (max-width: 430px) {
+  .SearchBar-container {
+    height: 1000px;
   }
 
   .Search-input-container input {
@@ -183,23 +183,16 @@
 
   .Searchcard {
     width: 75%;
-    background-image: none;
     height: 350px;
-    top: 80%;
     box-shadow: 5px 3px 3px gray;
   }
 
   .Searchcard h4 {
     font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 15%;
-    padding-top: 10px;
   }
 
   .Searchcard h5 {
     font-size: 13px;
-    margin-bottom: 0;
   }
 
   .Searchcard p {

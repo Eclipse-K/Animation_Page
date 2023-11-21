@@ -135,7 +135,7 @@ function SearchBar() {
         {searched && filteredData.length === 0 && suggestions.length === 0 ? (
           <div>검색 결과가 없습니다.</div>
         ) : filteredData.length > 0 ? (
-          <div>
+          <div className="Searchcard-container">
             {filteredData.map((item) => (
               <div className="Searchcard" key={item.id}>
                 <h4>{item.title}</h4>
