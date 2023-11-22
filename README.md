@@ -1,7 +1,7 @@
 # Animation page
 
 <center>
-<img  src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Animation Page&fontSize=90" width="80%"/>
+<img  src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Animation_Page&fontSize=90" width="80%"/>
 </center>
 
 - 고전만화부터 현대의 만화까지를 손쉽게 찾을 수 있었으면 좋겠다는 목적으로 만든 사이트. [Animation_Page](https://k-animation.netlify.app).
