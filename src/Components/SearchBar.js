@@ -89,64 +89,65 @@ function SearchBar() {
   };
 
   return (
-    <div className="SearchBar-container">
+    <div>
       <NavDrop />
-
-      <div className="Searchbar">
-        <form className="Searchbar-form" onSubmit={handleFormSubmit}>
-          <div className="Search-container">
-            <div className="Search-input-container">
-              <input
-                type="text"
-                value={searchTerm}
-                onChange={handleSearchChange}
-                onKeyPress={handleKeyPress}
-                placeholder="검색"
-                inputMode="text"
-              />
-              {searchTerm ? (
-                <button className="Search-ResetButton" onClick={handleReset}>
-                  <i aria-hidden="true">
-                    <FiRotateCcw />
-                  </i>
+      <div className="SearchBar-container">
+        <div className="Searchbar">
+          <form className="Searchbar-form" onSubmit={handleFormSubmit}>
+            <div className="Search-container">
+              <div className="Search-input-container">
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                  onKeyPress={handleKeyPress}
+                  placeholder="검색"
+                  inputMode="text"
+                />
+                {searchTerm ? (
+                  <button className="Search-ResetButton" onClick={handleReset}>
+                    <i aria-hidden="true">
+                      <FiRotateCcw />
+                    </i>
+                  </button>
+                ) : (
+                  <span style={{ width: "28px" }}></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
+                )}
+                <button className="Search-SubmitButton" type="submit">
+                  <FiSearch />
                 </button>
-              ) : (
-                <span style={{ width: "28px" }}></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
-              )}
-              <button className="Search-SubmitButton" type="submit">
-                <FiSearch />
-              </button>
-            </div>
-            {suggestions.length > 0 && (
-              <ul className="Suggestion_title" ref={suggestionRef}>
-                {suggestions.map((suggestion) => (
-                  <li
-                    key={suggestion.id}
-                    onClick={() => handleSuggestionClick(suggestion)}
-                  >
-                    {suggestion.title}
-                  </li>
-                ))}
-              </ul> //자동완성 기능
-            )}
-          </div>
-        </form>
-
-        {searched && filteredData.length === 0 && suggestions.length === 0 ? (
-          <div>검색 결과가 없습니다.</div>
-        ) : filteredData.length > 0 ? (
-          <div className="Searchcard-container">
-            {filteredData.map((item) => (
-              <div className="Searchcard" key={item.id}>
-                <h4>{item.title}</h4>
-                <h5>{item.year}</h5>
-                <p>{item.content}</p>
               </div>
-            ))}
-          </div>
-        ) : searched ? (
-          <div>검색 결과가 없습니다.</div>
-        ) : null}
+              {suggestions.length > 0 && (
+                <ul className="Suggestion_title" ref={suggestionRef}>
+                  {suggestions.map((suggestion) => (
+                    <li
+                      key={suggestion.id}
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      {suggestion.title}
+                    </li>
+                  ))}
+                </ul> //자동완성 기능
+              )}
+            </div>
+          </form>
+
+          {searched && filteredData.length === 0 && suggestions.length === 0 ? (
+            <div>검색 결과가 없습니다.</div>
+          ) : filteredData.length > 0 ? (
+            <div className="Searchcard-container">
+              {filteredData.map((item) => (
+                <div className="Searchcard" key={item.id}>
+                  <h4>{item.title}</h4>
+                  <h5>{item.year}</h5>
+                  <p>{item.content}</p>
+                </div>
+              ))}
+            </div>
+          ) : searched ? (
+            <div>검색 결과가 없습니다.</div>
+          ) : null}
+        </div>
       </div>
     </div>
 

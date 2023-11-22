@@ -43,22 +43,27 @@ function Since1980() {
   };
 
   return (
-    <div className="List-Box">
+    <div className="Since-Container">
       <NavDrop />
-      <div className="List-Container">
-        <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
-        {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
-
-        <AniList item={data} data={data} />
-        <ScrollTopButton />
-
-        {showLoadMore && (
-          <BsCaretDownSquareFill
-            className="More-Arrow"
-            onClick={handleShowMore}
-            alt="더보기"
+      <div className="List-Box">
+        <div className="List-Container">
+          <BsFillPlusSquareFill
+            className="plusbutton"
+            onClick={handleAddClick}
           />
-        )}
+          {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
+
+          <AniList item={data} data={data} />
+          <ScrollTopButton />
+
+          {showLoadMore && (
+            <BsCaretDownSquareFill
+              className="More-Arrow"
+              onClick={handleShowMore}
+              alt="더보기"
+            />
+          )}
+        </div>
       </div>
 
       <Copyright />

@@ -21,9 +21,8 @@ const Title = styled(Link)`
     transform: scale(1.2);
   }
 
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 432px) {
     font-size: 35px;
-    border: 1px solid black;
   }
 `;
 
