@@ -43,22 +43,24 @@ function Since1970() {
   };
 
   return (
-    <div className="list-container">
+    <div className="List-Box">
       <NavDrop />
+      <div className="List-Container">
+        <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
+        {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
 
-      <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
-      {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
+        <AniList item={data} data={data} />
+        <ScrollTopButton />
 
-      <AniList item={data} data={data} />
-      <ScrollTopButton />
+        {showLoadMore && (
+          <BsCaretDownSquareFill
+            className="More-Arrow"
+            onClick={handleShowMore}
+            alt="더보기"
+          />
+        )}
+      </div>
 
-      {showLoadMore && (
-        <BsCaretDownSquareFill
-          className="More-Arrow"
-          onClick={handleShowMore}
-          alt="더보기"
-        />
-      )}
       <Copyright />
     </div>
   );

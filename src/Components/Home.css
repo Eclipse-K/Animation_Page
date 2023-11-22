@@ -1,3 +1,9 @@
 .Home-container {
-  height: 850px;
+  height: 855px;
+}
+
+@media all and (max-width: 432px) {
+  .Home-container {
+    height: 950px;
+  }
 }

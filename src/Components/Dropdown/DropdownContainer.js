@@ -14,7 +14,7 @@ const DropdownContainer = styled.div`
   justify-content: center;
   z-index: 3;
 
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 432px) {
     width: 100px;
   }
 `;

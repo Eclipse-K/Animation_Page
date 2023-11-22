@@ -37,9 +37,10 @@
   height: 50px;
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 432px) {
   .navbar-drop {
     width: 25%;
+    left: 10px;
   }
 
   .dropdown-button svg {

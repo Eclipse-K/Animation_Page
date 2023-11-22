@@ -96,7 +96,7 @@
   font-family: "Cute Font", cursive;
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 432px) {
   .card_content {
     overflow: visible;
   }

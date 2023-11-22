@@ -9,7 +9,7 @@ const DropdownBox = styled.div`
   height: 100%;
   background-color: #d0f276;
 
-  @media all and (max-width: 414px) {
+  @media all and (max-width: 432px) {
     width: 100px;
 
     p {

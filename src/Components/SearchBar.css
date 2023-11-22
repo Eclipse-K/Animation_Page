@@ -3,7 +3,7 @@
 .SearchBar-container {
   border: 1px solid green;
   width: 100%;
-  height: 800px;
+  height: 855px;
 }
 
 .Searchbar {
@@ -168,7 +168,7 @@
   font-size: 1.2rem;
 }
 
-@media all and (max-width: 430px) {
+@media all and (max-width: 432px) {
   .SearchBar-container {
     height: 1000px;
   }
