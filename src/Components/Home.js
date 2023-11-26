@@ -3,6 +3,7 @@ import Copyright from "./Copyright";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import Minesweeper from "./Minesweeper";
 
 const Title = styled(Link)`
   color: white;
@@ -31,6 +32,7 @@ function Home() {
     <div className="Home-container">
       <NavDrop />
       <Title to="/">Animation</Title>
+      <Minesweeper />
       <Copyright />
     </div>
   );
