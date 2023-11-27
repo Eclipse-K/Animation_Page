@@ -1,9 +1,10 @@
 .Home-container {
   height: 855px;
+  position: relative;
 }
 
 @media all and (max-width: 432px) {
   .Home-container {
-    height: 950px;
+    height: 930px;
   }
 }

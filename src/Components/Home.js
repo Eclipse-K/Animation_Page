@@ -33,6 +33,7 @@ function Home() {
       <NavDrop />
       <Title to="/">Animation</Title>
       <Minesweeper />
+
       <Copyright />
     </div>
   );
