@@ -13,7 +13,6 @@ const Title = styled(Link)`
   transition: transform 0.3s;
   text-decoration: none;
   position: absolute;
-  z-index: 2;
   right: 40px;
   top: 10px;
 

@@ -18,6 +18,13 @@ const DropdownButton = styled.button`
   svg:hover {
     color: rgba(0, 0, 0, 0.5);
   }
+
+  @media all and (max-width: 432px) {
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
 `;
 
 export default DropdownButton;
