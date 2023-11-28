@@ -13,6 +13,12 @@ const DropStyledLink = styled(Link)`
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
+  @media all and (max-width: 432px) {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 5rem;
+  }
 `;
 
 export default DropStyledLink;
