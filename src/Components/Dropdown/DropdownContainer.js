@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 const DropdownContainer = styled.div`
   position: fixed;
@@ -8,11 +19,9 @@ const DropdownContainer = styled.div`
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #d0f276;
   z-index: 3;
+  animation: ${fadeIn} 0.7s ease;
 
   @media all and (max-width: 432px) {
     width: 100%;

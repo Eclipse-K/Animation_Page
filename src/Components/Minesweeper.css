@@ -9,6 +9,18 @@
   left: 25%;
   right: 25%;
   background-color: white;
+  border: 3px solid black;
+  animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
 }
 
 .minesweeper {

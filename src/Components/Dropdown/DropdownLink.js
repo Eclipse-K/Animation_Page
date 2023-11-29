@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const DropdownButton = styled.button`
+const DropdownLink = styled(Link)`
   display: block;
   margin-top: 10px;
   border: none;
@@ -27,4 +28,4 @@ const DropdownButton = styled.button`
   }
 `;
 
-export default DropdownButton;
+export default DropdownLink;
