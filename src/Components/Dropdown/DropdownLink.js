@@ -5,13 +5,16 @@ const DropdownLink = styled(Link)`
   display: block;
   margin-top: 10px;
   border: none;
-  background-color: #d0f276;
+  background-color: white;
 
   svg {
-    width: 30px;
-    height: 30px;
-    background-color: #d0f276;
-    color: white;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: white;
+    border: 10px double black;
+    color: black;
     text-decoration: none;
     transition: background-color 0.3s;
   }
@@ -24,6 +27,7 @@ const DropdownLink = styled(Link)`
     svg {
       width: 60px;
       height: 60px;
+      margin-left: 5px;
     }
   }
 `;

@@ -15,11 +15,12 @@ const DropdownContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 300px;
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: #d0f276;
+  background-color: white;
+  border: 10px double black;
   z-index: 3;
   animation: ${fadeIn} 0.7s ease;
 
