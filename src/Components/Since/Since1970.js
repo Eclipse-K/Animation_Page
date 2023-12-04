@@ -47,14 +47,15 @@ function Since1970() {
       <NavDrop />
       <div className="List-Box">
         <div className="List-Container">
+          <AniList item={data} data={data} />
+
+          <ScrollTopButton />
+
           <BsFillPlusSquareFill
             className="plusbutton"
             onClick={handleAddClick}
           />
           {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
-
-          <AniList item={data} data={data} />
-          <ScrollTopButton />
 
           {showLoadMore && (
             <BsCaretDownSquareFill

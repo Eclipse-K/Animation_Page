@@ -1,4 +1,5 @@
 import AniItem from "./AniItem";
+import "./AniList.css";
 
 const AniList = ({ data }) => {
   return (

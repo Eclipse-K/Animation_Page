@@ -7,7 +7,7 @@ function AniItem({ item }) {
 
   const zoomClick = () => {
     setIsClick(!isClick);
-  }; //클릭하면 확대되는 기능
+  };
 
   return (
     <li

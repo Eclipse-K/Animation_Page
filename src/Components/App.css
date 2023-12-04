@@ -9,7 +9,19 @@
   color: #a6adab;
 }
 
+.dark-mode a:link,
+.dark-mode a:visited,
+.dark-mode svg {
+  color: #a6adab;
+}
+
 .light-mode {
-  background-color: #f4e5dd;
+  background-color: white;
+  color: #10100f;
+}
+
+.light-mode a:link,
+.light-mode a:visited,
+.light-mode svg {
   color: #10100f;
 }
