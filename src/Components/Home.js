@@ -1,6 +1,5 @@
 import NavDrop from "./NavDrop";
 import Copyright from "./Copyright";
-import "./Home.css";
 import Minesweeper from "./Minesweeper";
 import HomeContainer from "./Temporarily/HomeContainer";
 import Title from "./Temporarily/Title";
