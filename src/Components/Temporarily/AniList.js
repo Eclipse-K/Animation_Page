@@ -1,7 +1,7 @@
 import AniItem from "./AniItem";
 import "./AniList.css";
 
-const AniList = ({ data }) => {
+function AniList({ data }) {
   return (
     <ul className="info_container">
       {data.map((item) => (
@@ -9,6 +9,6 @@ const AniList = ({ data }) => {
       ))}
     </ul>
   );
-};
+}
 
 export default AniList;
