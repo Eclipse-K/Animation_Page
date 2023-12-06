@@ -57,7 +57,7 @@ function Since1970() {
 
       <div className="List-Box">
         <div className="List-Container">
-          <AniList item={data} data={data} />
+          <AniList item={data} data={data} showOnlyOneItem={showOnlyOneItem} />
 
           <ScrollTopButton />
 
@@ -76,9 +76,14 @@ function Since1970() {
           )}
 
           {showOnlyOneItem ? (
-            <BsCardList onClick={handleToggleVisibility} alt="전체보기" />
+            <BsCardList
+              className="Full-view"
+              onClick={handleToggleVisibility}
+              alt="전체보기"
+            />
           ) : (
             <BsCollectionPlayFill
+              className="View-only-one"
               onClick={handleToggleVisibility}
               alt="1개만 보기"
             />
