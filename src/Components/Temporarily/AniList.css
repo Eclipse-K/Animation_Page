@@ -5,3 +5,10 @@
   width: 90%;
   padding: 0;
 }
+
+.info_container_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}

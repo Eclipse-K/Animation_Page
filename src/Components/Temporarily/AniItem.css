@@ -23,6 +23,15 @@
 .info_card_one {
   width: 90%;
   height: 200px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  border-top-style: solid;
+  overflow-y: auto;
+}
+
+.info_card_one:first-child {
+  margin-top: 0;
 }
 
 .card_content {
