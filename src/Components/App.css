@@ -6,6 +6,8 @@
 
 .dark-mode {
   background-color: #1c3a34;
+  height: 100%;
+  overflow: auto;
   color: #a6adab;
 }
 
@@ -17,6 +19,7 @@
 
 .light-mode {
   background-color: white;
+  height: 100%;
   color: #10100f;
 }
 
@@ -24,4 +27,14 @@
 .light-mode a:visited,
 .light-mode svg {
   color: #10100f;
+}
+
+.App-container {
+  height: 855px;
+}
+
+@media all and (max-width: 432px) {
+  .App-container {
+    height: 950px;
+  }
 }
