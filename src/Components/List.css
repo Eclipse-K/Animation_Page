@@ -87,6 +87,10 @@
 }
 
 @media all and (max-width: 432px) {
+  .List-Container {
+    width: 100%;
+  }
+
   .plusbutton:hover {
     background-color: none;
   }
