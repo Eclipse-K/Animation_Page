@@ -10,7 +10,6 @@ import {
 } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
 import NavDrop from "../NavDrop";
-import Copyright from "../Copyright";
 import "../List.css";
 
 function Since1970() {
@@ -90,8 +89,6 @@ function Since1970() {
           )}
         </div>
       </div>
-
-      <Copyright />
     </div>
   );
 }

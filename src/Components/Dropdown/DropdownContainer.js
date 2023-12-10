@@ -21,7 +21,7 @@ const DropdownContainer = styled.div`
   margin: 0;
   background-color: white;
   border: 10px double black;
-  z-index: 3;
+  z-index: 99;
   animation: ${fadeIn} 0.7s ease;
 
   @media all and (max-width: 432px) {
