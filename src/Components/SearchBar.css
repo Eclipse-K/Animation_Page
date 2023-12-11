@@ -16,13 +16,13 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100px;
+  height: 90px;
 }
 
 .Search-container {
   border-bottom: 2px solid black;
   width: 100%;
-  height: 80px;
+  height: 70px;
 }
 
 .Search-container form:focus-within {
@@ -123,14 +123,14 @@
   margin: 0;
   padding: 15px;
   transform: translate(-50%, -50%) scale(0.8);
-  width: 90%;
+  width: 100%;
   height: 650px;
   border-radius: 10px;
   background-image: url("../image/background_image_2.png");
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  overflow: auto;
+  overflow-y: auto;
   animation: zoom-in 0.3s forwards;
 }
 
@@ -146,20 +146,17 @@
 }
 
 .Searchcard h4 {
-  background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 5%;
   font-family: "Bagel Fat One", cursive;
   font-size: 3rem;
 }
 
 .Searchcard h5 {
-  background-color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   margin-bottom: 3%;
 }
 
 .Searchcard p {
-  background-color: rgba(255, 255, 255, 0.5);
   text-align: left;
   padding-left: 25px;
   padding-right: 25px;
@@ -173,7 +170,12 @@
     height: 1000px;
   }
 
+  .Search-input-container {
+    top: 4%;
+  }
+
   .Search-input-container input {
+    font-size: 15px;
     text-indent: 5px;
   }
 
