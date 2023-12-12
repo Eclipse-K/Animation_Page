@@ -6,12 +6,20 @@ function AniList({ data, showOnlyOneItem }) {
     ? "info_container_one"
     : "info_container";
 
+  const sliderClass = showOnlyOneItem ? "" : "slider";
+
   return (
-    <ul className={infoContainer}>
-      {data.map((item) => (
-        <AniItem key={item.id} item={item} showOnlyOneItem={showOnlyOneItem} />
-      ))}
-    </ul>
+    <div className={`slider-container ${sliderClass}`}>
+      <ul className={infoContainer}>
+        {data.map((item) => (
+          <AniItem
+            key={item.id}
+            item={item}
+            showOnlyOneItem={showOnlyOneItem}
+          />
+        ))}
+      </ul>
+    </div>
   );
 }
 
