@@ -1,25 +1,46 @@
+import Slider from "react-slick";
 import AniItem from "./AniItem";
 import "./AniList.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function AniList({ data, showOnlyOneItem }) {
   const infoContainer = showOnlyOneItem
     ? "info_container_one"
     : "info_container";
 
-  const sliderClass = showOnlyOneItem ? "" : "slider";
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
-    <div className={`slider-container ${sliderClass}`}>
-      <ul className={infoContainer}>
-        {data.map((item) => (
-          <AniItem
-            key={item.id}
-            item={item}
-            showOnlyOneItem={showOnlyOneItem}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul className={infoContainer}>
+      {showOnlyOneItem ? (
+        <div>
+          {data.map((item) => (
+            <AniItem
+              key={item.id}
+              item={item}
+              showOnlyOneItem={showOnlyOneItem}
+            />
+          ))}
+        </div>
+      ) : (
+        <Slider {...settings}>
+          {data.map((item) => (
+            <AniItem
+              key={item.id}
+              item={item}
+              showOnlyOneItem={showOnlyOneItem}
+            />
+          ))}
+        </Slider>
+      )}
+    </ul>
   );
 }
 

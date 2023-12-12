@@ -14,10 +14,7 @@
   padding: 0;
 }
 
-.slider {
-  display: flex;
-  justify-content: center;
-  transition: transform 0.5s ease;
+.slick-slider {
   width: 100%;
 }
 
