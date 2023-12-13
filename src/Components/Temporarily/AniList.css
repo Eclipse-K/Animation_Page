@@ -1,7 +1,6 @@
 .info_container {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 0;
 }
@@ -18,8 +17,16 @@
   width: 100%;
 }
 
+.info_container .slick-dots {
+  bottom: -35px;
+}
+
 @media all and (max-width: 432px) {
   .info_container {
     width: 80%;
+  }
+
+  .info_container .slick-dots {
+    bottom: -45px;
   }
 }
