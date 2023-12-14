@@ -20,7 +20,7 @@ function AniList({ data, showOnlyOneItem }) {
   return (
     <ul className={infoContainer}>
       {showOnlyOneItem ? (
-        <div>
+        <div className="Card-Box">
           {data.map((item) => (
             <AniItem
               key={item.id}

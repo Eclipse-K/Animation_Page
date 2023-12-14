@@ -109,6 +109,7 @@
   padding-right: 5px;
   background-color: #f4faf6;
   font-family: "Cute Font", cursive;
+  overflow-y: auto;
 }
 
 @media all and (max-width: 432px) {

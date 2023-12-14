@@ -21,6 +21,12 @@
   bottom: -35px;
 }
 
+.Card-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media all and (max-width: 432px) {
   .info_container {
     width: 80%;
