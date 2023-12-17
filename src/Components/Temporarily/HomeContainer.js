@@ -5,7 +5,11 @@ const HomeContainer = styled.div`
   height: 855px;
   align-items: flex-end;
 
-  @media all and (max-width: 432px) {
+  @media all and (width: 280px) {
+    height: 653px;
+  }
+
+  @media all and (min-width: 281px) and (max-width: 432px) {
     height: 930px;
   }
 `;

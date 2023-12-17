@@ -15,3 +15,9 @@
   text-align: center;
   margin: auto;
 }
+
+@media all and (width: 280px) {
+  .under_sentence p {
+    font-size: 10px;
+  }
+}

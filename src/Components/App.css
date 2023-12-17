@@ -33,7 +33,13 @@
   height: 855px;
 }
 
-@media all and (max-width: 432px) {
+@media all and (width: 280px) {
+  .App-container {
+    height: 650px;
+  }
+}
+
+@media all and (min-width: 281px) and (max-width: 432px) {
   .App-container {
     height: 950px;
   }
