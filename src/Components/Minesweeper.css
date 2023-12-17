@@ -83,7 +83,26 @@ h1 {
   margin-bottom: 10px;
 }
 
-@media all and (max-width: 432px) {
+@media all and (width: 280px) {
+  .Mine-container {
+    width: 80%;
+    height: 40%;
+    left: 10%;
+    right: 10%;
+    top: 30%;
+  }
+
+  .row {
+    flex-wrap: nowrap;
+  }
+
+  .cell {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media all and (min-width: 281px) and (max-width: 432px) {
   .Mine-container {
     width: 80%;
     left: 10%;

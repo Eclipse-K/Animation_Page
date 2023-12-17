@@ -15,7 +15,11 @@ const Title = styled(Link)`
     transform: scale(1.2);
   }
 
-  @media all and (max-width: 432px) {
+  @media all and (width: 280px) {
+    font-size: 25px;
+  }
+
+  @media all and (min-width: 281px) and (max-width: 432px) {
     font-size: 35px;
   }
 `;
