@@ -10,7 +10,7 @@ function AniList({ data, showOnlyOneItem }) {
     : "info_container";
 
   const settings = {
-    dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

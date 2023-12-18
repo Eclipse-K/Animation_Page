@@ -1,7 +1,7 @@
 .info_container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   padding: 0;
 }
 
@@ -17,8 +17,9 @@
   width: 100%;
 }
 
-.info_container .slick-dots {
-  bottom: -35px;
+.info_container .slick-prev:before,
+.info_container .slick-next:before {
+  color: black;
 }
 
 .Card-Box {
@@ -30,9 +31,5 @@
 @media all and (max-width: 432px) {
   .info_container {
     width: 80%;
-  }
-
-  .info_container .slick-dots {
-    bottom: -300px;
   }
 }
