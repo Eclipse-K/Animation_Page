@@ -28,7 +28,13 @@
   align-items: center;
 }
 
-@media all and (max-width: 432px) {
+@media all and (width: 280px) {
+  .info_container {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 281px) and (max-width: 432px) {
   .info_container {
     width: 80%;
   }

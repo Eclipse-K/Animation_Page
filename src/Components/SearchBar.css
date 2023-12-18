@@ -165,7 +165,54 @@
   text-indent: 20px;
 }
 
-@media all and (max-width: 432px) {
+@media all and (width: 280px) {
+  .SearchBar-container {
+    height: 1000px;
+  }
+
+  .Search-input-container {
+    width: 80%;
+  }
+
+  .Search-input-container input {
+    font-size: 15px;
+    text-indent: 5px;
+  }
+
+  .Search-ResetButton {
+    padding: 0;
+  }
+
+  .Search-ResetButton svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Search-SubmitButton svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .Searchcard {
+    width: 75%;
+    height: 450px;
+    box-shadow: 5px 3px 3px gray;
+  }
+
+  .Searchcard h4 {
+    font-size: 20px;
+  }
+
+  .Searchcard h5 {
+    font-size: 13px;
+  }
+
+  .Searchcard p {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 281px) and (max-width: 432px) {
   .SearchBar-container {
     height: 1000px;
   }
