@@ -121,8 +121,14 @@
   }
 
   .card_content {
+    height: 250px;
     overflow: visible;
   }
+
+  .card-content-second {
+    height: 250px;
+  }
+
   .info_card.expansion {
     transform: scale(1);
     margin-left: 5%;
@@ -139,5 +145,6 @@
 
   .card_content p {
     font-family: "Dongle", sans-serif;
+    height: 170px;
   }
 }
