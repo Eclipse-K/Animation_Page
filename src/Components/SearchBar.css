@@ -217,10 +217,6 @@
     height: 1000px;
   }
 
-  .Search-input-container {
-    top: 4%;
-  }
-
   .Search-input-container input {
     font-size: 15px;
     text-indent: 5px;
