@@ -30,7 +30,7 @@
 }
 
 .App-container {
-  height: 855px;
+  height: 70rem;
 }
 
 @media all and (width: 280px) {
@@ -42,5 +42,22 @@
 @media all and (min-width: 281px) and (max-width: 432px) {
   .App-container {
     height: 950px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .App-container {
+    height: 1024px;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1279px) {
+  .App-container {
+    height: 90rem;
+  }
+}
+
+@media all and (min-width: 1279px) and (max-width: 1500px) {
+  .App-container {
+    height: 100rem;
   }
 }
