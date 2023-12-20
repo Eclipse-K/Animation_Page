@@ -5,6 +5,7 @@ import Since1980 from "./Since/Since1980";
 import Since1990 from "./Since/Since1990";
 import Since2000 from "./Since/Since2000";
 import Home from "./Home";
+import Copyright from "./Copyright";
 import SearchBar from "./SearchBar";
 import { useState, useEffect } from "react";
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/SearchBar" element={<SearchBar />} />
         </Routes>
       </div>
+      <Copyright />
     </div>
   );
 }
