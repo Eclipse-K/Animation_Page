@@ -4,31 +4,6 @@
   font-family: "Bebas Neue", cursive;
 }
 
-.dark-mode {
-  background-color: #1c3a34;
-  height: 100%;
-
-  color: #a6adab;
-}
-
-.dark-mode a:link,
-.dark-mode a:visited,
-.dark-mode svg {
-  color: #a6adab;
-}
-
-.light-mode {
-  background-color: white;
-  height: 100%;
-  color: #10100f;
-}
-
-.light-mode a:link,
-.light-mode a:visited,
-.light-mode svg {
-  color: #10100f;
-}
-
 .App-container {
   height: 70rem;
 }
