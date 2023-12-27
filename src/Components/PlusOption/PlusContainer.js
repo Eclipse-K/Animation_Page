@@ -2,8 +2,9 @@ import styled from "styled-components";
 import PlusInput from "./PlusInput";
 
 const PlusContainer = styled.div`
-  border: 1px solid black;
+  border: 5px double black;
   border-radius: 20px;
+  background-color: white;
   position: fixed;
   top: 50%;
   left: 50%;
