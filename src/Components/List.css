@@ -42,6 +42,7 @@
   top: 40px;
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 
 .View-only-one {
@@ -50,6 +51,7 @@
   top: 40px;
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 
 .More-Arrow {
