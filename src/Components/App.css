@@ -8,6 +8,26 @@
   height: 70rem;
 }
 
+.dark-mode {
+  background-color: #1c3a34;
+  color: #a6adab;
+}
+
+.dark-mode a:link,
+.dark-mode svg {
+  color: #a6adab;
+}
+
+.light-mode {
+  background-color: white;
+  color: #10100f;
+}
+
+.light-mode a:link,
+.light-mode svg {
+  color: #10100f;
+}
+
 @media all and (width: 280px) {
   .App-container {
     height: 650px;

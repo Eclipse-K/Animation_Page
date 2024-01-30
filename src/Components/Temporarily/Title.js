@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Title = styled(Link)`
+const Title = styled.div`
   margin: 0;
   font-family: "Black Ops One", cursive;
   font-size: 40px;
@@ -10,6 +9,7 @@ const Title = styled(Link)`
   position: absolute;
   right: 40px;
   top: 15px;
+  cursor: default;
 
   :hover {
     transform: scale(1.2);

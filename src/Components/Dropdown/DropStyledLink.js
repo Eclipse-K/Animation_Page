@@ -14,7 +14,8 @@ const DropStyledLink = styled(Link)`
   margin-right: 1px;
 
   &:hover {
-    background-color: #d0f276;
+    background-color: black;
+    color: white;
   }
 
   @media all and (max-width: 432px) {
