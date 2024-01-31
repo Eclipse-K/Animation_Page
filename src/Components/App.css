@@ -8,14 +8,14 @@
   height: 70rem;
 }
 
-.dark-mode {
-  background-color: #1c3a34;
-  color: #a6adab;
+/* .dark-mode {
+  background-color: #10100f;
+  color: white;
 }
 
 .dark-mode a:link,
 .dark-mode svg {
-  color: #a6adab;
+  color: white;
 }
 
 .light-mode {
@@ -26,7 +26,7 @@
 .light-mode a:link,
 .light-mode svg {
   color: #10100f;
-}
+} */
 
 @media all and (width: 280px) {
   .App-container {
@@ -36,7 +36,7 @@
 
 @media all and (min-width: 281px) and (max-width: 432px) {
   .App-container {
-    height: 950px;
+    height: 900px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) {

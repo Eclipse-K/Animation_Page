@@ -1,5 +1,6 @@
 .Since-Container {
   position: relative;
+  height: 1200px;
 }
 
 .List-Box {
@@ -88,9 +89,39 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media all and (max-width: 432px) {
+@media all and (width: 280px) {
+  .Since-Container {
+    height: 1200px;
+  }
+
+  .Full-view {
+    top: 25px;
+    right: 20px;
+  }
+
+  .View-only-one {
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media all and (min-width: 281px) and (max-width: 432px) {
+  .Since-Container {
+    height: 1000px;
+  }
+
   .List-Container {
-    width: 100%;
+    width: 90%;
+  }
+
+  .Full-view {
+    top: 30px;
+    right: 20px;
+  }
+
+  .View-only-one {
+    top: 30px;
+    right: 20px;
   }
 
   .plusbutton:hover {

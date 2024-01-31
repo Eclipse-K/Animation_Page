@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.minesweeper h1 {
+  color: black;
+}
+
 .row {
   display: flex;
 }

@@ -6,16 +6,11 @@
 }
 
 .info_container_one {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 200px;
   padding-left: 0;
   padding-bottom: 20px;
   margin: 0;
-  height: 900px;
-  overflow: auto;
+  overflow-y: auto;
+  height: 1000px;
 }
 
 .slick-slider {
@@ -31,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 @media all and (width: 280px) {
@@ -42,5 +38,11 @@
 @media all and (min-width: 281px) and (max-width: 432px) {
   .info_container {
     width: 80%;
+  }
+
+  .info_container_one {
+    padding: 0 20px;
+    margin: 0 10px;
+    height: 900px;
   }
 }

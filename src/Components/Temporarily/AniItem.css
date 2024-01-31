@@ -8,7 +8,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  background-color: #f3e2c3;
+
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3e2c3;
+  background-color: #c4eec2;
   pointer-events: none;
   width: 100%;
   height: 500px;
@@ -83,7 +83,7 @@
 .card-content-second {
   display: flex;
   flex-direction: column;
-  background-color: #f3e2c3;
+
   width: 100%;
   height: 500px;
 }
@@ -97,7 +97,7 @@
   margin-bottom: 10px;
   padding-top: 5px;
   padding-left: 10px;
-  background-color: #f3e2c3;
+
   font-family: "Gugi", serif;
   font-weight: 800;
 }
@@ -110,7 +110,7 @@
   font-size: 50px;
   margin-bottom: 10px;
   padding-left: 10px;
-  background-color: #f3e2c3;
+
   font-family: "Cute Font", cursive;
 }
 
@@ -124,7 +124,7 @@
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 5px;
-  background-color: #f3e2c3;
+
   font-family: "Cute Font", cursive;
 }
 
@@ -167,6 +167,16 @@
     height: 800px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .info_card_one {
+    width: 85%;
+    height: 300px;
+    padding: 20px 0;
+  }
+
+  .info_card_one .card_content {
+    height: 250px;
   }
 
   .card_content {
