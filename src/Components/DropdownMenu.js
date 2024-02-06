@@ -1,5 +1,10 @@
 import DropdownContainer from "./Dropdown/DropdownContainer.js";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiFillFacebook } from "react-icons/ai";
+import {
+  FaSquareInstagram,
+  FaXTwitter,
+  FaSquareThreads,
+} from "react-icons/fa6";
 import DropdownLink from "./Dropdown/DropdownLink.js";
 import DropStyledLink from "./Dropdown/DropStyledLink.js";
 
@@ -43,6 +48,10 @@ function DropdownMenu({ closeDropdown }) {
           Since 2000
         </DropStyledLink>
       </p>
+      <FaSquareInstagram />
+      <AiFillFacebook />
+      <FaXTwitter />
+      <FaSquareThreads />
     </DropdownContainer>
   );
 }
