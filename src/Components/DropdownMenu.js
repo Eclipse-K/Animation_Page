@@ -7,6 +7,29 @@ import {
 } from "react-icons/fa6";
 import DropdownLink from "./Dropdown/DropdownLink.js";
 import DropStyledLink from "./Dropdown/DropStyledLink.js";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+
+const SnsContainer = styled.div`
+  position: relative;
+  top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+const SnsLink = styled(Link)`
+  color: black;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+`;
 
 function DropdownMenu({ closeDropdown }) {
   const dropButtonClick = () => {
@@ -48,10 +71,20 @@ function DropdownMenu({ closeDropdown }) {
           Since 2000
         </DropStyledLink>
       </p>
-      <FaSquareInstagram />
-      <AiFillFacebook />
-      <FaXTwitter />
-      <FaSquareThreads />
+      <SnsContainer>
+        <SnsLink to="https://www.instagram.com/" target="_blank">
+          <FaSquareInstagram />
+        </SnsLink>
+        <SnsLink to="https://www.facebook.com/" target="_blank">
+          <AiFillFacebook />
+        </SnsLink>
+        <SnsLink to="https://twitter.com/" target="_blank">
+          <FaXTwitter />
+        </SnsLink>
+        <SnsLink to="https://www.threads.net/" target="_blank">
+          <FaSquareThreads />
+        </SnsLink>
+      </SnsContainer>
     </DropdownContainer>
   );
 }
