@@ -7,29 +7,8 @@ import {
 } from "react-icons/fa6";
 import DropdownLink from "./Dropdown/DropdownLink.js";
 import DropStyledLink from "./Dropdown/DropStyledLink.js";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-const SnsContainer = styled.div`
-  position: relative;
-  top: 5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-`;
-
-const SnsLink = styled(Link)`
-  color: black;
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-`;
+import SnsContainer from "./Dropdown/SnsContainer.js";
+import SnsLink from "./Dropdown/SnsLink.js";
 
 function DropdownMenu({ closeDropdown }) {
   const dropButtonClick = () => {
