@@ -3,7 +3,8 @@ import styled from "styled-components";
 const HomeContainer = styled.div`
   display: flex;
   height: 1500px;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 
   @media all and (width: 280px) {
     height: 653px;
