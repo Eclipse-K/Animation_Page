@@ -12,6 +12,9 @@ const DropStyledLink = styled(Link)`
   border: 3px solid black;
   margin-left: 1px;
   margin-right: 1px;
+  font-family: ${(props) => (props.isfirst ? "Dongle" : "Hi Melody")},
+    sans-serif;
+  font-size: 25px;
 
   &:hover {
     background-color: black;

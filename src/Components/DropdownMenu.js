@@ -21,7 +21,11 @@ function DropdownMenu({ closeDropdown }) {
         <AiOutlineClose />
       </DropdownLink>
       <p>
-        <DropStyledLink to="/SearchBar" onClick={dropButtonClick}>
+        <DropStyledLink
+          to="/SearchBar"
+          onClick={dropButtonClick}
+          isfirst="true"
+        >
           통합검색
         </DropStyledLink>
       </p>
