@@ -4,6 +4,7 @@ const ipadStyle = styled.div`
   position: relative;
   width: 500px;
   height: 600px;
+  top: -10%;
   background-color: #000;
   border-radius: 20px;
   overflow: hidden;
@@ -23,6 +24,7 @@ const ipadStyle = styled.div`
   @media all and (min-width: 281px) and (max-width: 432px) {
     width: 400px;
     height: 700px;
+    top: 0;
 
     &::before {
       background: linear-gradient(white, whitesmoke);

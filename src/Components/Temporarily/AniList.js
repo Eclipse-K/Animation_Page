@@ -4,7 +4,7 @@ import "./AniList.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function AniList({ data, showOnlyOneItem }) {
+function AniList({ data, showOnlyOneItem, scrollRef }) {
   const infoContainer = showOnlyOneItem
     ? "info_container_one"
     : "info_container";
@@ -18,7 +18,7 @@ function AniList({ data, showOnlyOneItem }) {
   };
 
   return (
-    <ul className={infoContainer}>
+    <ul className={infoContainer} ref={scrollRef}>
       {showOnlyOneItem ? (
         <div className="Card-Box">
           {data.map((item) => (
