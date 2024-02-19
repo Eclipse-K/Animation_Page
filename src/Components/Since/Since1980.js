@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import anijson from "../../api.json";
 import AniList from "../Temporarily/AniList";
-import ScrollTopButton from "../ScrollTopButton";
 import {
   BsFillPlusSquareFill,
   BsCaretDownSquareFill,
@@ -11,6 +10,7 @@ import {
 import PlusPopup from "../PlusPopup";
 import NavDrop from "../NavDrop";
 import "../List.css";
+import ScrollButton from "../ScrollButton/ScrollButton";
 
 function Since1980() {
   // eslint-disable-next-line
@@ -57,15 +57,22 @@ function Since1980() {
     setIsPlusPopup(true);
   };
 
+  const scrollRef = useRef(null);
+
   return (
     <div className="Since-Container">
       <NavDrop />
 
       <div className="List-Box">
         <div className="List-Container">
-          <AniList item={data} data={data} showOnlyOneItem={showOnlyOneItem} />
+          <AniList
+            item={data}
+            data={data}
+            showOnlyOneItem={showOnlyOneItem}
+            scrollRef={scrollRef}
+          />
 
-          <ScrollTopButton />
+          <ScrollButton scrollRef={scrollRef} />
 
           <BsFillPlusSquareFill
             className="plusbutton"
