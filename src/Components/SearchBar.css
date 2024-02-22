@@ -40,7 +40,7 @@
   background-color: white;
 }
 
-.Search-input-container input {
+.Search-input {
   border-style: none;
   width: 90%;
   height: 50px;
@@ -49,12 +49,17 @@
   padding: 0;
 }
 
-.Search-input-container input:focus {
+.Search-input:focus {
   outline: none;
 }
 
-.Search-input-container input::placeholder {
+.Search-input::placeholder {
   color: gray;
+}
+
+.Search-input.clicked {
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 .Search-ResetButton,

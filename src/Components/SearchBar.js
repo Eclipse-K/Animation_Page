@@ -10,6 +10,7 @@ function SearchBar() {
   const [filteredData, setFilteredData] = useState([]);
   const [searched, setSearched] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
+  const [pushClick, setPushClick] = useState(false);
   const suggestionRef = useRef();
 
   useEffect(() => {
@@ -88,6 +89,25 @@ function SearchBar() {
     }
   };
 
+  const handlePushFocus = () => {
+    setPushClick(true);
+  };
+
+  useEffect(() => {
+    const handleBlankClick = (event) => {
+      // 클릭된 엘리먼트가 input 엘리먼트인 경우에만 isClicked 변경
+      if (!event.target.matches("input")) {
+        setPushClick(false);
+      }
+    };
+
+    document.addEventListener("click", handleBlankClick);
+
+    return () => {
+      document.removeEventListener("click", handleBlankClick);
+    };
+  }, []);
+
   return (
     <div>
       <NavDrop />
@@ -97,10 +117,12 @@ function SearchBar() {
             <div className="Search-container">
               <div className="Search-input-container">
                 <input
+                  className={`Search-input ${pushClick ? "clicked" : ""}`}
                   type="text"
                   value={searchTerm}
                   onChange={handleSearchChange}
                   onKeyPress={handleKeyPress}
+                  onFocus={handlePushFocus}
                   placeholder="검색"
                   inputMode="text"
                 />
