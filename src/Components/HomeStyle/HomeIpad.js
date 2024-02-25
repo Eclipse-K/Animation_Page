@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ipadStyle = styled.div`
   position: relative;
-  width: 500px;
+  width: 90%;
   height: 600px;
   top: -10%;
   background-color: #000;
@@ -22,7 +22,7 @@ const ipadStyle = styled.div`
   }
 
   @media all and (min-width: 281px) and (max-width: 432px) {
-    width: 400px;
+    width: 90%;
     height: 700px;
     top: 0;
 
