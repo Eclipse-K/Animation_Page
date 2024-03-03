@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HomeSecond = styled.img`
+const HomeThird = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,4 +9,4 @@ const HomeSecond = styled.img`
   height: 22rem;
 `;
 
-export default HomeSecond;
+export default HomeThird;
