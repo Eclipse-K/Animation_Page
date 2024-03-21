@@ -1,5 +1,5 @@
 import NavDrop from "./NavDrop";
-import Minesweeper from "./Minesweeper";
+// import Minesweeper from "./Minesweeper";
 import HomeContainer from "./HomeStyle/HomeContainer.js";
 import Title from "./Temporarily/Title";
 import Copyright from "./Copyright";
@@ -15,7 +15,7 @@ function Home() {
       <NavDrop />
       <Title>Animation</Title>
       <HomeGrid>
-        <Minesweeper />
+        {/* <Minesweeper /> */}
         {/* <HomeSecond src={MickeyMouse} alt="MickeyMouse" />
         <HomeThird src={Mazinger} alt="Mazinger" /> */}
       </HomeGrid>
