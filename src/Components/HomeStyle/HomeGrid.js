@@ -6,7 +6,7 @@ const HomeGrid = styled.div`
   width: 100%;
   height: 700px;
   top: -10%;
-  border: 1px solid black;
+  // border: 1px solid black;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 
