@@ -1,23 +1,28 @@
 import NavDrop from "./NavDrop";
-// import Minesweeper from "./Minesweeper";
 import HomeContainer from "./HomeStyle/HomeContainer.js";
 import Title from "./Temporarily/Title";
 import Copyright from "./Copyright";
 import HomeGrid from "./HomeStyle/HomeGrid.js";
-// import HomeSecond from "./HomeStyle/HomeSecond.js";
-// import MickeyMouse from "../image/MickeyMouse.JPG";
-// import Mazinger from "../image/마징가.png";
-// import HomeThird from "./HomeStyle/HomeThird.js";
+import { useEffect, useState } from "react";
+import groupfile from "../api.json";
 
 function Home() {
+  const [totalData, setTotalData] = useState([]);
+
+  useEffect(() => {
+    setTotalData(groupfile);
+  }, []);
+
   return (
     <HomeContainer>
       <NavDrop />
       <Title>Animation</Title>
       <HomeGrid>
-        {/* <Minesweeper /> */}
-        {/* <HomeSecond src={MickeyMouse} alt="MickeyMouse" />
-        <HomeThird src={Mazinger} alt="Mazinger" /> */}
+        {totalData.map((item) => (
+          <div className="book" key={item.id}>
+            <h1>{item.title}</h1>
+          </div>
+        ))}
       </HomeGrid>
 
       <Copyright />

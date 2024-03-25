@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 const HomeContainer = styled.div`
   display: flex;
-  height: 1500px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 1600px;
 
   @media all and (width: 280px) {
     height: 653px;

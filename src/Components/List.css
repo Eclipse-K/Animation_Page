@@ -1,5 +1,6 @@
 .Since-Container {
   position: relative;
+  width: 1600px;
   height: 1200px;
 }
 
@@ -91,6 +92,7 @@
 
 @media all and (width: 280px) {
   .Since-Container {
+    width: 280px;
     height: 1200px;
   }
 
@@ -107,6 +109,7 @@
 
 @media all and (min-width: 281px) and (max-width: 432px) {
   .Since-Container {
+    width: 430px;
     height: 1000px;
   }
 
