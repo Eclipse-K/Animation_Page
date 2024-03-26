@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import jsonData from "../api.json";
 import "./SearchBar.css";
 import { FiRotateCcw, FiSearch } from "react-icons/fi";
-import NavDrop from "./NavDrop";
 
 function SearchBar() {
   const [data, setData] = useState([]);
@@ -110,34 +109,38 @@ function SearchBar() {
 
   return (
     <div>
-      <NavDrop />
       <div className="SearchBar-container">
         <div className="Searchbar">
           <form className="Searchbar-form" onSubmit={handleFormSubmit}>
             <div className="Search-container">
               <div className="Search-input-container">
-                <input
-                  className={`Search-input ${pushClick ? "clicked" : ""}`}
-                  type="text"
-                  value={searchTerm}
-                  onChange={handleSearchChange}
-                  onKeyPress={handleKeyPress}
-                  onFocus={handlePushFocus}
-                  placeholder="검색"
-                  inputMode="text"
-                />
-                {searchTerm ? (
-                  <button className="Search-ResetButton" onClick={handleReset}>
-                    <i aria-hidden="true">
-                      <FiRotateCcw />
-                    </i>
+                <div className="Search-input-box">
+                  <input
+                    className={`Search-input ${pushClick ? "clicked" : ""}`}
+                    type="text"
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                    onKeyPress={handleKeyPress}
+                    onFocus={handlePushFocus}
+                    placeholder="검색"
+                    inputMode="text"
+                  />
+                  {searchTerm ? (
+                    <button
+                      className="Search-ResetButton"
+                      onClick={handleReset}
+                    >
+                      <i aria-hidden="true">
+                        <FiRotateCcw />
+                      </i>
+                    </button>
+                  ) : (
+                    <span></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
+                  )}
+                  <button className="Search-SubmitButton" type="submit">
+                    <FiSearch />
                   </button>
-                ) : (
-                  <span style={{ width: "28px" }}></span> //handleReset 아이콘이 비활성화일때도 아이콘 공간만큼 유지
-                )}
-                <button className="Search-SubmitButton" type="submit">
-                  <FiSearch />
-                </button>
+                </div>
               </div>
               {suggestions.length > 0 && (
                 <ul className="Suggestion_title" ref={suggestionRef}>

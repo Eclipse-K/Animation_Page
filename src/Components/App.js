@@ -7,6 +7,8 @@ import Since1990 from "./Since/Since1990";
 import Since2000 from "./Since/Since2000";
 import Home from "./Home";
 import SearchBar from "./SearchBar";
+import Copyright from "./Copyright";
+import NavDrop from "./NavDrop";
 
 function App() {
   const [modeChange, setModeChange] = useState(false);
@@ -20,8 +22,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App-container">
-      <div className={modeChange ? "dark-mode" : "light-mode"}>
+    <div className={modeChange ? "dark-mode" : "light-mode"}>
+      <NavDrop />
+      <div className="App-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Since1970" element={<Since1970 />} />
@@ -31,6 +34,7 @@ function App() {
           <Route path="/SearchBar" element={<SearchBar />} />
         </Routes>
       </div>
+      <Copyright />
     </div>
   );
 }

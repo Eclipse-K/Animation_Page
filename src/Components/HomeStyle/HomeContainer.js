@@ -6,9 +6,9 @@ const HomeContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 1600px;
 
   @media all and (width: 280px) {
+    width: 280px;
     height: 653px;
   }
 

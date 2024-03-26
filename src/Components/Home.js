@@ -1,7 +1,5 @@
-import NavDrop from "./NavDrop";
 import HomeContainer from "./HomeStyle/HomeContainer.js";
 import Title from "./Temporarily/Title";
-import Copyright from "./Copyright";
 import HomeGrid from "./HomeStyle/HomeGrid.js";
 import { useEffect, useState } from "react";
 import groupfile from "../api.json";
@@ -15,7 +13,6 @@ function Home() {
 
   return (
     <HomeContainer>
-      <NavDrop />
       <Title>Animation</Title>
       <HomeGrid>
         {totalData.map((item) => (
@@ -24,8 +21,6 @@ function Home() {
           </div>
         ))}
       </HomeGrid>
-
-      <Copyright />
     </HomeContainer>
   );
 }

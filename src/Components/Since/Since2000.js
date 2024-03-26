@@ -8,7 +8,6 @@ import {
   BsCollectionPlayFill,
 } from "react-icons/bs";
 import PlusPopup from "../PlusPopup";
-import NavDrop from "../NavDrop";
 import "../List.css";
 import ScrollButton from "../ScrollButton/ScrollButton";
 
@@ -61,8 +60,6 @@ function Since2000() {
 
   return (
     <div className="Since-Container">
-      <NavDrop />
-
       <div className="List-Box">
         <div className="List-Container">
           <AniList
