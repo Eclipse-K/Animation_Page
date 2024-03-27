@@ -1,10 +1,9 @@
 .under_sentence {
   display: flex;
   height: 50px;
-  margin-top: 10px;
   position: fixed;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   background-color: white;
   z-index: 2;
