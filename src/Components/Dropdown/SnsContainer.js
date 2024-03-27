@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 const SnsContainer = styled.div`
-  position: relative;
-  top: 5%;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

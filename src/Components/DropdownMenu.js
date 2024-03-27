@@ -20,6 +20,20 @@ function DropdownMenu({ closeDropdown }) {
       <DropdownLink to="/" onClick={dropButtonClick}>
         <AiOutlineClose />
       </DropdownLink>
+      <SnsContainer>
+        <SnsLink to="https://www.instagram.com/" target="_blank">
+          <FaSquareInstagram />
+        </SnsLink>
+        <SnsLink to="https://www.facebook.com/" target="_blank">
+          <AiFillFacebook />
+        </SnsLink>
+        <SnsLink to="https://twitter.com/" target="_blank">
+          <FaXTwitter />
+        </SnsLink>
+        <SnsLink to="https://www.threads.net/" target="_blank">
+          <FaSquareThreads />
+        </SnsLink>
+      </SnsContainer>
       <p>
         <DropStyledLink
           to="/SearchBar"
@@ -54,20 +68,6 @@ function DropdownMenu({ closeDropdown }) {
           Since 2000
         </DropStyledLink>
       </p>
-      <SnsContainer>
-        <SnsLink to="https://www.instagram.com/" target="_blank">
-          <FaSquareInstagram />
-        </SnsLink>
-        <SnsLink to="https://www.facebook.com/" target="_blank">
-          <AiFillFacebook />
-        </SnsLink>
-        <SnsLink to="https://twitter.com/" target="_blank">
-          <FaXTwitter />
-        </SnsLink>
-        <SnsLink to="https://www.threads.net/" target="_blank">
-          <FaSquareThreads />
-        </SnsLink>
-      </SnsContainer>
     </DropdownContainer>
   );
 }

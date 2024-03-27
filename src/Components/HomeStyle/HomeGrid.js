@@ -7,7 +7,7 @@ const HomeGrid = styled.div`
   justify-items: center;
   width: 100%;
   top: 200px;
-  padding-bottom: 100px;
+  padding: 0 10px 100px 10px;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 
@@ -33,7 +33,7 @@ const HomeGrid = styled.div`
   }
 
   @media all and (width: 280px) {
-    top: 15%;
+    top: 100px;
     grid-template-columns: 1fr;
   }
 
