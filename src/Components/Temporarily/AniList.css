@@ -85,4 +85,26 @@
     margin: 0 10px;
     height: 900px;
   }
+
+  .Card-big,
+  .Card-big .card_content,
+  .Card-big .card_content .card-content-second {
+    height: 300px;
+  }
+
+  .Card-big h1 {
+    font-size: 30px;
+  }
+
+  .Card-big h2 {
+    font-size: 20px;
+  }
+
+  .Card-big p {
+    font-size: 15px;
+  }
+
+  .Card-Slider-Box {
+    height: 100px;
+  }
 }

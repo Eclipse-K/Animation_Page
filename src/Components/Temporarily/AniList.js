@@ -15,14 +15,6 @@ function AniList({ data, showOnlyOneItem, scrollRef }) {
     ? "info_container_one"
     : "info_container";
 
-  // const settings = {
-  //   arrows: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
-
   return (
     <ul className={infoContainer} ref={scrollRef}>
       {showOnlyOneItem ? (
