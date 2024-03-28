@@ -28,7 +28,7 @@ const HomeGrid = styled.div`
     align-items: center;
     font-family: "Dongle", sans-serif;
     font-size: 40px;
-    color: white;
+    color: #1b1b2f;
     margin: 0;
   }
 

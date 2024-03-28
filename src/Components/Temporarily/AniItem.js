@@ -1,16 +1,24 @@
+import React from "react";
 import "./AniItem.css";
 
-function AniItem({ item, showOnlyOneItem }) {
+function AniItem({ item, showOnlyOneItem, onClick }) {
   const { title, year, content } = item;
-  const cardClassName = showOnlyOneItem ? "info_card_one" : "info_card";
+  const contentToShow = showOnlyOneItem ? content : null;
 
   return (
-    <li className={cardClassName}>
+    <li
+      className={showOnlyOneItem ? "info_card_one" : "info_card"}
+      onClick={onClick}
+    >
       <div className="card_content">
         <div className="card-content-second">
           <h1>{title}</h1>
-          <h2>- 방영연도: {year}</h2>
-          <p>- {content}</p>
+          {showOnlyOneItem && (
+            <React.Fragment>
+              <h2>- 방영연도: {year}</h2>
+              <p>- {contentToShow}</p>
+            </React.Fragment>
+          )}
         </div>
       </div>
     </li>

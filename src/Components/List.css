@@ -1,7 +1,9 @@
 .Since-Container {
   position: relative;
-  width: 1600px;
-  height: 1200px;
+  width: 100%;
+  height: 900px;
+  top: 100px;
+  /* transform: translate(0, 0); */
 }
 
 .List-Box {
@@ -93,7 +95,7 @@
 @media all and (width: 280px) {
   .Since-Container {
     width: 280px;
-    height: 1200px;
+    top: 0;
   }
 
   .Full-view {
@@ -110,7 +112,7 @@
 @media all and (min-width: 281px) and (max-width: 432px) {
   .Since-Container {
     width: 100%;
-    height: 1000px;
+    top: 0;
   }
 
   .List-Container {
@@ -129,5 +131,11 @@
 
   .plusbutton:hover {
     background-color: none;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 1250px) {
+  .Since-Container {
+    display: flex;
   }
 }

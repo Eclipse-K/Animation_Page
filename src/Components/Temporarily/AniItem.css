@@ -4,20 +4,17 @@
 .info_card {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
-  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 90%;
-  height: 600px;
+  width: 150px;
+  height: 150px;
   margin: 10px 30px 10px 30px;
   transition: transform 0.3s;
   list-style-type: none;
-  overflow-y: auto;
 }
 
 .info_card_one {
@@ -40,11 +37,13 @@
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  width: 100%;
-  height: 500px;
+  width: 150px;
+  height: 50px;
+  /* height: 500px; */
 }
 
 .info_card_one .card_content {
+  width: 100%;
   height: 200px;
 }
 
@@ -80,26 +79,27 @@
 
 .card-content-second {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  /* height: 500px; */
 }
 
 .info_card_one .card-content-second {
+  flex-direction: column;
+  width: 100%;
   height: 200px;
 }
 
 .card_content h1 {
-  font-size: 75px;
-  margin-bottom: 10px;
-  padding-top: 5px;
-  padding-left: 10px;
-
+  font-size: 15px;
+  padding: 0 10px 0 10px;
   font-family: "Gugi", serif;
   font-weight: 800;
 }
 
 .info_card_one .card_content h1 {
+  padding: 0;
   font-size: 30px;
 }
 
@@ -107,7 +107,6 @@
   font-size: 50px;
   margin-bottom: 10px;
   padding-left: 10px;
-
   font-family: "Cute Font", cursive;
 }
 
