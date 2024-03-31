@@ -79,7 +79,7 @@
 
 .card-content-second {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 150px;
   /* height: 500px; */
