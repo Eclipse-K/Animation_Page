@@ -69,21 +69,26 @@ function Since1970() {
             scrollRef={scrollRef}
           />
 
-          <ScrollButton scrollRef={scrollRef} />
+          {/* view-only-one일 때는 스크롤과 더보기 숨김 */}
+          {showOnlyOneItem ? (
+            <>
+              <ScrollButton scrollRef={scrollRef} />
+              {showLoadMore && (
+                <BsCaretDownSquareFill
+                  className="More-Arrow"
+                  onClick={handleShowMore}
+                  alt="더보기"
+                />
+              )}
+            </>
+          ) : null}
 
+          {/* 추가하기 */}
           <BsFillPlusSquareFill
             className="plusbutton"
             onClick={handleAddClick}
           />
           {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
-
-          {showLoadMore && (
-            <BsCaretDownSquareFill
-              className="More-Arrow"
-              onClick={handleShowMore}
-              alt="더보기"
-            />
-          )}
 
           {showOnlyOneItem ? (
             <BsCollectionPlayFill
