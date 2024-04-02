@@ -10,7 +10,6 @@
   padding-bottom: 20px;
   margin: 0;
   overflow-y: auto;
-  height: 1000px;
 }
 
 .slick-slider {
@@ -71,7 +70,35 @@
 
 @media all and (width: 280px) {
   .info_container {
-    width: 80%;
+    width: 100%;
+  }
+
+  .Card-Slider {
+    align-items: center;
+  }
+
+  .Card-big,
+  .Card-big .card_content,
+  .Card-big .card_content .card-content-second {
+    height: 300px;
+  }
+
+  .Card-big .card-content-second h1 {
+    font-size: 20px;
+  }
+
+  .Card-big .card-content-second h2 {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  .Card-big .card-content-second p {
+    font-size: 15px;
+  }
+
+  .Card-Slider-Box {
+    height: 130px;
   }
 }
 
@@ -81,9 +108,8 @@
   }
 
   .info_container_one {
-    padding: 0 20px;
+    padding: 0 20px 100px 20px;
     margin: 0 10px;
-    height: 900px;
   }
 
   .Card-big,
