@@ -5,8 +5,6 @@
   flex-direction: column;
   align-items: center;
   width: 1600px;
-  height: 1500px;
-  overflow: auto;
 }
 
 .Searchbar {
@@ -147,6 +145,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 5%;
+  padding-bottom: 100px;
 }
 
 .Searchcard {

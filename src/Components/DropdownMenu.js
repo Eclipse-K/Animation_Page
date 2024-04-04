@@ -1,5 +1,5 @@
 import DropdownContainer from "./Dropdown/DropdownContainer.js";
-import { AiOutlineClose, AiFillFacebook } from "react-icons/ai";
+import { AiFillFacebook, AiOutlineClose } from "react-icons/ai";
 import {
   FaSquareInstagram,
   FaXTwitter,
@@ -9,16 +9,25 @@ import DropdownLink from "./Dropdown/DropdownLink.js";
 import DropStyledLink from "./Dropdown/DropStyledLink.js";
 import SnsContainer from "./Dropdown/SnsContainer.js";
 import SnsLink from "./Dropdown/SnsLink.js";
+import Xbutton from "./Dropdown/X-button.js";
 
 function DropdownMenu({ closeDropdown }) {
   const dropButtonClick = () => {
     closeDropdown();
   };
+  const xMobile = window.innerWidth <= 1024;
 
   return (
     <DropdownContainer>
       <DropdownLink to="/" onClick={dropButtonClick}>
-        <AiOutlineClose />
+        {xMobile ? (
+          <AiOutlineClose />
+        ) : (
+          <Xbutton>
+            <span className="hover-span1"></span>
+            <span className="hover-span2"></span>
+          </Xbutton>
+        )}
       </DropdownLink>
       <SnsContainer>
         <SnsLink to="https://www.instagram.com/" target="_blank">
