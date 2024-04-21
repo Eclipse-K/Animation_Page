@@ -46,7 +46,7 @@
 
 @media all and (min-width: 281px) and (max-width: 432px) {
   .App-container {
-    width: 400px;
+    width: 390px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) {

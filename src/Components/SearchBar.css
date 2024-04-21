@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1600px;
+  width: 1300px;
 }
 
 .Searchbar {
   position: relative;
   text-align: center;
-  width: 100%;
+  width: 1000px;
   height: 65px;
   top: 20px;
 }
@@ -272,7 +272,7 @@
   }
 
   .Searchbar {
-    width: 98%;
+    width: 300px;
   }
 
   .Searchbar-form {
@@ -314,5 +314,15 @@
 
   .Searchcard p {
     font-size: 15px;
+  }
+}
+
+@media all and (min-width: 450px) and (max-width: 1050px) {
+  .SearchBar-container {
+    width: 1050px;
+  }
+
+  .Searchbar {
+    width: 850px;
   }
 }
