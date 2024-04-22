@@ -8,7 +8,7 @@ const HomeGrid = styled.div`
   width: 100%;
   top: 200px;
   padding: 0 10px 100px 10px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
 
   .book {
@@ -28,7 +28,6 @@ const HomeGrid = styled.div`
     align-items: center;
     font-family: "Dongle", sans-serif;
     font-size: 40px;
-    color: #1b1b2f;
     margin: 0;
   }
 

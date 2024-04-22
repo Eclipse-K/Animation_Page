@@ -6,22 +6,14 @@ import groupfile from "../api.json";
 
 function Home() {
   const [totalData, setTotalData] = useState([]);
-  const [colors, setColors] = useState([]);
+  const [colors, setColors] = useState(["#FFFFFF", "#000000"]);
 
   useEffect(() => {
-    const generateRandomColor = () => {
-      const randomColor =
-        "#" + Math.floor(Math.random() * 16777215).toString(16);
-      return randomColor;
-    };
-
-    const newColors = [];
-    while (newColors.length < totalData.length) {
-      newColors.push(generateRandomColor());
-    }
-    setColors(newColors);
-
     setTotalData(groupfile);
+    setColors((prevColors) => {
+      const reversedColors = [prevColors[1], prevColors[0]];
+      return reversedColors;
+    });
   }, [totalData]);
 
   return (
@@ -32,7 +24,10 @@ function Home() {
           <div
             className="book"
             key={item.id}
-            style={{ backgroundColor: colors[index] }}
+            style={{
+              backgroundColor: colors[index % 2],
+              color: colors[index % 2] === "#FFFFFF" ? "#000000" : "#FFFFFF",
+            }}
           >
             <h1>{item.title}</h1>
           </div>
