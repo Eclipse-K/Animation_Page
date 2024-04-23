@@ -163,9 +163,11 @@ function SearchBar() {
             <div className="Searchcard-container">
               {filteredData.map((item) => (
                 <div className="Searchcard" key={item.id}>
-                  <h4>{item.title}</h4>
-                  <h5>{item.year}</h5>
-                  <p>{item.content}</p>
+                  <div className="Searchcard-box">
+                    <h4>{item.title}</h4>
+                    <h5>{item.year}</h5>
+                    <p>{item.content}</p>
+                  </div>
                 </div>
               ))}
             </div>

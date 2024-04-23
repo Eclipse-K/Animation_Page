@@ -217,7 +217,7 @@
 
 @media all and (min-width: 450px) and (max-width: 1023px) {
   .info_card {
-    height: 800px;
+    height: 150px;
   }
 
   .card_content {
