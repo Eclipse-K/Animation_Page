@@ -47,6 +47,7 @@ function AniList({ data, showOnlyOneItem, scrollRef }) {
                   key={item.id}
                   item={item}
                   showOnlyOneItem={showOnlyOneItem}
+                  isSelected={selectedItem === item}
                   onClick={() => handleItemClick(item)}
                 />
               ))}

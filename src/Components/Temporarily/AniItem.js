@@ -1,14 +1,16 @@
 import React from "react";
 import "./AniItem.css";
 
-function AniItem({ item, showOnlyOneItem, onClick }) {
+function AniItem({ item, showOnlyOneItem, isSelected, onClick }) {
   const { title, year, content } = item;
   const contentToShow = showOnlyOneItem ? content : null;
 
   return (
     <li
-      className={showOnlyOneItem ? "info_card_one" : "info_card"}
-      onClick={onClick}
+      className={`${showOnlyOneItem ? "info_card_one" : "info_card"} ${
+        isSelected ? "on" : ""
+      }`}
+      onClick={() => onClick(item)}
     >
       <div className="card_content">
         <div className="card-content-second">

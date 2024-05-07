@@ -17,6 +17,11 @@
   list-style-type: none;
 }
 
+.info_card.on {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
 .info_card:hover {
   cursor: pointer;
 }
