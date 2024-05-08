@@ -2,7 +2,7 @@ import AniItem from "./AniItem";
 import "./AniList.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function AniList({ data, showOnlyOneItem, scrollRef }) {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -14,6 +14,10 @@ function AniList({ data, showOnlyOneItem, scrollRef }) {
   const infoContainer = showOnlyOneItem
     ? "info_container_one"
     : "info_container";
+
+  useEffect(() => {
+    setSelectedItem(data[0]);
+  }, [data]);
 
   return (
     <ul className={infoContainer} ref={scrollRef}>
