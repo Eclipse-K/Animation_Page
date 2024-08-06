@@ -4,16 +4,10 @@ const Title = styled.div`
   margin: 0;
   font-family: "Black Ops One", cursive;
   font-size: 40px;
-  transition: transform 0.3s;
   text-decoration: none;
-  position: absolute;
   right: 40px;
   top: 15px;
   cursor: default;
-
-  :hover {
-    transform: scale(1.2);
-  }
 
   @media all and (width: 280px) {
     font-size: 25px;

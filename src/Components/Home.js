@@ -1,5 +1,4 @@
 import HomeContainer from "./HomeStyle/HomeContainer.js";
-import Title from "./Temporarily/Title";
 import HomeGrid from "./HomeStyle/HomeGrid.js";
 import { useEffect, useState } from "react";
 import groupfile from "../api.json";
@@ -18,7 +17,6 @@ function Home() {
 
   return (
     <HomeContainer>
-      <Title>Animation</Title>
       <HomeGrid>
         {totalData.map((item, index) => (
           <div

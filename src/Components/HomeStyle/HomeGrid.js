@@ -5,7 +5,6 @@ const HomeGrid = styled.div`
   display: grid;
   align-items: center;
   justify-items: center;
-  width: 100%;
   top: 200px;
   padding: 0 10px 100px 10px;
   grid-template-columns: repeat(5, 1fr);
@@ -40,6 +39,7 @@ const HomeGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
     border: none;
     top: 100px;
+    width: 100%;
 
     h1 {
       font-size: 25px;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import "./NavDrop.css";
 import DropdownMenu from "./DropdownMenu";
+import Title from "./Temporarily/Title";
 
 function NavDrop() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -29,6 +30,7 @@ function NavDrop() {
       </div>
 
       {isCollapsed && <DropdownMenu closeDropdown={closeDropdown} />}
+      <Title>Animation</Title>
     </nav>
   );
 }

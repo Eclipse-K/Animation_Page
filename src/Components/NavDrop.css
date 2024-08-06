@@ -2,10 +2,9 @@
 
 .navbar-drop {
   display: flex;
-  position: absolute;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  width: 10%;
+  width: 80%;
   top: 10px;
   left: 10px;
   z-index: 4;
