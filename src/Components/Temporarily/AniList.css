@@ -70,7 +70,7 @@
 
 @media all and (width: 280px) {
   .info_container {
-    width: 100%;
+    width: 96%;
   }
 
   .Card-Slider {
@@ -104,12 +104,12 @@
 
 @media all and (min-width: 281px) and (max-width: 432px) {
   .info_container {
-    width: 80%;
+    width: 96%;
   }
 
   .info_container_one {
-    padding: 0 20px 100px 20px;
-    margin: 0 10px;
+    /* padding: 0 20px 100px 20px; */
+    margin: 0 8px;
   }
 
   .Card-big,

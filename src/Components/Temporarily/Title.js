@@ -11,10 +11,12 @@ const Title = styled.div`
 
   @media all and (width: 280px) {
     font-size: 25px;
+    padding-right: 8px;
   }
 
   @media all and (min-width: 281px) and (max-width: 432px) {
     font-size: 35px;
+    padding-right: 8px;
   }
 `;
 
