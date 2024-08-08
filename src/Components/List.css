@@ -66,19 +66,19 @@
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  color: rgba(0, 0, 0, 0.75);
-  background-color: rgba(242, 242, 243, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   border-style: none;
   z-index: 3;
 }
 
 .More-Arrow:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
 }
 
 .plusbutton {
-  border: 1px solid black;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   justify-content: flex-end;
   position: fixed;
@@ -90,7 +90,7 @@
 }
 
 .plusbutton:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
 }
 
 @media all and (width: 280px) {

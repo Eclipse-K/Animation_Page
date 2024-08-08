@@ -9,6 +9,7 @@ const HomeGrid = styled.div`
   padding: 0 10px 100px 10px;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  width: 80%;
 
   .book {
     display: flex;
