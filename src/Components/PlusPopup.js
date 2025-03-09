@@ -4,7 +4,6 @@ import PlusInsertButton from "./PlusOption/PulsInsertButton";
 import PlusContainer from "./PlusOption/PlusContainer";
 import { useRef } from "react";
 import { useEffect } from "react";
-//import axios from "axios";
 
 function PlusPopup({ onClose }) {
   const popupRef = useRef(null);
@@ -42,18 +41,6 @@ function PlusPopup({ onClose }) {
       year: yearInput.value,
       content: contentInput.value,
     };
-
-    /* Axios를 사용하여 API 요청을 보내는 부분입니다.
-    axios
-      .post("https://example-api.com/items", newItem)
-      .then((response) => {
-        console.log("새로운 아이템이 추가되었습니다!", response.data);
-        onClose(); // API 요청이 성공하면 팝업을 닫습니다.
-      })
-      .catch((error) => {
-        console.error("아이템 추가에 실패했습니다:", error);
-      });
-      */
 
     onClose();
   };
