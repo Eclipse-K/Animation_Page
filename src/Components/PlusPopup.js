@@ -27,22 +27,39 @@ function PlusPopup({ onClose }) {
     }
   };
 
-  const handleConfirmClick = () => {
-    // "확인" 버튼을 클릭했을 때의 동작을 처리하기 위한 로직을 여기에 추가합니다.
+  const handleConfirmClick = async () => {
     const titleInput = document.getElementById("title");
-    const sicneInput = document.getElementById("since");
+    const sinceInput = document.getElementById("since");
     const yearInput = document.getElementById("year");
     const contentInput = document.getElementById("content");
 
-    // eslint-disable-next-line
     const newItem = {
+      id: crypto.randomUUID(), // UUID 생성
       title: titleInput.value,
-      since: sicneInput.value,
+      since: sinceInput.value,
       year: yearInput.value,
       content: contentInput.value,
     };
 
-    onClose();
+    try {
+      const response = await fetch("http://localhost:5001/api/add", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newItem),
+      });
+
+      if (!response.ok) {
+        throw new Error(`서버 오류: ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("서버 응답:", result);
+      alert("추가되었습니다!");
+      onClose();
+    } catch (error) {
+      console.error("API 요청 실패:", error);
+      alert("데이터 저장 중 오류 발생");
+    }
   };
 
   return (
