@@ -77,6 +77,11 @@ function DropdownMenu({ closeDropdown }) {
           Since 2000
         </DropStyledLink>
       </p>
+      <p>
+        <DropStyledLink to="/Since2010" onClick={dropButtonClick}>
+          Since 2010
+        </DropStyledLink>
+      </p>
     </DropdownContainer>
   );
 }
