@@ -4,8 +4,6 @@ const Xbutton = styled.button`
   position: relative;
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
-  margin-left: 10px;
   background-color: white;
   border: 10px double black;
   color: black;

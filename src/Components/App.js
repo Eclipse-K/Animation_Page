@@ -10,6 +10,7 @@ import SearchBar from "./SearchBar";
 import Copyright from "./Copyright";
 import NavDrop from "./NavDrop";
 import Since2010 from "./Since/Since2010";
+import Since2020 from "./Since/Since2020";
 
 function App() {
   const [modeChange, setModeChange] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Route path="/Since1990" element={<Since1990 />} />
           <Route path="/Since2000" element={<Since2000 />} />
           <Route path="/Since2010" element={<Since2010 />} />
+          <Route path="/Since2020" element={<Since2020 />} />
           <Route path="/SearchBar" element={<SearchBar />} />
         </Routes>
       </div>

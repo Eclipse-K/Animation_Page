@@ -5,10 +5,9 @@ import {
   FaXTwitter,
   FaSquareThreads,
 } from "react-icons/fa6";
-import DropdownLink from "./Dropdown/DropdownLink.js";
+import DropdownLink, { Closebutton } from "./Dropdown/DropdownLink.js";
 import DropStyledLink from "./Dropdown/DropStyledLink.js";
 import SnsContainer from "./Dropdown/SnsContainer.js";
-import SnsLink from "./Dropdown/SnsLink.js";
 import Xbutton from "./Dropdown/X-button.js";
 
 function DropdownMenu({ closeDropdown }) {
@@ -17,32 +16,39 @@ function DropdownMenu({ closeDropdown }) {
   };
   const xMobile = window.innerWidth <= 1024;
 
+  const outsideUrl = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <DropdownContainer>
       <DropdownLink to="/" onClick={dropButtonClick}>
         {xMobile ? (
-          <AiOutlineClose />
+          <Closebutton>
+            <AiOutlineClose />
+          </Closebutton>
         ) : (
           <Xbutton>
             <span className="hover-span1"></span>
             <span className="hover-span2"></span>
           </Xbutton>
         )}
+        <SnsContainer>
+          <FaSquareInstagram
+            onClick={() => outsideUrl("https://www.instagram.com/")}
+          />
+
+          <AiFillFacebook
+            onClick={() => outsideUrl("https://www.facebook.com/")}
+          />
+
+          <FaXTwitter onClick={() => outsideUrl("https://twitter.com/")} />
+
+          <FaSquareThreads
+            onClick={() => outsideUrl("https://www.threads.net/")}
+          />
+        </SnsContainer>
       </DropdownLink>
-      <SnsContainer>
-        <SnsLink to="https://www.instagram.com/" target="_blank">
-          <FaSquareInstagram />
-        </SnsLink>
-        <SnsLink to="https://www.facebook.com/" target="_blank">
-          <AiFillFacebook />
-        </SnsLink>
-        <SnsLink to="https://twitter.com/" target="_blank">
-          <FaXTwitter />
-        </SnsLink>
-        <SnsLink to="https://www.threads.net/" target="_blank">
-          <FaSquareThreads />
-        </SnsLink>
-      </SnsContainer>
       <p>
         <DropStyledLink
           to="/SearchBar"
@@ -80,6 +86,11 @@ function DropdownMenu({ closeDropdown }) {
       <p>
         <DropStyledLink to="/Since2010" onClick={dropButtonClick}>
           Since 2010
+        </DropStyledLink>
+      </p>
+      <p>
+        <DropStyledLink to="/Since2020" onClick={dropButtonClick}>
+          Since 2020
         </DropStyledLink>
       </p>
     </DropdownContainer>
