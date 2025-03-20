@@ -26,6 +26,7 @@ const DropdownContainer = styled.div`
 
   @media all and (max-width: 432px) {
     width: 100%;
+    overflow: auto;
   }
 `;
 
