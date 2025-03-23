@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PlusInput from "./PlusInput";
 
 const PlusContainer = styled.div`
   border: 5px double black;
@@ -16,30 +15,8 @@ const PlusContainer = styled.div`
   justify-content: center;
   z-index: 9999;
 
-  ${PlusInput} {
-    margin-bottom: 16px;
-  }
-
   form {
     width: 400px;
-  }
-
-  #title {
-    height: 30px;
-  }
-
-  #since {
-    height: 30px;
-  }
-
-  #year {
-    height: 30px;
-  }
-
-  #content {
-    height: 100px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
   }
 `;
 

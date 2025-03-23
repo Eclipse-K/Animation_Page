@@ -5,7 +5,7 @@ const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
 
   @media all and (width: 280px) {
     width: 280px;

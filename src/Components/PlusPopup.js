@@ -4,6 +4,7 @@ import PlusInsertButton from "./PlusOption/PulsInsertButton";
 import PlusContainer from "./PlusOption/PlusContainer";
 import { useRef } from "react";
 import { useEffect } from "react";
+import PlusTextarea from "./PlusOption/PlusTextarea";
 
 function PlusPopup({ onClose }) {
   const popupRef = useRef(null);
@@ -73,7 +74,12 @@ function PlusPopup({ onClose }) {
         <PlusLabel htmlFor="year">연도</PlusLabel>
         <PlusInput text="연도" id="year" name="year" placeholder="연도" />
         <PlusLabel htmlFor="content">내용</PlusLabel>
-        <PlusInput text="내용" id="content" name="content" placeholder="내용" />
+        <PlusTextarea
+          text="내용"
+          id="content"
+          name="content"
+          placeholder="내용"
+        />
         <PlusInsertButton onClick={handleConfirmClick}>확인</PlusInsertButton>
       </form>
     </PlusContainer>

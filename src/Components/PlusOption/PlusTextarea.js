@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const PlusInput = styled.input`
+const PlusTextarea = styled.textarea`
   border: 1px solid black;
   border-bottom: 2px solid ${({ error }) => (error ? `#f44336` : `#eeeeee`)};
   display: flex;
@@ -8,7 +8,9 @@ const PlusInput = styled.input`
   outline: none;
   padding: 4px 0;
   width: 100%;
+  height: 100px;
   margin-bottom: 8px;
+  overflow: auto;
   text-transform: lowercase;
 
   ${({ error }) =>
@@ -24,4 +26,4 @@ const PlusInput = styled.input`
   }
 `;
 
-export default PlusInput;
+export default PlusTextarea;

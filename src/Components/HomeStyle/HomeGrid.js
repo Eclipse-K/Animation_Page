@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 const HomeGrid = styled.div`
-  position: absolute;
   display: grid;
   align-items: center;
   justify-items: center;
-  top: 200px;
   padding: 0 10px 100px 10px;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-  width: 80%;
+  width: 100%;
 
   .book {
     display: flex;

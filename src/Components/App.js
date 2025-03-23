@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
 import "./App.css";
 import Since1970 from "./Since/Since1970";
 import Since1980 from "./Since/Since1980";
@@ -13,20 +12,10 @@ import Since2010 from "./Since/Since2010";
 import Since2020 from "./Since/Since2020";
 
 function App() {
-  const [modeChange, setModeChange] = useState(false);
-  //시스템 설정에 따라 테마 색상이 변함.
-
-  useEffect(() => {
-    const prefersModeChange = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    setModeChange(prefersModeChange);
-  }, []);
-
   return (
-    <div className={modeChange ? "dark-mode" : "light-mode"}>
-      <NavDrop />
-      <div className="App-container">
+    <div className="App-container">
+      <div className="App-box">
+        <NavDrop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Since1970" element={<Since1970 />} />
@@ -37,8 +26,9 @@ function App() {
           <Route path="/Since2020" element={<Since2020 />} />
           <Route path="/SearchBar" element={<SearchBar />} />
         </Routes>
+
+        <Copyright />
       </div>
-      <Copyright />
     </div>
   );
 }

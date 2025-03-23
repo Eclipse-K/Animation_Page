@@ -8,7 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+}
+
+.App-box {
+  width: 1440px;
 }
 
 .light-mode,
@@ -40,7 +43,7 @@
   color: #10100f;
 } */
 
-@media all and (width: 280px) {
+/* @media all and (width: 280px) {
   .App-container {
     width: 280px;
   }
@@ -50,7 +53,8 @@
   .App-container {
     width: 100%;
   }
-}
+} */
+
 @media all and (min-width: 768px) and (max-width: 1024px) {
   .App-container {
     width: 1000px;
