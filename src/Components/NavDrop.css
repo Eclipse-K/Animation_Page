@@ -6,7 +6,8 @@
   align-items: center;
   width: 100%;
   padding: 0 8px;
-  z-index: 4;
+  border-bottom: 5px solid black;
+  margin-bottom: 8px;
 }
 
 .navbar-dropdown {

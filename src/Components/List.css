@@ -7,15 +7,20 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  overflow-y: auto;
 }
 
 .List-Container {
   display: flex;
   justify-content: center;
-  width: 90%;
   height: 100vmax;
   padding: 60px 0 24px 0;
+}
+
+.Button-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 8px;
 }
 
 /*
@@ -37,18 +42,12 @@
 
 /*더보기------*/
 .Full-view {
-  position: absolute;
-  right: 30px;
-  top: 40px;
   width: 35px;
   height: 35px;
   cursor: pointer;
 }
 
 .View-only-one {
-  position: absolute;
-  right: 30px;
-  top: 40px;
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -111,6 +110,10 @@
   .Since-Container {
     width: 100%;
     top: 0;
+  }
+
+  .Button-box {
+    display: none;
   }
 
   .List-Container {

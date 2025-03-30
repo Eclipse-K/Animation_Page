@@ -60,6 +60,25 @@ function Since2010() {
 
   return (
     <div className="Since-Container">
+      <div className="Button-box">
+        {/* 추가하기 */}
+        <BsFillPlusSquareFill className="plusbutton" onClick={handleAddClick} />
+        {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
+
+        {showOnlyOneItem ? (
+          <BsCollectionPlayFill
+            className="Full-view"
+            onClick={handleToggleVisibility}
+            alt="전체보기"
+          />
+        ) : (
+          <BsCardList
+            className="View-only-one"
+            onClick={handleToggleVisibility}
+            alt="1개만 보기"
+          />
+        )}
+      </div>
       <div className="List-Box">
         <div className="List-Container">
           <AniList
@@ -82,27 +101,6 @@ function Since2010() {
               )}
             </>
           ) : null}
-
-          {/* 추가하기 */}
-          <BsFillPlusSquareFill
-            className="plusbutton"
-            onClick={handleAddClick}
-          />
-          {isPlusPopup && <PlusPopup onClose={() => setIsPlusPopup(false)} />}
-
-          {showOnlyOneItem ? (
-            <BsCollectionPlayFill
-              className="Full-view"
-              onClick={handleToggleVisibility}
-              alt="전체보기"
-            />
-          ) : (
-            <BsCardList
-              className="View-only-one"
-              onClick={handleToggleVisibility}
-              alt="1개만 보기"
-            />
-          )}
         </div>
       </div>
     </div>
